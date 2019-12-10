@@ -1,0 +1,41 @@
+type: GenericSmelter
+name: Ballistics-Factory
+description: Create powerful Ballistic Missiles that can only be fired by the biggest of missile launchers.
+size: 4
+health: 500
+hasPower: true
+flameColor: 7affbd
+craftTime: 1200
+itemCapacity: 32
+consumesPower: true
+consumes: {
+  power: {
+    usage: 16.25
+    capacity: 16.25
+  }
+  items: {
+    items: [
+      surge-alloy/5
+      plastanium/10
+      thorium/10
+      blast-compound/16
+    ]
+  }
+}
+outputItem: {
+  item: missile
+  amount: 1
+}
+requirements: [
+  lead/2000
+  silicon/1000
+  graphite/1000
+  thorium/1600
+  surge-alloy/1250
+  plastanium/1080
+  phase-fabric/200
+]
+category: crafting
+research: spectre
+idleSound: respawning
+idleSoundVolume: 0.5
