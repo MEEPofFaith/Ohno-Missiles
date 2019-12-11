@@ -37,7 +37,7 @@ ammo: {
     bulletSprite: ohno-missiles-missileairmine
     hitEffect: flakExplosionBig
     despawnEffect: flakExplosionBig
-    lifetime: 562
+    lifetime: 281
     hitShake: 0.75
     frontColor: ffffff
     backColor: ffffff
