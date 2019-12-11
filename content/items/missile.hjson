@@ -1,6 +1,6 @@
 type: resource
-name: Ballistic Missile
-description: A powerful ballistic missile to be used in only the strongest of weaponry. [#8f0101]You'd expect it to be safer than Blast Compound because of the casing, but the sheer concentration of it makes it actually *more* dangerious.[]
+name: "[#8f0101]Ballistic Missile[]"
+description: "A powerful ballistic missile to be used in only the strongest of weaponry. [#8f0101]You'd expect it to be safer than Blast Compound because of the casing, but the sheer concentration of it makes it actually more dangerious.[]"
 explosiveness: 69420
 flammability: 5
 color: 8f0101
