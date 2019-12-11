@@ -18,3 +18,4 @@ I sped it up a bit. It actually takes about 10 seconds to explode. The gif itsel
 #### Flame/Fire/Napalm (or some better more creative name) Silo
 #### World Ender Silo (Will cost 11565 of all resources to build. Why 11565? Check the research cost.)
 #### Impulse Silo (Minimal damage, insane knockback)
+#### Nuclear Crawler
