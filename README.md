@@ -11,8 +11,8 @@ Adds a Ballistics Factory to create missiles to load various milos. Kinda expens
 ##### Anti-Air Silo (v1) - Fires much faster missiles that blast down flying enemies.
 ##### Splitter Silo (v1) - Fire missiles that split into multiple smaller missiles. Thrice.
 ##### Nuclear Silo (v1) - The destruction capable should be read from the name.
-![Nuclear Silo Gif](https://media.giphy.com/media/dzPUtwm2DDx5ttf1xr/giphy.gif)
-I sped it up a bit. It actually takes about 10 seconds to explode.
+![Nuclear Silo Gif](https://media.giphy.com/media/dzPUtwm2DDx5ttf1xr/giphy.gif)<br />
+I sped it up a bit. It actually takes about 10 seconds to explode. The gif itself is actually old, as I've made the missile faster in a later update to it.
 
 ## Plans
 ##### Flame/Fire/Napalm (or some better more creative name) Silo
