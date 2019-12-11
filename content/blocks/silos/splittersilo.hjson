@@ -1,0 +1,215 @@
+type: ItemTurret
+name: [#ffeb0d]Splitter Missile Silo[]
+description: The missile keeps splitting and splitting and splitting...
+health: 200
+size: 4
+reload: 1800
+range: 69420
+inaccuracy: 5
+rotatespeed: 5
+targetAir: true
+maxAmmo: 6
+ammoPerShot: 6
+heatColor: ffeb0d
+cooldown: 0.003
+restitution: 0.003
+recoil: 8
+shootEffect: nuclearShockwave
+shootSound: missilelaunch
+ammo: {
+  missile: {
+    type: MissileBulletType
+    bulletShrink: 0
+    trailColor: FFF600
+    speed: 1
+    damage: 2000
+    splashDamage: 2000
+    splashDamageRadius: 160
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    frontColor: ffffff
+    backColor: ffffff
+    effect: missileTrail
+    ammoMultiplier: 3
+    homingPower: 6
+    homingRange: 69420
+    splashDamageRadius: 100
+    hitSound: explosionbig
+    knockback: 2
+    bulletSprite: ohno-missiles-missilesplitter
+    despawnEffect: flakExplosionBig
+    hitEffect: flakExplosionBig
+    lifetime: 3600
+    hitShake: 1.5
+    fragBullets: 5
+    fragVelocityMin: 0.7
+    fragVelocityMax: 1.7
+    fragBullet: {
+      type: MissileBulletType
+      trailColor: FFF600
+      bulletShrink: 0
+      bulletSprite: ohno-missiles-missilesplitterpiece
+      speed: 1.5
+      frontColor: ffffff
+      backColor: ffffff
+      damage: 0
+      hitSize: 32
+      bulletWidth: 32
+      bulletHeight: 32
+      splashDamage: 0
+      knockback: 0
+      hitShake: 0.15
+      hitSound: explosionbig
+      lifetime: 30
+      hitEffect: flakExplosionBig
+      splashDamageRadius: 120
+      homingPower: 0
+      homingRange: 0
+      fragBullets: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      despawnEffect: flakExplosionBig
+      fragBullet: {
+        type: MissileBulletType
+        trailColor: FFF600
+        bulletShrink: 0
+        bulletSprite: ohno-missiles-missilesplitterpiece
+        speed: 1.5
+        frontColor: ffffff
+        backColor: ffffff
+        damage: 200
+        hitSize: 32
+        bulletWidth: 32
+        bulletHeight: 32
+        splashDamage: 200
+        knockback: 0.2
+        hitShake: 0.15
+        hitSound: explosionbig
+        lifetime: 3600
+        hitEffect: flakExplosionBig
+        splashDamageRadius: 120
+        homingPower: 9
+        homingRange: 69420
+        fragBullets: 5
+        fragVelocityMin: 0.7
+        fragVelocityMax: 1.7
+        despawnEffect: flakExplosionBig
+        fragBullet: {
+          type: MissileBulletType
+          bulletShrink: 0
+          frontColor: ffffff
+          backColor: ffffff
+          trailColor: FFF600
+          bulletSprite: ohno-missiles-missilesplittershard
+          hitShake: 0.015
+          speed: 2
+          damage: 0
+          homingPower: 0
+          homingRange: 0
+          hitSize: 32
+          bulletWidth: 32
+          bulletHeight: 32
+          splashDamage: 0
+          splashDamageRadius: 80
+          lifetime: 3600
+          knockback: 0
+          hitEffect: flakExplosionBig
+          hitSound: explosion
+          fragBullets: 1
+          fragVelocityMin: 1
+          fragVelocityMax: 1
+          despawnEffect: flakExplosionBig
+          fragBullet: {
+            type: MissileBulletType
+            bulletShrink: 0
+            frontColor: ffffff
+            backColor: ffffff
+            trailColor: FFF600
+            bulletSprite: ohno-missiles-missilesplittershard
+            hitShake: 0.015
+            speed: 2
+            damage: 20
+            homingPower: 12
+            homingRange: 69420
+            hitSize: 32
+            bulletWidth: 32
+            bulletHeight: 32
+            splashDamage: 20
+            splashDamageRadius: 80
+            lifetime: 30
+            knockback: 0.02
+            hitEffect: flakExplosionBig
+            hitSound: explosion
+            fragBullets: 5
+            fragVelocityMin: 0.7
+            fragVelocityMax: 1.7
+            despawnEffect: flakExplosionBig
+            fragBullet: {
+            type: MissileBulletType
+              bulletShrink: 0
+              trailColor: FFF600
+              bulletSprite: ohno-missiles-missilesplitterbit
+              frontColor: ffffff
+              backColor: ffffff
+              speed: 2.5
+              damage: 0
+              homingPower: 0
+              homingRange: 0
+              hitSize: 32
+              bulletWidth: 32
+              bulletHeight: 32
+              splashDamage: 0
+              splashDamageRadius: 40
+              lifetime: 3600
+              knockback: 0
+              hitShake: 0.001
+              hitEffect: shockwave
+              hitSound: explosion
+              hitShake: 0.0015
+              fragBullets: 1
+              fragVelocityMin: 1
+              fragVelocityMax: 1
+              despawnEffect: flakExplosionBig
+              fragBullet {
+                type: MissileBulletType
+                bulletShrink: 0
+                trailColor: FFF600
+                bulletSprite: ohno-missiles-missilesplitterbit
+                frontColor: ffffff
+                backColor: ffffff
+                speed: 2.5
+                damage: 2
+                homingPower: 15
+                homingRange: 69420
+                hitSize: 32
+                bulletWidth: 32
+                bulletHeight: 32
+                splashDamage: 2
+                splashDamageRadius: 40
+                lifetime: 3600
+                knockback: 0.002
+                hitShake: 0.001
+                hitEffect: shockwave
+                hitSound: explosion
+                hitShake: 0.0015
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+requirements: [
+  copper/2500
+  lead/2500
+  silicon/2000
+  graphite/2000
+  titanium/2000
+  plastanium/2500
+  thorium/2000
+  surge-alloy/1500
+]
+category: turret
+research: blanksilo
