@@ -115,7 +115,7 @@ ammo: {
           bulletHeight: 32
           splashDamage: 0
           splashDamageRadius: 80
-          lifetime: 3600
+          lifetime: 30
           knockback: 0
           hitEffect: none
           hitSound: none
@@ -141,7 +141,7 @@ ammo: {
             bulletHeight: 32
             splashDamage: 20
             splashDamageRadius: 80
-            lifetime: 30
+            lifetime: 3600
             knockback: 0.02
             hitEffect: flakExplosion
             hitSound: explosion
@@ -166,7 +166,7 @@ ammo: {
               bulletHeight: 32
               splashDamage: 0
               splashDamageRadius: 40
-              lifetime: 3600
+              lifetime: 30
               knockback: 0
               hitShake: 0.001
               hitEffect: none
