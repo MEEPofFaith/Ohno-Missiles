@@ -49,12 +49,12 @@ ammo: {
     fragBullet: {
       type: FlakBulletType
       drag: 0.033
-      explodeRange: 80
+      explodeRange: 32
       trailColor: FFF600
       speed: 3
       damage: 500
       splashDamage: 500
-      splashDamageRadius: 120
+      splashDamageRadius: 40
       frontColor: ffffff
       backColor: ffffff
       bulletShrink: 0
@@ -73,6 +73,10 @@ ammo: {
       collidesTiles: false
       collidesAir: true
       lifetime: 3600
+      fragBullets: 5
+      fragBullet: {
+        arc
+      }
     }
   }
 }
