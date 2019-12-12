@@ -42,7 +42,7 @@ ammo: {
     backColor: ffffff
     collidesTiles: false
     collidesAir: true
-    fragBullets: 100
+    fragBullets: 1000
     fragVelocityMin: 0
     fragVelocityMax: 2
     collidesAir: false
