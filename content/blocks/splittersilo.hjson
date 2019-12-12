@@ -43,8 +43,8 @@ ammo: {
     lifetime: 3600
     hitShake: 1.5
     fragBullets: 5
-    fragVelocityMin: 0.7
-    fragVelocityMax: 1.7
+    fragVelocityMin: 1
+    fragVelocityMax: 1
     fragBullet: {
       type: MissileBulletType
       effect: missileTrail
@@ -61,14 +61,14 @@ ammo: {
       splashDamage: 0
       knockback: 0
       hitShake: 0.15
-      lifetime: 30
+      lifetime: 300
       hitEffect: none
       splashDamageRadius: 120
       homingPower: 0
       homingRange: 0
       fragBullets: 1
-      fragVelocityMin: 1
-      fragVelocityMax: 1
+      fragVelocityMin: 0.5
+      fragVelocityMax: 2
       despawnEffect: none
       hitSound: none
       fragBullet: {
@@ -94,8 +94,8 @@ ammo: {
         homingPower: 9
         homingRange: 69420
         fragBullets: 5
-        fragVelocityMin: 0.7
-        fragVelocityMax: 1.7
+        fragVelocityMin: 1
+        fragVelocityMax: 1
         despawnEffect: flakExplosionBig
         fragBullet: {
           type: MissileBulletType
@@ -115,13 +115,13 @@ ammo: {
           bulletHeight: 32
           splashDamage: 0
           splashDamageRadius: 80
-          lifetime: 30
+          lifetime: 300
           knockback: 0
           hitEffect: none
           hitSound: none
           fragBullets: 1
-          fragVelocityMin: 1
-          fragVelocityMax: 1
+          fragVelocityMin: 0.5
+          fragVelocityMax: 2
           despawnEffect: none
           fragBullet: {
             type: MissileBulletType
@@ -146,8 +146,8 @@ ammo: {
             hitEffect: flakExplosion
             hitSound: explosion
             fragBullets: 5
-            fragVelocityMin: 0.7
-            fragVelocityMax: 1.7
+            fragVelocityMin: 1
+            fragVelocityMax: 1
             despawnEffect: flakExplosion
             fragBullet: {
               type: MissileBulletType
@@ -166,15 +166,15 @@ ammo: {
               bulletHeight: 32
               splashDamage: 0
               splashDamageRadius: 40
-              lifetime: 30
+              lifetime: 300
               knockback: 0
               hitShake: 0.001
               hitEffect: none
               hitSound: none
               hitShake: 0.0015
               fragBullets: 1
-              fragVelocityMin: 1
-              fragVelocityMax: 1
+              fragVelocityMin: 0.5
+              fragVelocityMax: 2
               despawnEffect: none
               fragBullet: {
                 type: MissileBulletType
