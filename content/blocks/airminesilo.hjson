@@ -1,6 +1,6 @@
 type: ItemTurret
 name: "[#9EE6FF]Air Mine Silo[]"
-description: Fires an missile that bursts into a swarm of air mines.
+description: Fires a missile that bursts into a swarm of air mines.
 health: 200
 size: 4
 reload: 600
@@ -49,7 +49,7 @@ ammo: {
     fragBullet: {
       type: FlakBulletType
       drag: 0.033
-      explodeRange: 80
+      explodeRange: 40
       trailColor: FFF600
       speed: 3
       damage: 500
@@ -72,7 +72,10 @@ ammo: {
       hitShake: 0.75
       collidesTiles: false
       collidesAir: true
-      lifetime: 3600
+      lifetime: 10800
+	  
+	  fragBullets: 10
+	  fragBullet: lightning
     }
   }
 }
