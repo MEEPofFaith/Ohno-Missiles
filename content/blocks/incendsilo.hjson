@@ -3,7 +3,7 @@ name: "[#F27D00]Incendiary Missile Silo[]"
 description: Doesn't deal as much damage, but a massive area gets lit on fire.
 health: 200
 size: 4
-reload: 1200
+reload: 1800
 range: 69420
 inaccuracy: 5
 rotatespeed: 5
