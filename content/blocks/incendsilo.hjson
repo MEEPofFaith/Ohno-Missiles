@@ -65,7 +65,7 @@ ammo: {
 			homingPower: 0
 			homingRange: 0
       hitShake: 0.75
-      hitEffect: none
+      hitEffect: hitLiquid
       hitSound: none
       despawnEffect: none
       hitShake: 0
@@ -90,7 +90,7 @@ ammo: {
   			homingPower: 0
   			homingRange: 0
         hitShake: 0
-        hitEffect: none
+        hitEffect: hitLiquid
         hitSound: none
         despawnEffect: none
         collidesAir: false
