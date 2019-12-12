@@ -54,7 +54,7 @@ ammo: {
       speed: 3
       damage: 500
       splashDamage: 500
-      splashDamageRadius: 160
+      splashDamageRadius: 60
       frontColor: ffffff
       backColor: ffffff
       bulletShrink: 0
@@ -73,9 +73,8 @@ ammo: {
       collidesTiles: false
       collidesAir: true
       lifetime: 10800
-	  
-	  fragBullets: 10
-	  fragBullet: lightning
+	    fragBullets: 30
+	    fragBullet: lightning
     }
   }
 }
