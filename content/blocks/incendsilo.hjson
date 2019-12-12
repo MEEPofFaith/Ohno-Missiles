@@ -1,15 +1,16 @@
 type: ItemTurret
-name: [#F27D00]Missile Silo[]
-description: Doesn't deal as much damage, but a massive area get lit on fire. Don't use this for close combat for any reason.
+name: "[#F27D00]Missile Silo[]"
+description: Doesn't deal as much damage, but a massive area gets lit on fire.
 health: 200
 size: 4
-reload: 600
+reload: 1200
 range: 69420
 inaccuracy: 5
 rotatespeed: 5
-targetAir: true
+targetAir: false
 heatColor: F27D00
 maxAmmo: 6
+ammoPerShot: 2
 restitution: 0.003
 recoil: 8
 shootSound: missilelaunch
@@ -20,12 +21,12 @@ ammo: {
     bulletShrink: 0
     trailColor: FFF600
     speed: 2
-    damage: 0
-    splashDamage: 0
-    splashDamageRadius: 0
-    hitSize: 32
-    bulletWidth: 32
-    bulletHeight: 32
+    damage: 300
+    splashDamage: 300
+    splashDamageRadius: 300
+    hitSize: 40
+    bulletWidth: 40
+    bulletHeight: 40
     effect: missileTrail
     ammoMultiplier: 3
     homingPower: 0.25
@@ -41,48 +42,77 @@ ammo: {
     backColor: ffffff
     collidesTiles: false
     collidesAir: true
-    fragBullets: 20
+    fragBullets: 200
     fragVelocityMin: 0
     fragVelocityMax: 2
+    collidesAir: false
+    collidesTiles: true
     fragBullet: {
-      type: FlakBulletType
-      drag: 0.033
-      explodeRange: 80
-      trailColor: FFF600
-      speed: 3
-      damage: 500
-      splashDamage: 500
-      splashDamageRadius: 120
+      type: LiquidBulletType
+			bulletShrink: 0
+      drag: 0.066
+      liquid: slag
+      speed: 6
+      damage: 50
+      splashDamage: 50
+      splashDamageRadius: 24
       frontColor: ffffff
       backColor: ffffff
       bulletShrink: 0
-      hitSize: 32
-      bulletHeight: 32
-      bulletWidth: 32
-      bulletSprite: ohno-missiles-missileairminemine
-      knockback: 5
-      homingPower: 0
-      homingRange: 0
+      bulletHeight: 0
+      bulletWidth: 0
+      knockback: 0.1
+			homingPower: 0
+			homingRange: 0
       hitShake: 0.75
-      hitEffect: flakExplosionBig
-      hitSound: explosion
-      despawnEffect: flakExplosionBig
-      hitShake: 0.75
-      collidesTiles: false
-      collidesAir: true
-      lifetime: 3600
+      hitEffect: none
+      hitSound: none
+      despawnEffect: none
+      hitShake: 0
+      collidesTiles: true
+      collidesAir: false
+      lifetime: 30 
+      fragBullets: 20
+      fragBullet: {
+        type: LiquidBulletType
+		  	bulletShrink: 0
+        liquid: oil
+        speed: 0
+        damage: 50
+        splashDamage: 50
+        splashDamageRadius: 24
+        frontColor: ffffff
+        backColor: ffffff
+        bulletShrink: 0
+        bulletHeight: 0
+        bulletWidth: 0
+        knockback: 0.1
+  			homingPower: 0
+  			homingRange: 0
+        hitShake: 0
+        hitEffect: none
+        hitSound: none
+        despawnEffect: none
+        collidesAir: false
+        collidesTiles: true
+        hitShake: 0
+        collidesTiles: true
+        collidesAir: false
+        lifetime: 1
+      }
     }
   }
 }
 requirements: [
-  copper/2000
-  lead/2000
+  copper/2500
+  lead/2500
   silicon/1250
   graphite/1250
-  titanium/1500
-  plastanium/1000
-  thorium/1000
-  surge-alloy/750
+  metaglass/2250
+  titanium/1600
+  plastanium/500
+  thorium/1200
+  surge-alloy/600
 ]
 category: turret
-research: missilefactory
+research: airminesilo
