@@ -52,12 +52,10 @@ ammo: {
       drag: 0.066
       liquid: oil
       speed: 6
-      damage: 50
-      splashDamage: 50
+      damage: 0
+      splashDamage: 0
       splashDamageRadius: 24
       knockback: 0.1
-			homingPower: 0
-			homingRange: 0
       hitShake: 0.3
       hitSound: flame
       hitEffect: fireSmoke
@@ -68,14 +66,12 @@ ammo: {
       fragBullets: 5000
       fragBullet: {
         type: LiquidBulletType
-        liquid: slag
+        liquid: oil
         speed: 0
-        damage: 50
-        splashDamage: 50
+        damage: 0
+        splashDamage: 0
         splashDamageRadius: 24
         knockback: 0.1
-  			homingPower: 0
-  			homingRange: 0
         hitShake: 0
         hitSound: fire
         hitEffect: fireSmoke
@@ -83,6 +79,74 @@ ammo: {
         collidesAir: false
         collidesTiles: true
         lifetime: 1
+        fragBullets: 5000
+        fragBullet: {
+          type: LiquidBulletType
+          liquid: oil
+          speed: 0
+          damage: 0
+          splashDamage: 0
+          splashDamageRadius: 24
+          knockback: 0.1
+          hitShake: 0
+          hitSound: fire
+          hitEffect: fireSmoke
+          despawnEffect: fireSmoke
+          collidesAir: false
+          collidesTiles: true
+          lifetime: 1
+          fragBullets: 5000
+          fragBullet: {
+            type: LiquidBulletType
+            liquid: slag
+            speed: 0
+            damage: 0
+            splashDamage: 0
+            splashDamageRadius: 24
+            knockback: 0.1
+            hitShake: 0
+            hitSound: fire
+            hitEffect: fireSmoke
+            despawnEffect: fireSmoke
+            collidesAir: false
+            collidesTiles: true
+            lifetime: 1
+            fragBullets: 5000
+            fragBullet: {
+              type: LiquidBulletType
+              liquid: slag
+              speed: 0
+              damage: 0
+              splashDamage: 0
+              splashDamageRadius: 24
+              knockback: 0.1
+              hitShake: 0
+              hitSound: fire
+              hitEffect: fireSmoke
+              despawnEffect: fireSmoke
+              collidesAir: false
+              collidesTiles: true
+              lifetime: 1
+              fragBullets: 5000
+              fragBullet: {
+                type: LiquidBulletType
+                liquid: slag
+                speed: 0
+                damage: 0
+                splashDamage: 0
+                splashDamageRadius: 24
+                knockback: 0.1
+                hitShake: 0
+                hitSound: fire
+                hitEffect: fireSmoke
+                despawnEffect: fireSmoke
+                collidesAir: false
+                collidesTiles: true
+                lifetime: 1
+              }
+            }
+          }
+        }
       }
     }
   }
