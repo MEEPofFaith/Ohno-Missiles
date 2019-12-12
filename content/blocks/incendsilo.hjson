@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "[#F27D00]Missile Silo[]"
+name: "[#F27D00]Incendiary Missile Silo[]"
 description: Doesn't deal as much damage, but a massive area gets lit on fire.
 health: 200
 size: 4
