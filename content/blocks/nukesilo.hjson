@@ -64,7 +64,7 @@ ammo: {
 			bulletSprite: missile
 			hitEffect: shockwave
 			despawnEffect: none
-			lifetime: 20
+			lifetime: 120
 			hitShake: 400
 			collidesTiles: true
 			collidesAir: true
