@@ -42,7 +42,7 @@ ammo: {
     backColor: ffffff
     collidesTiles: false
     collidesAir: true
-    fragBullets: 5000
+    fragBullets: 10
     fragVelocityMin: 0
     fragVelocityMax: 2
     collidesAir: false
@@ -51,7 +51,7 @@ ammo: {
       type: LiquidBulletType
       drag: 0.066
       liquid: oil
-      speed: 6
+      speed: 3
       damage: 0
       splashDamage: 0
       splashDamageRadius: 24
@@ -66,8 +66,8 @@ ammo: {
       fragBullets: 1000
       fragBullet: {
         type: LiquidBulletType
-        liquid: slag
-        speed: 1
+        liquid: oil
+        speed: 0
         damage: 0
         splashDamage: 0
         splashDamageRadius: 24
@@ -78,12 +78,12 @@ ammo: {
         despawnEffect: fireSmoke
         collidesAir: false
         collidesTiles: true
-        lifetime: 6
+        lifetime: 1
         fragBullets: 1000
         fragBullet: {
           type: LiquidBulletType
           liquid: oil
-          speed: 1
+          speed: 0
           damage: 0
           splashDamage: 0
           splashDamageRadius: 24
@@ -94,8 +94,8 @@ ammo: {
           despawnEffect: fireSmoke
           collidesAir: false
           collidesTiles: true
-          lifetime: 6
-          fragBullets: 1000
+          lifetime: 1
+          fragBullets: 10
           fragBullet: {
             type: LiquidBulletType
             liquid: slag
@@ -110,12 +110,12 @@ ammo: {
             despawnEffect: fireSmoke
             collidesAir: false
             collidesTiles: true
-            lifetime: 6
+            lifetime: 9
             fragBullets: 1000
             fragBullet: {
               type: LiquidBulletType
-              liquid: oil
-              speed: 1
+              liquid: slag
+              speed: 0
               damage: 0
               splashDamage: 0
               splashDamageRadius: 24
@@ -126,12 +126,12 @@ ammo: {
               despawnEffect: fireSmoke
               collidesAir: false
               collidesTiles: true
-              lifetime: 6
+              lifetime: 1
               fragBullets: 1000
               fragBullet: {
                 type: LiquidBulletType
                 liquid: slag
-                speed: 1
+                speed: 0
                 damage: 0
                 splashDamage: 0
                 splashDamageRadius: 24
@@ -142,7 +142,7 @@ ammo: {
                 despawnEffect: fireSmoke
                 collidesAir: false
                 collidesTiles: true
-                lifetime: 6
+                lifetime: 1
               }
             }
           }
