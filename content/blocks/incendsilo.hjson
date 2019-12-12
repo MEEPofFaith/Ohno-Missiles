@@ -42,7 +42,7 @@ ammo: {
     backColor: ffffff
     collidesTiles: false
     collidesAir: true
-    fragBullets: 1000
+    fragBullets: 10000
     fragVelocityMin: 0
     fragVelocityMax: 2
     collidesAir: false
@@ -50,7 +50,7 @@ ammo: {
     fragBullet: {
       type: LiquidBulletType
       drag: 0.066
-      liquid: slag
+      liquid: napalm
       speed: 6
       damage: 0
       splashDamage: 0
@@ -62,26 +62,7 @@ ammo: {
       despawnEffect: fireSmoke
       collidesTiles: true
       collidesAir: false
-      lifetime: 30 
-      fragBullets: 1000
-      fragVelocityMin: 0.8
-      fragVelocityMax: 2
-      fragBullet: {
-        type: LiquidBulletType
-        liquid: oil
-        speed: 3
-        damage: 0
-        splashDamage: 0
-        sstatusDuration: 3600
-        knockback: 0.1
-        hitShake: 0
-        hitSound: fire
-        hitEffect: fireSmoke
-        despawnEffect: fireSmoke
-        collidesAir: false
-        collidesTiles: true
-        lifetime: 16
-      }
+      lifetime: 40 
     }
   }
 }
