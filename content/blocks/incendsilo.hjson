@@ -42,7 +42,7 @@ ammo: {
     backColor: ffffff
     collidesTiles: false
     collidesAir: true
-    fragBullets: 200
+    fragBullets: 5000
     fragVelocityMin: 0
     fragVelocityMax: 2
     collidesAir: false
@@ -50,7 +50,7 @@ ammo: {
     fragBullet: {
       type: LiquidBulletType
       drag: 0.066
-      liquid: slag
+      liquid: oil
       speed: 6
       damage: 50
       splashDamage: 50
@@ -65,10 +65,10 @@ ammo: {
       collidesTiles: true
       collidesAir: false
       lifetime: 30 
-      fragBullets: 20
+      fragBullets: 5000
       fragBullet: {
         type: LiquidBulletType
-        liquid: oil
+        liquid: slag
         speed: 0
         damage: 50
         splashDamage: 50
