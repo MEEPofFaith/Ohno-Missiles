@@ -42,7 +42,7 @@ ammo: {
     backColor: ffffff
     collidesTiles: false
     collidesAir: true
-    fragBullets: 10
+    fragBullets: 100
     fragVelocityMin: 0
     fragVelocityMax: 2
     collidesAir: false
@@ -51,7 +51,7 @@ ammo: {
       type: LiquidBulletType
       drag: 0.066
       liquid: oil
-      speed: 3
+      speed: 6
       damage: 0
       splashDamage: 0
       statusDuration: 3600
@@ -64,10 +64,12 @@ ammo: {
       collidesAir: false
       lifetime: 30 
       fragBullets: 1000
+      fragVelocityMin: 0.8
+      fragVelocityMax: 2
       fragBullet: {
         type: LiquidBulletType
-        liquid: oil
-        speed: 0
+        liquid: slag
+        speed: 3
         damage: 0
         splashDamage: 0
         sstatusDuration: 3600
@@ -78,75 +80,7 @@ ammo: {
         despawnEffect: fireSmoke
         collidesAir: false
         collidesTiles: true
-        lifetime: 1
-        fragBullets: 1000
-        fragBullet: {
-          type: LiquidBulletType
-          liquid: oil
-          speed: 0
-          damage: 0
-          splashDamage: 0
-          statusDuration: 3600
-          knockback: 0.1
-          hitShake: 0
-          hitSound: fire
-          hitEffect: fireSmoke
-          despawnEffect: fireSmoke
-          collidesAir: false
-          collidesTiles: true
-          lifetime: 1
-          fragBullets: 10
-          fragBullet: {
-            type: LiquidBulletType
-            liquid: slag
-            speed: 1
-            damage: 0
-            splashDamage: 0
-            statusDuration: 3600
-            knockback: 0.1
-            hitShake: 0
-            hitSound: fire
-            hitEffect: fireSmoke
-            despawnEffect: fireSmoke
-            collidesAir: false
-            collidesTiles: true
-            lifetime: 9
-            fragBullets: 1000
-            fragBullet: {
-              type: LiquidBulletType
-              liquid: slag
-              speed: 0
-              damage: 0
-              splashDamage: 0
-              statusDuration: 3600
-              knockback: 0.1
-              hitShake: 0
-              hitSound: fire
-              hitEffect: fireSmoke
-              despawnEffect: fireSmoke
-              collidesAir: false
-              collidesTiles: true
-              lifetime: 1
-              fragBullets: 1000
-              fragBullet: {
-                type: LiquidBulletType
-                liquid: slag
-                speed: 0
-                damage: 0
-                splashDamage: 0
-                statusDuration: 3600
-                knockback: 0.1
-                hitShake: 0
-                hitSound: fire
-                hitEffect: fireSmoke
-                despawnEffect: fireSmoke
-                collidesAir: false
-                collidesTiles: true
-                lifetime: 1
-              }
-            }
-          }
-        }
+        lifetime: 16
       }
     }
   }
