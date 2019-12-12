@@ -61,7 +61,7 @@ ammo: {
       splashDamage: 0
       knockback: 0
       hitShake: 0.15
-      lifetime: 300
+      lifetime: 150
       hitEffect: none
       splashDamageRadius: 120
       homingPower: 0
@@ -115,7 +115,7 @@ ammo: {
           bulletHeight: 32
           splashDamage: 0
           splashDamageRadius: 80
-          lifetime: 300
+          lifetime: 150
           knockback: 0
           hitEffect: none
           hitSound: none
@@ -166,7 +166,7 @@ ammo: {
               bulletHeight: 32
               splashDamage: 0
               splashDamageRadius: 40
-              lifetime: 300
+              lifetime: 150
               knockback: 0
               hitShake: 0.001
               hitEffect: none
