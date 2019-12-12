@@ -40,7 +40,7 @@ ammo: {
     despawnEffect: dynamicExplosion
     hitEffect: dynamicExplosion
     lifetime: 3600
-    hitShake: 2000
+    hitShake: 1000
 		fragBullets: 200
 		fragVelocityMin: 1
 		fragVelocityMax: 1
@@ -64,8 +64,8 @@ ammo: {
 			bulletSprite: missile
 			hitEffect: shockwave
 			despawnEffect: none
-			lifetime: 120
-			hitShake: 400
+			lifetime: 60
+			hitShake: 150
 			collidesTiles: true
 			collidesAir: true
 		}
