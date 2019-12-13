@@ -63,8 +63,8 @@ ammo: {
       bulletWidth: 32
       bulletSprite: ohno-missiles-missileairminemine
       knockback: 5
-      homingPower: 0
-      homingRange: 0
+      homingPower: 0.05
+      homingRange: 69420
       hitShake: 0.75
       hitEffect: flakExplosionBig
       hitSound: explosion
@@ -73,7 +73,7 @@ ammo: {
       collidesTiles: false
       collidesAir: true
       lifetime: 10800
-	    fragBullets: 30
+	    fragBullets: 15
 	    fragBullet: lightning
     }
   }
