@@ -40,8 +40,8 @@ ammo: {
     hitShake: 2
     frontColor: ffffff
     backColor: ffffff
-    collidesTiles: false
-    collidesAir: true
+    collidesTiles: true
+    collidesAir: false
     fragBullets: 100
     fragVelocityMin: 0
     fragVelocityMax: 2
@@ -54,6 +54,8 @@ ammo: {
       speed: 4
       damage: 0
       splashDamage: 0
+      collidesTiles: true
+      collidesAir: false
       statusDuration: 3600
       knockback: 0.1
       hitShake: 0
