@@ -69,13 +69,13 @@ ammo: {
 requirements: [
   copper/2500
   lead/2500
-  silicon/1250
-  graphite/1250
-  metaglass/2250
-  titanium/1600
+  silicon/1500
+  graphite/1500
+  metaglass/3000
+  titanium/2000
   plastanium/500
-  thorium/1200
-  surge-alloy/600
+  thorium/1500
+  surge-alloy/1000
 ]
 category: turret
 research: airminesilo
