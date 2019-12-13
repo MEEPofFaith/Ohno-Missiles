@@ -30,8 +30,8 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.25
-    homingRange: 69420
+    homingPower: 0
+    homingRange: 0
     hitSound: explosionbig
     knockback: 0.8
     bulletSprite: ohno-missiles-missileairmine
@@ -73,8 +73,8 @@ ammo: {
       collidesTiles: false
       collidesAir: true
       lifetime: 10800
-	    fragBullets: 15
-	    fragBullet: lightning
+      fragBullets: 10
+      fragBullet: lightning
     }
   }
 }
