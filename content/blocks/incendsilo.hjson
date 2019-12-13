@@ -22,8 +22,8 @@ ammo: {
     trailColor: FFF600
     speed: 2
     damage: 300
-    splashDamage: 300
-    splashDamageRadius: 300
+    splashDamage: 1000
+    splashDamageRadius: 24
     hitSize: 40
     bulletWidth: 40
     bulletHeight: 40
