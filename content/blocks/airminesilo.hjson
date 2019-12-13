@@ -49,12 +49,12 @@ ammo: {
     fragBullet: {
       type: FlakBulletType
       drag: 0.033
-      explodeRange: 40
+      explodeRange: 80
       trailColor: FFF600
       speed: 3
       damage: 500
       splashDamage: 500
-      splashDamageRadius: 60
+      splashDamageRadius: 120
       frontColor: ffffff
       backColor: ffffff
       bulletShrink: 0
