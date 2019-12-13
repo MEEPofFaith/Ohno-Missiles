@@ -59,7 +59,7 @@ ammo: {
       statusDuration: 3600
       knockback: 0.1
       hitShake: 0
-      hitSound: flame
+      hitSound: big-splat
       hitEffect: fireSmoke
       despawnEffect: fireSmoke
       collidesTiles: true
