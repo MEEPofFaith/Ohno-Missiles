@@ -63,7 +63,7 @@ ammo: {
       bulletWidth: 32
       bulletSprite: ohno-missiles-missileairminemine
       knockback: 5
-      homingPower: 0.05
+      homingPower: 0.0125
       homingRange: 69420
       hitShake: 0.75
       hitEffect: flakExplosionBig
