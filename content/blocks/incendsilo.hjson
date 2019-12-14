@@ -65,28 +65,9 @@ ammo: {
       collidesTiles: true
       collidesAir: false
       lifetime: 35
-      fragBullets: 100
-      fragVelocityMin: 0
-      fragVelocityMax: 2
-      fragBullet: {
-        type: LiquidBulletType
-        drag: 0.033
-        liquid: oil
-        speed: 4
-        damage: 0
-        splashDamage: 0
-        collidesTiles: true
-        collidesAir: false
-        statusDuration: 3600
-        knockback: 0.1
-        hitShake: 0
-        hitSound: none
-        hitEffect: none
-        despawnEffect: none
-        collidesTiles: true
-        collidesAir: false
-        lifetime: 35
-      }
+      incendAmount: 10
+      incendSpread: 40
+      incendChance: 2
     }
   }
 }
