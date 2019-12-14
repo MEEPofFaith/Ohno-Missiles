@@ -42,48 +42,59 @@ ammo: {
     backColor: ffffff
     collidesTiles: true
     collidesAir: false
-    fragBullets: 100
+    fragBullets: 10
     fragVelocityMin: 0
     fragVelocityMax: 2
     collidesAir: false
     collidesTiles: true
     fragBullet: {
-      type: LiquidBulletType
-      drag: 0.033
-      liquid: napalm
-      speed: 4
-      damage: 0
-      splashDamage: 0
-      collidesTiles: true
+      type:LiquidBulletType
+      liquid: oil
+      speed: 1
+      lifetime:5
+      fragBullets: 1000
+      fragVelocityMin: 0
+      fragVelocityMax: 2
       collidesAir: false
-      statusDuration: 3600
-      knockback: 0.1
-      hitShake: 0
-      hitSound: splat
-      hitEffect: fireSmoke
-      despawnEffect: fireSmoke
       collidesTiles: true
-      collidesAir: false
-      lifetime: 35
-      fragBullets: 1
       fragBullet: {
-        type: BasicBulletType
-        lifetime: 5
-        speed: 0
+        type: LiquidBulletType
+        drag: 0.033
+        liquid: napalm
+        speed: 4
         damage: 0
-        bulletWidth: 0
-        bulletHeight: 0
         splashDamage: 0
-        incendAmount: 10
-        incendSpread: 40
-        incendChance: 100
-        hitSound: none
-        hitEffect: none
-        despawnEffect: none
-        hitShake: 0
-        knockback: 0
         collidesTiles: true
         collidesAir: false
+        statusDuration: 3600
+        knockback: 0.1
+        hitShake: 0
+        hitSound: splat
+        hitEffect: fireSmoke
+        despawnEffect: fireSmoke
+        collidesTiles: true
+        collidesAir: false
+        lifetime: 35
+        fragBullets: 50
+        fragBullet: {
+          type: BasicBulletType
+          lifetime: 5
+          speed: 0
+          damage: 0
+          bulletWidth: 0
+          bulletHeight: 0
+          splashDamage: 0
+          incendAmount: 10
+          incendSpread: 40
+          incendChance: 100
+          hitSound: none
+          hitEffect: none
+          despawnEffect: none
+          hitShake: 0
+          knockback: 0
+          collidesTiles: true
+          collidesAir: false
+        }
       }
     }
   }
