@@ -82,7 +82,7 @@ ammo: {
         hitShake: 0
         hitSound: none
         hitEffect: none
-        despawnEffect: nonr
+        despawnEffect: none
         collidesTiles: true
         collidesAir: false
         lifetime: 35
