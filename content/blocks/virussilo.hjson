@@ -9,7 +9,7 @@ inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
 maxAmmo: 3
-heatColor: 7affbd
+heatColor: AC18C9
 cooldown: 0.003
 shootEffect: nuclearShockwave
 shootSound: missilelaunch
