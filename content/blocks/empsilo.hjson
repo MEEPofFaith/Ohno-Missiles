@@ -62,7 +62,7 @@ ammo: {
 			bulletSprite: missile
 			hitEffect: none
 			despawnEffect: none
-			lifetime: 30
+			lifetime: 20
 			hitShake: 0
 			pierce: true
 			collidesAir: true
