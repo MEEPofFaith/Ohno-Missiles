@@ -31,7 +31,7 @@ ammo: {
 		homingPower: 6
 		homingRange: 69420
 		splashDamageRadius: -1
-		hitSound: shootSnap
+		hitSound: laser
 		knockback: 1000
 		frontColor: ffffff
 		backColor: ffffff
