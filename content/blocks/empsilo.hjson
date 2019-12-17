@@ -70,7 +70,7 @@ ammo: {
 			hitSize: 32
       statusDuration: 300
 			status: {
-				name: STOPRIGHTTHERE
+				name: stoprightthere
 				speedMultiplier: 0
 				damageMultiplier: 0
 				damage: 0
