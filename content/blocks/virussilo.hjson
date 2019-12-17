@@ -54,8 +54,8 @@ ammo: {
 			bulletHeight: 4
 			homingPower: 100000
 			homingRange: 80
-			frontColor: FFFFFF
-			backColor: FFFFFF
+			frontColor: AC18C9
+			backColor: DB27D8
 			splashDamageRadius: 16
 			hitSound: pew
 			knockback: 10000
