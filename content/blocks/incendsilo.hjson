@@ -24,9 +24,9 @@ ammo: {
 		damage: 300
 		splashDamage: 1000
 		splashDamageRadius: 24
-		hitSize: 40
-		bulletWidth: 40
-		bulletHeight: 40
+		hitSize: 32
+		bulletWidth: 32
+		bulletHeight: 32
 		effect: missileTrail
 		ammoMultiplier: 3
 		homingPower: 0.25
