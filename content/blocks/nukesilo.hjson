@@ -41,31 +41,31 @@ ammo: {
     hitEffect: dynamicExplosion
     lifetime: 3600
     hitShake: 1000
-		fragBullets: 200
-		fragVelocityMin: 1
-		fragVelocityMax: 1
-		fragBullet: {
-			type: ArtilleryBulletType
-			bulletShrink: 0
-			trailEffect: none
-			speed: 10
-      knockback: 100
-			damage: 69420
-			splashDamage: 69420
-			bulletWidth: 0
-			bulletHeight: 0
-			homingPower: 0
-			homingRange: 0
-      frontColor: ffffff
-      backColor: ffffff
-			splashDamageRadius: 16000
-			hitSound: none
-			knockback: 1000
-			bulletSprite: missile
-			hitEffect: shockwave
-			despawnEffect: none
-			lifetime: 60
-			hitShake: 150
+    fragBullets: 200
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragBullet: {
+    	type: ArtilleryBulletType
+	    bulletShrink: 0
+    	trailEffect: none
+    	speed: 10
+     	knockback: 100
+     	damage: 69420
+    	splashDamage: 69420
+	    bulletWidth: 0
+  	  bulletHeight: 0
+	    homingPower: 0
+	    homingRange: 0
+	    frontColor: ffffff
+	    backColor: ffffff
+	    splashDamageRadius: 16000
+	    hitSound: none
+	    knockback: 1000
+	    bulletSprite: missile
+	    hitEffect: shockwave
+	    despawnEffect: none
+	    lifetime: 30
+	    hitShake: 150
 			collidesTiles: true
 			collidesAir: true
 		}

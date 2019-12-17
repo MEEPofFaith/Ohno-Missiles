@@ -13,9 +13,9 @@ Adds a Ballistics Factory to create missiles to load various milos. Kinda expens
 #### Nuclear Silo (v1) - The destruction capable should be read from the name.
 ![Nuclear Silo Gif](https://media.giphy.com/media/dzPUtwm2DDx5ttf1xr/giphy.gif)<br />
 I sped it up a bit. It actually takes about 10 seconds to explode. The gif itself is actually old, as I've made the missile fly faster in a later update to it.
+#### Incindiary Silo (v2) - Lower explosion damage radius, but sends liquid flames flying all over the place.
 
 ## Plans
-#### Flame/Fire/Napalm (or some better more creative name) Silo
 #### World Ender Silo (Will cost 11565 of all resources to build. Why 11565? Check the research cost.)
 #### Impulse Silo (Minimal damage, insane knockback)
 #### Nuclear Crawler
