@@ -14,7 +14,8 @@ Adds a Ballistics Factory to create missiles to load various milos. Kinda expens
 ![Nuclear Silo Gif](https://media.giphy.com/media/dzPUtwm2DDx5ttf1xr/giphy.gif)<br />
 I sped it up a bit. It actually takes about 10 seconds to explode. The gif itself is actually old, as I've made the missile fly faster in a later update to it.
 #### Incindiary Silo (v2) - Lower explosion damage radius, but sends liquid flames flying all over the place.
-#### Virus Silo (v2) (Basically Made by SolarPH) - On collision, creates a swarm of annoying drones
+#### Virus Silo (v2) (Started by SolarPH) - On collision, creates a swarm of annoying drones that deal damage.
+#### EMP Silo (v2) (Started by SolarPH) - Deals no damage, but stops enemies from moving and makes them deal no damage.
 
 ## Plans
 #### World Ender Silo (Will cost 11565 of all resources to build. Why 11565? Check the research cost.)
