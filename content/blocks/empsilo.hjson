@@ -68,8 +68,9 @@ ammo: {
 			collidesAir: true
 			collidesTiles: false
 			hitSize: 32
+      statusDuration: 300
 			status: {
-				name: emp
+				name: STOPRIGHTTHERE
 				speedMultiplier: 0
 				damageMultiplier: 0
 				damage: 0
