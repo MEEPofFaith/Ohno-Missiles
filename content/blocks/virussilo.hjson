@@ -50,8 +50,8 @@ ammo: {
 			speed: 5
 			damage: 1
 			splashDamage: 1
-			bulletWidth: 4
-			bulletHeight: 4
+			bulletWidth: 2
+			bulletHeight: 2
 			homingPower: 100000
 			homingRange: 80
 			frontColor: 7EFF72
@@ -68,7 +68,7 @@ ammo: {
 			collides: true
 			collidesAir: true
 			collidesTiles: false
-			hitSize: 60
+			hitSize: 8
 		}
   }
 }
