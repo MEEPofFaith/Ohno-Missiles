@@ -67,7 +67,7 @@ ammo: {
 			pierce: true
 			collidesAir: true
 			collidesTiles: false
-			hitSize: 32
+			hitSize: 80
       statusDuration: 300
 			status: {
 				name: stoprightthere
