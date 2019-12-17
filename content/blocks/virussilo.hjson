@@ -3,7 +3,7 @@ name: "[#AC18C9]Virus Missile Silo[]"
 description: Continuous Low Damage, uploads to nearby enemy units and mechs. Virus damages them slowly till death.
 health: 200
 size: 4
-reload: 1800
+reload: 900
 range: 69420
 inaccuracy: 5
 rotatespeed: 0.5
