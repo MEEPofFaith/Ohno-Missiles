@@ -3,7 +3,8 @@ description: Liquid flames
 effect: melting
 color: F27D00
 lightColor: F27D00
+explosiveness: 6.9420
 flammability: 69420
 temperature: 69420
-viscosity: 0.65
+viscosity: 0.95
 heatCapacity: 0
