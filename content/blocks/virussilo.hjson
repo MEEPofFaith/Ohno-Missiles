@@ -66,7 +66,7 @@ ammo: {
 			hitSize: 80
 			statusDuration: 300
 			status: {
-				name: Reversal
+				name: HalfStat
 				speedMultiplier: 0.5
 				damageMultiplier: 0.5
 				armorMultiplier: 0.5
