@@ -44,21 +44,34 @@ ammo: {
 		collidesAir: false
 		collidesAir: false
 		collidesTiles: true
-		incendChance: 100
-		incendAmount: 100000
-		incendSpread: 160
 		fragBullets: 2000
 		fragVelocityMin: 0
 		fragVelocityMax: 3
 		fragBullet: {
-			type: LiquidBulletType
-			liquid: napalm
+			type: ArtilleryBulletType
 			speed: 5
 			lifetime: 10
+			bulletSprite: ohno-missiles-missileairminemine
+			frontColor: F27D00
+			backColor: F27D00
 			damage: 0
+			hitEffect: none
+			despawnEffect: none
 			collides: false
+			incendChance: 100
+			incendAmount: 100
+			incendSpread: 8
 			fragBullets: 1
-			fragBullet: oilShot
+			fragBullet: {
+				type: LiquidBulletType
+				liquid: napalm
+				speed: 0
+				lifetime: 0
+				damage: 0
+				collides: false
+				fragBullets: 1
+				fragBullet: oilShot
+			}
 		}
 	}
 }
