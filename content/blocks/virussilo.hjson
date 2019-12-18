@@ -40,7 +40,7 @@ ammo: {
 		hitEffect: shockwave
 		lifetime: 3600
 		hitShake: 1
-		fragBullets: 2000
+		fragBullets: 200
 		fragVelocityMin: 1
 		fragVelocityMax: 1
 		fragBullet: {
