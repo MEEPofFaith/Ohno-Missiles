@@ -48,7 +48,7 @@ ammo: {
 			type: ArtilleryBulletType
 			bulletShrink: 0
 			trailEffect: lightningCharge
-			speed: 10
+			speed: 5
 			damage: 0
 			splashDamage: 0
 			bulletWidth: 0
@@ -62,23 +62,25 @@ ammo: {
 			bulletSprite: missile
 			hitEffect: none
 			despawnEffect: none
-			lifetime: 20
+			lifetime: 30
 			hitShake: 0
 			pierce: true
+			collides: true
 			collidesAir: true
 			collidesTiles: false
-			hitSize: 80
-      statusDuration: 300
+			hitSize: 4
+			statusDuration: 300
 			status: {
 				name: stoprightthere
 				speedMultiplier: 0
 				damageMultiplier: 0
+				armorMultiplier: 0
 				damage: 0
 				color: 00A9FF
 				effect: lightningCharge
 			}
 		}
-  }
+	}
 }
 requirements: [
   copper/5000
