@@ -14,6 +14,7 @@ baseRotateSpeed: 0.04
 retreatPercent: 0.1
 range: 135
 attackLength: 69420
+rotateWeapon: false
 weapon: {
   name: redacted-meltdown
   width: 40
