@@ -7,7 +7,7 @@ speed: 0.005
 maxVelocity: 0.2
 flying: true
 health: 17000
-engineOffset: 40
+engineOffset: 38
 engineSize: 6.5
 rotatespeed: 0.01
 baseRotateSpeed: 0.04
@@ -15,7 +15,7 @@ retreatPercent: 0.1
 range: 135
 attackLength: 69420
 rotateWeapon: false
-weaponOffsetY: 48
+weaponOffsetY: -48
 weapon: {
   name: redacted-meltdown
   width: 0
