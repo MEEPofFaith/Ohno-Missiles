@@ -12,7 +12,8 @@ engineSize: 6.5
 rotatespeed: 0.01
 baseRotateSpeed: 0.04
 retreatPercent: 0.1
-range: 140
+range: 135
+attackLength: 69420
 weapon: {
   name: redacted-meltdown
   width: 40
