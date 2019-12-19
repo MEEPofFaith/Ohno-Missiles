@@ -12,8 +12,8 @@ engineSize: 6.5
 rotatespeed: 0.01
 baseRotateSpeed: 0.04
 retreatPercent: 0.1
-range: 135
-attackLength: 69420
+range: 128
+attackLength: 112
 rotateWeapon: false
 weapon: {
   name: redacted-meltdown
@@ -21,8 +21,8 @@ weapon: {
   length: 48
   reload: 600
   recoil: 5
-  shots: 150
-  shotDelay: 2
+  shots: 75
+  shotDelay: 4
   spacing: 0
   alternate: false
   shootCone: 0
