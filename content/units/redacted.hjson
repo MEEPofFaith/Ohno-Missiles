@@ -11,7 +11,6 @@ engineOffset: 40
 engineSize: 6.5
 rotatespeed: 0.01
 baseRotateSpeed: 0.04
-rotateWeapon: false
 retreatPercent: 0.1
 range: 140
 weapon: {
