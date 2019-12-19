@@ -13,7 +13,7 @@ rotatespeed: 0.01
 baseRotateSpeed: 0.04
 rotateWeapon: false
 retreatPercent: 0.1
-range: 190
+range: 140
 weapon: {
   name: redacted-meltdown
   width: 0
