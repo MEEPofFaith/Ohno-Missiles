@@ -1,7 +1,7 @@
 type: hoverUnit
 name: Redacted
 mass: 50
-hitSize: 56
+hitsize: 56
 drag: 0.03
 speed: 0.005
 maxVelocity: 0.2
