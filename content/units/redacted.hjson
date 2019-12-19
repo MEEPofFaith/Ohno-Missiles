@@ -16,8 +16,8 @@ retreatPercent: 0.1
 range: 140
 weapon: {
   name: redacted-meltdown
-  width: 0
-  length: 32
+  width: 40
+  length: 40
   reload: 600
   recoil: 5
   shots: 150
