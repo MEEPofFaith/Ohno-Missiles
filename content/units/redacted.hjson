@@ -18,14 +18,15 @@ weapon: {
   name: redacted-meltdown
   width: 0
   length: 32
-  reload: 480
+  reload: 300
   recoil: 5
-  shots: 1
+  shots: 300
+  shotDelay: 1
   spacing: 0
   alternate: false
   shootCone: 0
   shake: 5
-  shootSound: meltdownblast
+  shootSound: laser
   ignoreRotation: true
-  bullet: meltdownLaser
+  bullet: lancerLaser
 }
