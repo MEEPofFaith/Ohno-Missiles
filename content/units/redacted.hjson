@@ -1,4 +1,4 @@
-type: HoverUnit
+type: hoverUnit
 name: Redacted
 mass: 50
 hitSize: 56
@@ -7,7 +7,7 @@ speed: 0.005
 maxVelocity: 0.2
 flying: true
 health: 17000
-engineOffset: 32
+engineOffset: 40
 engineSize: 6.5
 rotatespeed: 0.01
 baseRotateSpeed: 0.04
@@ -17,7 +17,7 @@ weapon: {
   name: redacted-meltdown
   width: 0
   length: 32
-  reload: 1200
+  reload: 480
   recoil: 5
   shots: 1
   spacing: 0
