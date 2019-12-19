@@ -12,6 +12,7 @@ engineSize: 6.5
 rotatespeed: 0.01
 baseRotateSpeed: 0.04
 rotateWeapon: false
+retreatPercent: 0.1
 range: 190
 weapon: {
   name: redacted-meltdown
