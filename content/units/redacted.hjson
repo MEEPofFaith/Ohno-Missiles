@@ -27,6 +27,5 @@ weapon: {
   shootCone: 0
   shake: 5
   shootSound: laser
-  ignoreRotation: true
   bullet: lancerLaser
 }
