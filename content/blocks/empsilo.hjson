@@ -10,7 +10,7 @@ rotatespeed: 5
 targetAir: true
 maxAmmo: 9
 ammoPerShot: 9
-heatColor: 7affbd
+heatColor: 00A9FF
 cooldown: 0.003
 shootEffect: nuclearShockwave
 shootSound: missilelaunch
