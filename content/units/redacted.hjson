@@ -17,7 +17,7 @@ attackLength: 112
 rotateWeapon: false
 shootCone: 360
 weapon: {
-  name: redacted-meltdown
+  name: redactedair
   width: 0
   length: -48
   reload: 600
