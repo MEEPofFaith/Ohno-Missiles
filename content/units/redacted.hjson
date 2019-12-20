@@ -19,7 +19,7 @@ shootCone: 360
 weapon: {
   name: redacted-meltdown
   width: 0
-  length: 48
+  length: -48
   reload: 600
   recoil: 5
   shots: 75
