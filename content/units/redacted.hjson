@@ -19,11 +19,11 @@ shootCone: 360
 weapon: {
   name: redactedair
   width: 0
-  length: -48
-  reload: 600
+  length: -26
+  reload: 90
   recoil: 5
-  shots: 75
-  shotDelay: 4
+  shots: 30
+  shotDelay: 1
   spacing: 0
   alternate: false
   inaccuracy: 0
