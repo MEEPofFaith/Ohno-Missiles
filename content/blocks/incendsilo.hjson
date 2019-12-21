@@ -6,7 +6,7 @@ size: 4
 reload: 1800
 range: 69420
 inaccuracy: 5
-rotatespeed: 5
+rotatespeed: 0.5
 targetAir: false
 heatColor: F27D00
 maxAmmo: 6

@@ -6,7 +6,7 @@ size: 4
 reload: 600
 range: 69420
 inaccuracy: 5
-rotatespeed: 5
+rotatespeed: 0.5
 targetAir: true
 targetGround: false
 maxAmmo: 9
