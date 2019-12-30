@@ -29,7 +29,7 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 6
+    homingPower: 1
     homingRange: 69420
     splashDamageRadius: 0
     hitSound: spark
@@ -44,8 +44,8 @@ ammo: {
     fragBullets: 400
     fragVelocityMin: 1
     fragVelocityMax: 1
-    weaveScale = 8
-    weaveMag = 2
+    weaveScale: 8
+    weaveMag: 4
     fragBullet: {
       type: ArtilleryBulletType
       bulletShrink: 0

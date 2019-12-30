@@ -26,7 +26,7 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 6
+    homingPower: 1
     frontColor: ffffff
     backColor: ffffff
     homingRange: 69420
@@ -37,8 +37,8 @@ ammo: {
     hitEffect: flakExplosionBig
     lifetime: 3600
     hitShake: 0.75
-  weaveScale = 8
-    weaveMag = 2
+    weaveScale: 8
+    weaveMag: 4
   }
 }
 requirements: [

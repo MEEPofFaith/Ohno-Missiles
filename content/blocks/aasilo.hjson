@@ -30,7 +30,7 @@ ammo: {
     ammoMultiplier: 12
     frontColor: ffffff
     backColor: ffffff
-    homingPower: 10
+    homingPower: 2
     homingRange: 69420
     splashDamageRadius: 240
     bulletSprite: ohno-missiles-missileaa
@@ -41,8 +41,8 @@ ammo: {
     knockback: 3
     hitEffect: flakExplosionBig
     hitShake: 0.25
-    weaveScale = 8
-    weaveMag = 2
+    weaveScale: 8
+    weaveMag: 4
   }
 }
 requirements: [

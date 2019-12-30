@@ -29,7 +29,7 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 6
+    homingPower: 1
     homingRange: 69420
     splashDamageRadius: 16000
     hitSound: nuke
@@ -42,8 +42,8 @@ ammo: {
     lifetime: 3600
     hitShake: 1000
     fragBullets: 200
-  weaveScale = 8
-    weaveMag = 2
+  weaveScale: 8
+    weaveMag: 4
     fragBullet: {
       type: ArtilleryBulletType
       bulletShrink: 0
