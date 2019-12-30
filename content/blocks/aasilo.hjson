@@ -41,6 +41,8 @@ ammo: {
     knockback: 3
     hitEffect: flakExplosionBig
     hitShake: 0.25
+    weaveScale = 8
+    weaveMag = 2
   }
 }
 requirements: [
