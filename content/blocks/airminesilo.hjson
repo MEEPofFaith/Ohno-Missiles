@@ -45,6 +45,8 @@ ammo: {
     fragBullets: 20
     fragVelocityMin: 0
     fragVelocityMax: 2
+    weaveScale = 8
+    weaveMag = 2
     homingPower: 0.001
     fragBullet: {
       type: FlakBulletType
