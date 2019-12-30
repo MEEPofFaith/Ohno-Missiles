@@ -26,7 +26,7 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     ammoMultiplier: 3
-    homingPower: 1
+    homingPower: 0.25
     homingRange: 69420
     hitSound: none
     knockback: 1000
@@ -39,7 +39,7 @@ ammo: {
     hitShake: 1
     fragBullets: 200
     weaveScale: 8
-    weaveMag: 4
+    weaveMag: 16
     fragBullet: {
       type: ArtilleryBulletType
       bulletShrink: 0
@@ -48,7 +48,7 @@ ammo: {
       damage: 0.01
       bulletWidth: 12
       bulletHeight: 12
-      homingPower: 100000
+      homingPower: 0.2500000
       homingRange: 80
       frontColor: 7EFF72
       backColor: A4FF59
