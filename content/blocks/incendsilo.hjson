@@ -16,77 +16,75 @@ recoil: 8
 shootSound: missilelaunch
 shootEffect: nuclearShockwave
 ammo: {
-  missile: {
-    type: MissileBulletType
-    bulletShrink: 0
-    trailColor: FFF600
-    speed: 2
-    damage: 300
-    splashDamage: 1000
-    splashDamageRadius: 24
-    hitSize: 32
-    bulletWidth: 32
-    bulletHeight: 32
-    effect: missileTrail
-    ammoMultiplier: 3
-    homingPower: 0.25
-    homingRange: 69420
-    hitSound: explosionbig
-    knockback: 0.8
-    bulletSprite: ohno-missiles-missileincend
-    hitEffect: flakExplosionBig
-    despawnEffect: flakExplosionBig
-    lifetime: 3600
-    hitShake: 2
-    frontColor: ffffff
-    backColor: ffffff
-    collidesTiles: true
-    collidesAir: false
-    collidesAir: false
-    collidesTiles: true
-    fragBullets: 2000
-    fragVelocityMin: 0
-    fragVelocityMax: 3
-    weaveScale = 8
-    weaveMag = 2
-    fragBullet: {
-      type: ArtilleryBulletType
-      speed: 5
-      lifetime: 10
-      bulletSprite: ohno-missiles-missileairminemine
-      frontColor: F27D00
-      backColor: F27D00
-      damage: 0
-      hitEffect: none
-      despawnEffect: none
-      collides: false
-      incendChance: 100
-      incendAmount: 100
-      incendSpread: 8
-      fragBullets: 1
-      fragBullet: {
-        type: LiquidBulletType
-        liquid: napalm
-        speed: 0
-        lifetime: 0
-        damage: 0
-        collides: false
-        fragBullets: 1
-        fragBullet: oilShot
-      }
-    }
-  }
+	missile: {
+		type: MissileBulletType
+		bulletShrink: 0
+		trailColor: FFF600
+		speed: 2
+		damage: 300
+		splashDamage: 1000
+		splashDamageRadius: 24
+		hitSize: 32
+		bulletWidth: 32
+		bulletHeight: 32
+		effect: missileTrail
+		ammoMultiplier: 3
+		homingPower: 0.25
+		homingRange: 69420
+		hitSound: explosionbig
+		knockback: 0.8
+		bulletSprite: ohno-missiles-missileincend
+		hitEffect: flakExplosionBig
+		despawnEffect: flakExplosionBig
+		lifetime: 3600
+		hitShake: 2
+		frontColor: ffffff
+		backColor: ffffff
+		collidesTiles: true
+		collidesAir: false
+		collidesAir: false
+		collidesTiles: true
+		fragBullets: 2000
+		fragVelocityMin: 0
+		fragVelocityMax: 3
+		fragBullet: {
+			type: ArtilleryBulletType
+			speed: 5
+			lifetime: 10
+			bulletSprite: ohno-missiles-missileairminemine
+			frontColor: F27D00
+			backColor: F27D00
+			damage: 0
+			hitEffect: none
+			despawnEffect: none
+			collides: false
+			incendChance: 100
+			incendAmount: 100
+			incendSpread: 8
+			fragBullets: 1
+			fragBullet: {
+				type: LiquidBulletType
+				liquid: napalm
+				speed: 0
+				lifetime: 0
+				damage: 0
+				collides: false
+				fragBullets: 1
+				fragBullet: oilShot
+			}
+		}
+	}
 }
 requirements: [
-  copper/2500
-  lead/2500
-  silicon/1250
-  graphite/1250
-  metaglass/2250
-  titanium/1600
-  plastanium/500
-  thorium/1200
-  surge-alloy/600
+	copper/2500
+	lead/2500
+	silicon/1250
+	graphite/1250
+	metaglass/2250
+	titanium/1600
+	plastanium/500
+	thorium/1200
+	surge-alloy/600
 ]
 category: turret
 research: airminesilo

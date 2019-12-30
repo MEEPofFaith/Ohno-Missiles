@@ -37,8 +37,6 @@ ammo: {
     hitEffect: flakExplosionBig
     lifetime: 3600
     hitShake: 0.75
-  weaveScale = 8
-    weaveMag = 2
   }
 }
 requirements: [

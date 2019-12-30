@@ -43,8 +43,8 @@ ammo: {
     lifetime: 3600
     hitShake: 1.5
     fragBullets: 5
-    weaveScale = 8
-    weaveMag = 2
+    fragVelocityMin: 1
+    fragVelocityMax: 1
     fragBullet: {
       type: MissileBulletType
       effect: missileTrail
@@ -67,10 +67,10 @@ ammo: {
       homingPower: 0
       homingRange: 0
       fragBullets: 1
+      fragVelocityMin: 0.5
+      fragVelocityMax: 2
       despawnEffect: none
       hitSound: none
-      weaveScale = 8
-      weaveMag = 2
       fragBullet: {
         type: MissileBulletType
         effect: missileTrail
@@ -94,8 +94,8 @@ ammo: {
         homingPower: 9
         homingRange: 69420
         fragBullets: 5
-        weaveScale = 8
-        weaveMag = 2
+        fragVelocityMin: 1
+        fragVelocityMax: 1
         despawnEffect: flakExplosionBig
         fragBullet: {
           type: MissileBulletType
@@ -120,9 +120,9 @@ ammo: {
           hitEffect: none
           hitSound: none
           fragBullets: 1
+          fragVelocityMin: 0.5
+          fragVelocityMax: 2
           despawnEffect: none
-          weaveScale = 8
-          weaveMag = 2
           fragBullet: {
             type: MissileBulletType
             bulletShrink: 0
@@ -146,9 +146,9 @@ ammo: {
             hitEffect: flakExplosion
             hitSound: explosion
             fragBullets: 5
+            fragVelocityMin: 1
+            fragVelocityMax: 1
             despawnEffect: flakExplosion
-            weaveScale = 8
-            weaveMag = 2
             fragBullet: {
               type: MissileBulletType
               bulletShrink: 0
@@ -173,9 +173,9 @@ ammo: {
               hitSound: none
               hitShake: 0.0015
               fragBullets: 1
+              fragVelocityMin: 0.5
+              fragVelocityMax: 2
               despawnEffect: none
-              weaveScale = 8
-              weaveMag = 2
               fragBullet: {
                 type: MissileBulletType
                 bulletShrink: 0
@@ -199,8 +199,6 @@ ammo: {
                 hitEffect: flakExplosion
                 hitSound: explosion
                 hitShake: 0.0015
-                weaveScale = 8
-                weaveMag = 2
               }
             }
           }
