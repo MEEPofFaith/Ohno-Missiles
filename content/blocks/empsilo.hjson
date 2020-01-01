@@ -44,8 +44,6 @@ ammo: {
     fragBullets: 400
     fragVelocityMin: 1
     fragVelocityMax: 1
-    weaveScale: 8
-    weaveMag: 16
     fragBullet: {
       type: ArtilleryBulletType
       bulletShrink: 0

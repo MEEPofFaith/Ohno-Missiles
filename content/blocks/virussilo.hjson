@@ -38,8 +38,6 @@ ammo: {
     lifetime: 3600
     hitShake: 1
     fragBullets: 200
-    weaveScale: 8
-    weaveMag: 16
     fragBullet: {
       type: ArtilleryBulletType
       bulletShrink: 0
