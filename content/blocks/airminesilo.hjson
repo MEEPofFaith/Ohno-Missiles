@@ -1,92 +1,90 @@
 type: ItemTurret
-name: "[#9EE6FF]Air Mine Silo[]"
-description: Fires a missile that bursts into a swarm of air mines.
+name: "[#7EFF72]Virus Missile Silo[]"
+description: Continuous low Damage, uploads to nearby enemy units and mechs. Virus damages them slowly till death, then they move on to other enemies.
 health: 200
 size: 4
-reload: 600
+reload: 900
 range: 69420
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
-targetGround: false
-maxAmmo: 9
-heatColor: 9EE6FF
-restitution: 0.003
-recoil: 8
+maxAmmo: 3
+heatColor: 7EFF72
 cooldown: 0.003
 shootEffect: nuclearShockwave
 shootSound: missilelaunch
+recoil: 8
+restitution: 0.003
 ammo: {
   missile: {
     type: MissileBulletType
     bulletShrink: 0
-    trailColor: FFF600
+    trailColor: 7EFF72
     speed: 2
     damage: 0
-    splashDamage: 0
-    splashDamageRadius: 0
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
-    effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.0001
-    homingRange: 0
-    hitSound: explosionbig
-    knockback: 0.8
-    bulletSprite: ohno-missiles-missileairmine
-    hitEffect: flakExplosionBig
-    despawnEffect: flakExplosionBig
-    lifetime: 281
-    hitShake: 0.75
+    homingPower: 0.25
+    homingRange: 69420
+    hitSound: none
+    knockback: 1000
     frontColor: ffffff
     backColor: ffffff
-    collides: false
-    fragBullets: 20
-    fragVelocityMin: 0
-    fragVelocityMax: 2
-    homingPower: 0.001
+    bulletSprite: ohno-missiles-missilevirus
+    despawnEffect: shockwave
+    hitEffect: shockwave
+    lifetime: 3600
+    hitShake: 1
+    fragBullets: 200
     fragBullet: {
-      type: FlakBulletType
-      drag: 0.033
-      explodeRange: 80
-      trailColor: FFF600
-      speed: 3
-      damage: 500
-      splashDamage: 500
-      splashDamageRadius: 120
-      frontColor: 9EE6FF
-      backColor: 9799A3
+      type: ArtilleryBulletType
       bulletShrink: 0
-      hitSize: 4
-      bulletHeight: 4
-      bulletWidth: 4
-      bulletSprite: ohno-missiles-missileairminemine
-      knockback: 5
-      homingPower: 0.0005
-      homingRange: 69420
-      hitShake: 0.75
-      hitEffect: flakExplosionBig
-      hitSound: explosion
-      despawnEffect: flakExplosionBig
-      hitShake: 0.75
-      collidesTiles: false
+      trailEffect: healWaveMend
+      speed: 5
+      damage: 0.01
+      bulletWidth: 12
+      bulletHeight: 12
+      homingPower: 0.2500000
+      homingRange: 80
+      frontColor: 7EFF72
+      backColor: A4FF59
+      hitSound: none
+      knockback: 10000
+      bulletSprite: ohno-missiles-missilevirusbug
+      hitEffect: none
+      despawnEffect: none
+      lifetime: 1800
+      hitShake: 0
+      pierce: true
+      collides: true
       collidesAir: true
-      lifetime: 10800
-      fragBullets: 10
-      fragBullet: lightning
+      collidesTiles: false
+      hitSize: 80
+      statusDuration: 300
+      status: {
+        name: HalfStat
+        speedMultiplier: 0.5
+        damageMultiplier: 0.5
+        armorMultiplier: 0.5
+        damage: 0
+        color: 7EFF72
+        effect: lightningShoot
+      }
     }
   }
 }
 requirements: [
-  copper/2000
-  lead/2000
-  silicon/1300
-  graphite/1300
-  titanium/1700
-  plastanium/1600
-  thorium/700
-  surge-alloy/400
+  copper/5000
+  lead/5000
+  silicon/1570
+  graphite/1750
+  titanium/2000
+  plastanium/1000
+  thorium/2250
+  surge-alloy/2250
+  metaglass/1000
 ]
 category: turret
-research: blanksilo
+research: splittersilo
