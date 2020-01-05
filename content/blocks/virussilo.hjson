@@ -55,7 +55,7 @@ ammo: {
       bulletSprite: ohno-missiles-missilevirusbug
       hitEffect: none
       despawnEffect: none
-      lifetime: 3600
+      lifetime: 1800
       hitShake: 0
       pierce: true
       collides: true
