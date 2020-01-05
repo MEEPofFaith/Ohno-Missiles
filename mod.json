@@ -1,5 +1,5 @@
 name: "Ohno Missiles"
 author: "[#FCC21B]MEEP of Faith[] and [#6ECDEC]SolarPH[]"
 description: "With the new [#8f0101]Ballistic Missile[], you can nuke the enemies with various missile silos. Note: Missile launchers are extremely expensive and time consuming to build. I recommend using the 250% build speed on the Trident Bomber and Phantom Builders."
-version: "2.45"
+version: "2.46"
 //I increase the version number every time I make a new test version, no matter how small the change
