@@ -14,18 +14,19 @@ baseRotateSpeed: 0.04
 retreatPercent: 0.1
 range: 128
 attackLength: 112
-rotateWeapon: false
+rotateWeapon: true
+weaponOffsetY: 26
 shootCone: 360
 weapon: {
-  name: redactedair
-  width: 0
-  length: -26
-  reload: 90
+  name: redactedlaser
+  width: 5
+  length: 4
+  reload: 120
   recoil: 5
-  shots: 30
-  shotDelay: 1
+  shots: 10
+  shotDelay: 6
   spacing: 0
-  alternate: false
+  alternate: true
   inaccuracy: 0
   shake: 5
   shootSound: laser
