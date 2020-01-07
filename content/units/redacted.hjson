@@ -21,14 +21,13 @@ weapon: {
   name: redactedlaser
   width: 10
   length: -2
-  reload: 300
+  reload: 45
   recoil: 5
-  shots: 10
-  shotDelay: 12
-  spacing: 0
+  shots: 1
   alternate: true
   inaccuracy: 0
-  shake: 5
+  shake: 10
+  lengthRand: 0.2
   shootSound: laser
   bullet: lancerLaser
 }
