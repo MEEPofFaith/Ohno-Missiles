@@ -9,7 +9,8 @@ inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
 targetGround: false
-maxAmmo: 9
+maxAmmo: 12
+ammoPerShot:5
 heatColor: 9EE6FF
 restitution: 0.003
 recoil: 8

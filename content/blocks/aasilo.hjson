@@ -9,7 +9,8 @@ inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
 targetGround: false
-maxAmmo: 12
+maxAmmo: 9
+ammoPerShot:2
 heatColor: ff3333
 cooldown: 0.003
 shootEffect: nuclearShockwave
@@ -27,7 +28,7 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     effect: missileTrail
-    ammoMultiplier: 12
+    ammoMultiplier: 3
     frontColor: ffffff
     backColor: ffffff
     homingPower: 0.5

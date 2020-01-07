@@ -28,7 +28,7 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     effect: missileTrail
-    ammoMultiplier: 3
+    ammoMultiplier: 1
     homingPower: 0.25
     homingRange: 69420
     splashDamageRadius: 16000
@@ -47,11 +47,11 @@ ammo: {
       bulletShrink: 0
       trailEffect: none
       speed: 10
-       knockback: 100
-       damage: 69420
+      knockback: 100
+      damage: 69420
       splashDamage: 69420
       bulletWidth: 0
-        bulletHeight: 0
+      bulletHeight: 0
       homingPower: 0
       homingRange: 0
       frontColor: ffffff
@@ -63,7 +63,7 @@ ammo: {
       hitEffect: shockwave
       despawnEffect: none
       lifetime: 30
-      hitShake: 150
+      hitShake: 1000
       collidesTiles: true
       collidesAir: true
     }

@@ -8,7 +8,8 @@ range: 69420
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
-maxAmmo: 3
+maxAmmo: 6
+ammoPerShot: 6
 heatColor: 7EFF72
 cooldown: 0.003
 shootEffect: nuclearShockwave
