@@ -21,10 +21,10 @@ weapon: {
   name: redactedlaser
   width: 10
   length: -2
-  reload: 120
+  reload: 300
   recoil: 5
   shots: 10
-  shotDelay: 6
+  shotDelay: 12
   spacing: 0
   alternate: true
   inaccuracy: 0
