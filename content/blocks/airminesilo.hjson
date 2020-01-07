@@ -3,7 +3,7 @@ name: "[#9EE6FF]Air Mine Silo[]"
 description: Fires a missile that bursts into a swarm of air mines.
 health: 200
 size: 4
-reload: 600
+reload: 900
 range: 69420
 inaccuracy: 5
 rotatespeed: 0.5
@@ -72,7 +72,7 @@ ammo: {
       hitShake: 0.75
       collidesTiles: false
       collidesAir: true
-      lifetime: 10800
+      lifetime: 1800
       fragBullets: 10
       fragBullet: lightning
     }
