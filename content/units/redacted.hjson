@@ -15,12 +15,12 @@ retreatPercent: 0.1
 range: 128
 attackLength: 112
 rotateWeapon: true
-weaponOffsetY: 26
+weaponOffsetY: 32
 shootCone: 360
 weapon: {
   name: redactedlaser
-  width: 5
-  length: 4
+  width: 10
+  length: -2
   reload: 120
   recoil: 5
   shots: 10
