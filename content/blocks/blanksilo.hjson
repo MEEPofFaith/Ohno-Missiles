@@ -31,7 +31,7 @@ ammo: {
     backColor: ffffff
     homingRange: 69420
     splashDamageRadius: 900
-    hitSound: explosionbig
+    hitSound: missileboom
     knockback: 2
     bulletSprite: ohno-missiles-missileblank
     hitEffect: flakExplosionBig

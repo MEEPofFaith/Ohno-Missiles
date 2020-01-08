@@ -3,7 +3,7 @@ name: "[#ff3333]Anti-Air Silo[]"
 description: Fires fast missiles that effectively blast down flying enemies.
 health: 200
 size: 4
-reload: 600
+reload: 1200
 range: 69420
 inaccuracy: 5
 rotatespeed: 0.5
@@ -36,7 +36,7 @@ ammo: {
     splashDamageRadius: 240
     bulletSprite: ohno-missiles-missileaa
     lifetime: 3600
-    hitSound: explosion
+    hitSound: missileboom
     collidesTiles: false
     collidesAir: true
     knockback: 3

@@ -35,7 +35,7 @@ ammo: {
     homingPower: 0.25
     homingRange: 69420
     splashDamageRadius: 100
-    hitSound: explosionbig
+    hitSound: missileboom
     knockback: 2
     bulletSprite: ohno-missiles-missilesplitter
     despawnEffect: flakExplosionBig
@@ -83,7 +83,7 @@ ammo: {
         splashDamage: 200
         knockback: 0.2
         hitShake: 0.15
-        hitSound: explosionbig
+        hitSound: missileboom
         lifetime: 3600
         hitEffect: flakExplosionBig
         splashDamageRadius: 120
@@ -136,7 +136,7 @@ ammo: {
             lifetime: 3600
             knockback: 0.02
             hitEffect: flakExplosion
-            hitSound: explosion
+            hitSound: explosionbig
             fragBullets: 5
             despawnEffect: flakExplosion
             fragBullet: {
