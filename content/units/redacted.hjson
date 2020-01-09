@@ -21,11 +21,12 @@ weapon: {
   name: redactedlaser
   width: 14
   length: 32
-  reload: 45
+  nimPlayerDist: 10
+  reload: 90
   recoil: 5
   shots: 1
-  alternate: true
-  inaccuracy: 0
+  alternate: false
+  inaccuracy: 3
   shake: 10
   lengthRand: 0.2
   shootSound: laser
