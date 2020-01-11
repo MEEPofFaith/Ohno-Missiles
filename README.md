@@ -4,7 +4,7 @@ With the new ballistic missile, you can nuke the enemies with various missile si
 ## Factory
 Adds a Ballistics Factory to create missiles to load various milos. Kinda expensive to run, so have fun with that.
 
-## Missile Showcase
+## Missile Showcase (Click on the image to open the video)
 [![Missile Showcase Video](https://img.youtube.com/vi/ayshhQFQrW8/0.jpg)](https://www.youtube.com/watch?v=ayshhQFQrW8)
 
 ## Silos (and version added)
