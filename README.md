@@ -4,6 +4,9 @@ With the new ballistic missile, you can nuke the enemies with various missile si
 ## Factory
 Adds a Ballistics Factory to create missiles to load various milos. Kinda expensive to run, so have fun with that.
 
+## Missile Showcase
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ayshhQFQrW8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Silos (and version added)
 #### Missile Silo (v1) - Fires basic missiles. These missiles travel slightly faster.
 #### Air Mine Silo (v1) - Fires a missile that bursts into a field of air mines.
