@@ -1,0 +1,34 @@
+type: hoverUnit
+name: Redacted
+mass: 50
+hitsize: 56
+drag: 0.03
+speed: 0.005
+maxVelocity: 0.2
+flying: true
+health: 17000
+engineOffset: 38
+engineSize: 6.5
+rotatespeed: 0.01
+baseRotateSpeed: 0.04
+retreatPercent: 0.1
+range: 128
+attackLength: 112
+rotateWeapon: true
+weaponOffsetY: 32
+shootCone: 360
+weapon: {
+  name: redactedlaser
+  width: 14
+  length: 32
+  nimPlayerDist: 10
+  reload: 90
+  recoil: 5
+  shots: 1
+  alternate: false
+  inaccuracy: 3
+  shake: 10
+  lengthRand: 0.2
+  shootSound: laser
+  bullet: lancerLaser
+}

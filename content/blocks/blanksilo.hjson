@@ -6,7 +6,7 @@ size: 4
 reload: 600
 range: 69420
 inaccuracy: 5
-rotatespeed: 5
+rotatespeed: 0.5
 targetAir: true
 maxAmmo: 6
 restitution: 0.003
@@ -26,12 +26,12 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 6
+    homingPower: 0.25
     frontColor: ffffff
     backColor: ffffff
     homingRange: 69420
     splashDamageRadius: 900
-    hitSound: explosionbig
+    hitSound: missileboom
     knockback: 2
     bulletSprite: ohno-missiles-missileblank
     hitEffect: flakExplosionBig

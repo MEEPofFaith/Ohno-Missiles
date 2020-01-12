@@ -6,7 +6,7 @@ size: 4
 reload: 3600
 range: 69420
 inaccuracy: 5
-rotatespeed: 5
+rotatespeed: 0.5
 targetAir: true
 maxAmmo: 9
 ammoPerShot: 9
@@ -21,15 +21,15 @@ ammo: {
     type: MissileBulletType
     bulletShrink: 0
     trailColor: FFF600
-    speed: 0.6
+    speed: 1.3
     damage: 69420
     splashDamage: 320
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
     effect: missileTrail
-    ammoMultiplier: 3
-    homingPower: 6
+    ammoMultiplier: 1
+    homingPower: 0.25
     homingRange: 69420
     splashDamageRadius: 16000
     hitSound: nuke
@@ -40,35 +40,33 @@ ammo: {
     despawnEffect: dynamicExplosion
     hitEffect: dynamicExplosion
     lifetime: 3600
-    hitShake: 2000
-		fragBullets: 200
-		fragVelocityMin: 1
-		fragVelocityMax: 1
-		fragBullet: {
-			type: ArtilleryBulletType
-			bulletShrink: 0
-			trailEffect: none
-			speed: 10
+    hitShake: 1000
+    fragBullets: 200
+    fragBullet: {
+      type: ArtilleryBulletType
+      bulletShrink: 0
+      trailEffect: none
+      speed: 10
       knockback: 100
-			damage: 69420
-			splashDamage: 69420
-			bulletWidth: 0
-			bulletHeight: 0
-			homingPower: 0
-			homingRange: 0
+      damage: 69420
+      splashDamage: 69420
+      bulletWidth: 0
+      bulletHeight: 0
+      homingPower: 0
+      homingRange: 0
       frontColor: ffffff
       backColor: ffffff
-			splashDamageRadius: 16000
-			hitSound: none
-			knockback: 1000
-			bulletSprite: missile
-			hitEffect: shockwave
-			despawnEffect: none
-			lifetime: 20
-			hitShake: 400
-			collidesTiles: true
-			collidesAir: true
-		}
+      splashDamageRadius: 16000
+      hitSound: none
+      knockback: 1000
+      bulletSprite: missile
+      hitEffect: shockwave
+      despawnEffect: none
+      lifetime: 30
+      hitShake: 1000
+      collidesTiles: true
+      collidesAir: true
+    }
   }
 }
 requirements: [

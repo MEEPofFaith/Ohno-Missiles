@@ -6,7 +6,7 @@ size: 4
 reload: 1800
 range: 69420
 inaccuracy: 5
-rotatespeed: 5
+rotatespeed: 0.5
 targetAir: true
 maxAmmo: 6
 ammoPerShot: 6
@@ -21,7 +21,7 @@ ammo: {
     type: MissileBulletType
     bulletShrink: 0
     trailColor: FFF600
-    speed: 1
+    speed: 1.7
     damage: 2000
     splashDamage: 2000
     splashDamageRadius: 160
@@ -32,10 +32,10 @@ ammo: {
     backColor: ffffff
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 6
+    homingPower: 0.25
     homingRange: 69420
     splashDamageRadius: 100
-    hitSound: explosionbig
+    hitSound: missileboom
     knockback: 2
     bulletSprite: ohno-missiles-missilesplitter
     despawnEffect: flakExplosionBig
@@ -43,8 +43,6 @@ ammo: {
     lifetime: 3600
     hitShake: 1.5
     fragBullets: 5
-    fragVelocityMin: 0.7
-    fragVelocityMax: 1.7
     fragBullet: {
       type: MissileBulletType
       effect: missileTrail
@@ -61,14 +59,12 @@ ammo: {
       splashDamage: 0
       knockback: 0
       hitShake: 0.15
-      lifetime: 30
+      lifetime: 150
       hitEffect: none
       splashDamageRadius: 120
       homingPower: 0
       homingRange: 0
       fragBullets: 1
-      fragVelocityMin: 1
-      fragVelocityMax: 1
       despawnEffect: none
       hitSound: none
       fragBullet: {
@@ -87,15 +83,13 @@ ammo: {
         splashDamage: 200
         knockback: 0.2
         hitShake: 0.15
-        hitSound: explosionbig
+        hitSound: missileboom
         lifetime: 3600
         hitEffect: flakExplosionBig
         splashDamageRadius: 120
-        homingPower: 9
+        homingPower: 0.25
         homingRange: 69420
         fragBullets: 5
-        fragVelocityMin: 0.7
-        fragVelocityMax: 1.7
         despawnEffect: flakExplosionBig
         fragBullet: {
           type: MissileBulletType
@@ -115,13 +109,11 @@ ammo: {
           bulletHeight: 32
           splashDamage: 0
           splashDamageRadius: 80
-          lifetime: 30
+          lifetime: 150
           knockback: 0
           hitEffect: none
           hitSound: none
           fragBullets: 1
-          fragVelocityMin: 1
-          fragVelocityMax: 1
           despawnEffect: none
           fragBullet: {
             type: MissileBulletType
@@ -134,7 +126,7 @@ ammo: {
             hitShake: 0.015
             speed: 2
             damage: 20
-            homingPower: 12
+            homingPower: 0.25
             homingRange: 69420
             hitSize: 32
             bulletWidth: 32
@@ -144,10 +136,8 @@ ammo: {
             lifetime: 3600
             knockback: 0.02
             hitEffect: flakExplosion
-            hitSound: explosion
+            hitSound: explosionbig
             fragBullets: 5
-            fragVelocityMin: 0.7
-            fragVelocityMax: 1.7
             despawnEffect: flakExplosion
             fragBullet: {
               type: MissileBulletType
@@ -166,15 +156,13 @@ ammo: {
               bulletHeight: 32
               splashDamage: 0
               splashDamageRadius: 40
-              lifetime: 30
+              lifetime: 150
               knockback: 0
               hitShake: 0.001
               hitEffect: none
               hitSound: none
               hitShake: 0.0015
               fragBullets: 1
-              fragVelocityMin: 1
-              fragVelocityMax: 1
               despawnEffect: none
               fragBullet: {
                 type: MissileBulletType
@@ -186,7 +174,7 @@ ammo: {
                 backColor: ffffff
                 speed: 2.5
                 damage: 2
-                homingPower: 15
+                homingPower: 0.25
                 homingRange: 69420
                 hitSize: 32
                 bulletWidth: 32

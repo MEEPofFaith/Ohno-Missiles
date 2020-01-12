@@ -1,15 +1,16 @@
 type: ItemTurret
 name: "[#9EE6FF]Air Mine Silo[]"
-description: Fires an missile that bursts into a swarm of air mines.
+description: Fires a missile that bursts into a swarm of air mines.
 health: 200
 size: 4
-reload: 600
+reload: 900
 range: 69420
 inaccuracy: 5
-rotatespeed: 5
+rotatespeed: 0.5
 targetAir: true
 targetGround: false
-maxAmmo: 9
+maxAmmo: 12
+ammoPerShot:5
 heatColor: 9EE6FF
 restitution: 0.003
 recoil: 8
@@ -30,8 +31,8 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.25
-    homingRange: 69420
+    homingPower: 0.0002
+    homingRange: 0
     hitSound: explosionbig
     knockback: 0.8
     bulletSprite: ohno-missiles-missileairmine
@@ -42,10 +43,11 @@ ammo: {
     frontColor: ffffff
     backColor: ffffff
     collidesTiles: false
-    collidesAir: true
+    hitTiles: false
     fragBullets: 20
     fragVelocityMin: 0
     fragVelocityMax: 2
+    homingPower: 0.001
     fragBullet: {
       type: FlakBulletType
       drag: 0.033
@@ -55,16 +57,16 @@ ammo: {
       damage: 500
       splashDamage: 500
       splashDamageRadius: 120
-      frontColor: ffffff
-      backColor: ffffff
+      frontColor: 9EE6FF
+      backColor: 9799A3
       bulletShrink: 0
-      hitSize: 32
-      bulletHeight: 32
-      bulletWidth: 32
+      hitSize: 4
+      bulletHeight: 4
+      bulletWidth: 4
       bulletSprite: ohno-missiles-missileairminemine
       knockback: 5
-      homingPower: 0
-      homingRange: 0
+      homingPower: 0.0002
+      homingRange: 69420
       hitShake: 0.75
       hitEffect: flakExplosionBig
       hitSound: explosion
@@ -72,7 +74,9 @@ ammo: {
       hitShake: 0.75
       collidesTiles: false
       collidesAir: true
-      lifetime: 3600
+      lifetime: 1800
+      fragBullets: 10
+      fragBullet: lightning
     }
   }
 }
