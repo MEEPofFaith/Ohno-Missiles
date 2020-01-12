@@ -20,4 +20,4 @@ Adds a Ballistics Factory to create missiles to load various milos. Kinda expens
 ## Plans
 #### World Ender Silo (Will cost 11565 of all resources to build. Why 11565? Check the research cost.)
 #### Impulse Silo (Minimal damage, insane knockback)
-#### Nuclear Crawler
+#### Nuclear Crawler (The name says its abilities... Like a crawler with a nuke on it.)
