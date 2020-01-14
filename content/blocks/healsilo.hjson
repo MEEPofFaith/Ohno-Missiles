@@ -1,0 +1,62 @@
+type: ItemTurret
+name: "[#7EFF72]Heal Missile Silo v2[]"
+description: "The return of the [#00FF00]Heal Silo."
+health: 200
+size: 4
+reload: 900
+range: 69420
+inaccuracy: 5
+rotatespeed: 0.5
+targetAir: true
+maxAmmo: 6
+ammoPerShot: 6
+heatColor: 7EFF72
+cooldown: 0.003
+shootEffect: nuclearShockwave
+shootSound: none
+recoil: 8
+restitution: 0.003
+ammo: {
+  missile: {
+    type: MissileBulletType
+    bulletShrink: 0
+    trailColor: 7EFF72
+    speed: 2
+    damage: 0
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    ammoMultiplier: 3
+    homingPower: 0.25
+    homingRange: 69420
+    hitSound: virusboom
+    knockback: 1000
+    frontColor: ffffff
+    backColor: ffffff
+    bulletSprite: missiles-mod-of-pure-ohno-missilevirus
+    despawnEffect: shockwave
+    hitEffect: shockwave
+    lifetime: 3600
+    hitShake: 1
+    fragBullets: 200
+    fragBullet: {
+      type: HealBulletType
+	  healPercent: 50
+	  speed: 20
+	  lifetime: 5 
+    }
+  }
+}
+requirements: [
+  copper/5000
+  lead/5000
+  silicon/1570
+  graphite/1750
+  titanium/2000
+  plastanium/1000
+  thorium/2250
+  surge-alloy/2250
+  metaglass/1000
+]
+category: turret
+research: splittersilo
