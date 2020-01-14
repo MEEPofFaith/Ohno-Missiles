@@ -34,7 +34,7 @@ ammo: {
     homingPower: 0.5
     homingRange: 69420
     splashDamageRadius: 240
-    bulletSprite: ohno-missiles-missileaa
+    bulletSprite: missiles-mod-of-pure-ohno-missileaa
     lifetime: 3600
     hitSound: missileboom
     collidesTiles: false

@@ -35,7 +35,7 @@ ammo: {
     homingRange: 0
     hitSound: explosionbig
     knockback: 0.8
-    bulletSprite: ohno-missiles-missileairmine
+    bulletSprite: missiles-mod-of-pure-ohno-missileairmine
     hitEffect: flakExplosionBig
     despawnEffect: flakExplosionBig
     lifetime: 281
@@ -63,7 +63,7 @@ ammo: {
       hitSize: 4
       bulletHeight: 4
       bulletWidth: 4
-      bulletSprite: ohno-missiles-missileairminemine
+      bulletSprite: missiles-mod-of-pure-ohno-missileairminemine
       knockback: 5
       homingPower: 0.0002
       homingRange: 69420

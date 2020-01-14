@@ -36,7 +36,7 @@ ammo: {
     knockback: 1000
     frontColor: ffffff
     backColor: ffffff
-    bulletSprite: ohno-missiles-missileemp
+    bulletSprite: missiles-mod-of-pure-ohno-missileemp
     despawnEffect: nuclearShockwave
     hitEffect: nuclearShockwave
     lifetime: 3600

@@ -36,7 +36,7 @@ ammo: {
     knockback: 100
     frontColor: ffffff
     backColor: ffffff
-    bulletSprite: ohno-missiles-missilenuke
+    bulletSprite: missiles-mod-of-pure-ohno-missilenuke
     despawnEffect: dynamicExplosion
     hitEffect: dynamicExplosion
     lifetime: 3600
