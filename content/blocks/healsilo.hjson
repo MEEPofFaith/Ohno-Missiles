@@ -38,12 +38,16 @@ ammo: {
     hitEffect: shockwave
     lifetime: 3600
     hitShake: 1
-    fragBullets: 200
+    fragBullets: 1000
+	fragVelocityMin: 1
+	fragVelocityMax: 1
     fragBullet: {
       type: HealBulletType
 	  healPercent: 50
-	  speed: 20
-	  lifetime: 5 
+	  speed: 10
+	  lifetime: 60
+	  collidesAir: true
+	  pierce: true
     }
   }
 }
