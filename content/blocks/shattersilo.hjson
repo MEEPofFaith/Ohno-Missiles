@@ -1,0 +1,111 @@
+type: ItemTurret
+name: "[#7affbd]Shatter Silo[]"
+description: Slow firing. Scatters tile eaters across the impact area.
+health: 200
+size: 4
+reload: 360
+range: 69420
+inaccuracy: 5
+rotatespeed: 0.5
+targetAir: true
+maxAmmo: 9
+ammoPerShot: 9
+heatColor: 7affbd
+cooldown: 0.003
+shootEffect: nuclearShockwave
+shootSound: ohnolaunch
+recoil: 8
+restitution: 0.003
+ammo: {
+  missile: {
+    type: MissileBulletType
+    bulletShrink: 0
+    trailColor: FFF600
+    speed: 1.3
+    damage: 0
+    splashDamage: 0
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    effect: missileTrail
+    ammoMultiplier: 1
+    homingPower: 0.25
+    homingRange: 69420
+    splashDamageRadius: 0
+    hitSound: none
+    knockback: 0
+    frontColor: ffffff
+    backColor: ffffff
+    bulletSprite: missiles-mod-of-pure-ohno-missilenuke
+    despawnEffect: shockwave
+    hitEffect: shockwave
+    lifetime: 3600
+    hitShake: 2
+    fragBullets: 5
+    fragBullet: {
+      type: ArtilleryBulletType
+      bulletShrink: 0
+      trailEffect: shieldBreak
+      speed: 2
+      knockback: 0
+      damage: 0
+      splashDamage: 0
+      bulletWidth: 0
+      bulletHeight: 0
+      homingPower: 8
+      homingRange: 4
+      frontColor: ffffff
+      backColor: ffffff
+      splashDamageRadius: 0
+      hitSound: none
+      knockback: 0
+      bulletSprite: missile
+      hitEffect: shockwave
+      despawnEffect: shockwave
+      lifetime: 180
+      hitShake: 0
+      collidesTiles: false
+      collidesAir: false
+	  collides: false
+	  fragBullets: 4
+	  fragBullet: {
+	    type: ArtilleryBulletType
+        bulletShrink: 0
+        trailEffect: shieldBreak
+        speed: 4
+        knockback: 0
+		damage: 69420
+		splashDamage: 69420
+		bulletWidth: 0
+		bulletHeight: 0
+		homingPower: 0
+		homingRange: 0
+		frontColor: ffffff
+		backColor: ffffff
+		splashDamageRadius: 40
+		hitSound: none
+		knockback: 0
+		bulletSprite: missile
+		hitEffect: shieldBreak
+		despawnEffect: shieldBreak
+		lifetime: 60
+		hitShake: 40
+		collidesTiles: false
+		collidesAir: false
+		collides: false
+	  }
+    }
+  }
+}
+requirements: [
+  copper/5000
+  lead/5000
+  silicon/2000
+  graphite/2250
+  titanium/2500
+  plastanium/1750
+  thorium/2000
+  surge-alloy/2000
+]
+category: turret
+research: splittersilo
