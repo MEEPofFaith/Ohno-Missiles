@@ -13,7 +13,7 @@ ammoPerShot: 9
 heatColor: d620d6
 cooldown: 0.003
 shootEffect: nuclearShockwave
-shootSound: ohnolaunch
+shootSound: missilelaunch
 recoil: 8
 restitution: 0.003
 ammo: {
