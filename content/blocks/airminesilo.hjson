@@ -31,7 +31,7 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.0002
+    homingPower: 0.0001
     homingRange: 0
     hitSound: explosionbig
     knockback: 0.8
@@ -47,7 +47,6 @@ ammo: {
     fragBullets: 20
     fragVelocityMin: 0
     fragVelocityMax: 2
-    homingPower: 0.001
     fragBullet: {
       type: FlakBulletType
       drag: 0.033
@@ -65,7 +64,7 @@ ammo: {
       bulletWidth: 4
       bulletSprite: missiles-mod-of-pure-ohno-missileairminemine
       knockback: 5
-      homingPower: 0.0002
+      homingPower: 0.0001
       homingRange: 69420
       hitShake: 0.75
       hitEffect: flakExplosionBig

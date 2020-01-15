@@ -29,7 +29,7 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.25
+    homingPower: 0.0001
     homingRange: 69420
     hitSound: explosionbig
     knockback: 0.8
