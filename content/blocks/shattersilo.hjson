@@ -1,16 +1,16 @@
 type: ItemTurret
-name: "[#7affbd]Shatter Silo[]"
+name: "[#d620d6]Shatter Silo[]"
 description: Slow firing. Scatters tile eaters across the impact area.
 health: 200
 size: 4
-reload: 360
+reload: 900
 range: 69420
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
 maxAmmo: 9
 ammoPerShot: 9
-heatColor: 7affbd
+heatColor: d620d6
 cooldown: 0.003
 shootEffect: nuclearShockwave
 shootSound: ohnolaunch
@@ -36,17 +36,17 @@ ammo: {
     knockback: 0
     frontColor: ffffff
     backColor: ffffff
-    bulletSprite: missiles-mod-of-pure-ohno-missilenuke
+    bulletSprite: missiles-mod-of-pure-ohno-missileshatter
     despawnEffect: shockwave
     hitEffect: shockwave
     lifetime: 3600
     hitShake: 2
-    fragBullets: 5
+    fragBullets: 10
     fragBullet: {
       type: ArtilleryBulletType
       bulletShrink: 0
       trailEffect: shieldBreak
-      speed: 2
+      speed: 3
       knockback: 0
       damage: 0
       splashDamage: 0
@@ -62,38 +62,38 @@ ammo: {
       bulletSprite: missile
       hitEffect: shockwave
       despawnEffect: shockwave
-      lifetime: 180
+      lifetime: 30
       hitShake: 0
       collidesTiles: false
       collidesAir: false
-	  collides: false
-	  fragBullets: 4
-	  fragBullet: {
+	    collides: false
+	    fragBullets: 5
+	    fragBullet: {
 	    type: ArtilleryBulletType
         bulletShrink: 0
         trailEffect: shieldBreak
-        speed: 4
+        speed: 5
         knockback: 0
-		damage: 69420
-		splashDamage: 69420
-		bulletWidth: 0
-		bulletHeight: 0
-		homingPower: 0
-		homingRange: 0
-		frontColor: ffffff
-		backColor: ffffff
-		splashDamageRadius: 40
-		hitSound: none
-		knockback: 0
-		bulletSprite: missile
-		hitEffect: shieldBreak
-		despawnEffect: shieldBreak
-		lifetime: 60
-		hitShake: 40
-		collidesTiles: false
-		collidesAir: false
-		collides: false
-	  }
+		    damage: 4000
+		    splashDamage: 4000
+		    bulletWidth: 0
+		    bulletHeight: 0
+        homingPower: 0
+        homingRange: 0
+        frontColor: ffffff
+        backColor: ffffff
+        splashDamageRadius: 40
+        hitSound: none
+        knockback: 0
+        bulletSprite: missile
+        hitEffect: shieldBreak
+        despawnEffect: shieldBreak
+        lifetime: 8
+        hitShake: 40
+        collidesTiles: false
+        collidesAir: false
+        collides: false
+	    }
     }
   }
 }
