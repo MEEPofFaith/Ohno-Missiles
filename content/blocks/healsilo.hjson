@@ -39,15 +39,15 @@ ammo: {
     lifetime: 3600
     hitShake: 1
     fragBullets: 1000
-	fragVelocityMin: 1
-	fragVelocityMax: 1
+    fragVelocityMin: 1
+    fragVelocityMax: 1
     fragBullet: {
       type: HealBulletType
-	  healPercent: 50
-	  speed: 10
-	  lifetime: 60
-	  collidesAir: true
-	  pierce: true
+      healPercent: 50
+      speed: 10
+      lifetime: 60
+      collidesAir: true
+      pierce: true
     }
   }
 }
@@ -63,4 +63,4 @@ requirements: [
   metaglass/1000
 ]
 category: turret
-research: splittersilo
+research: incendsilo
