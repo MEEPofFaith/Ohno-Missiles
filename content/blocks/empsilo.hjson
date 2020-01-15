@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "[#00A9FF]EMP Missile Silo[]"
+localizedName: "[#00A9FF]EMP Missile Silo[]"
 description: No Damage, but freezes enemies into their position.
 health: 200
 size: 4
@@ -71,7 +71,7 @@ ammo: {
       hitSize: 4
       statusDuration: 300
       status: {
-        name: stoprightthere
+        localizedName: stoprightthere
         speedMultiplier: 0
         damageMultiplier: 0
         armorMultiplier: 0

@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "[#ffeb0d]Splitter Missile Silo[]"
+localizedName: "[#ffeb0d]Splitter Missile Silo[]"
 description: The missile keeps splitting and splitting and splitting...
 health: 200
 size: 4

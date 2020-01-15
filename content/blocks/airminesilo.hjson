@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "[#9EE6FF]Air Mine Silo[]"
+localizedName: "[#9EE6FF]Air Mine Silo[]"
 description: Fires a missile that bursts into a swarm of air mines.
 health: 200
 size: 4

@@ -1,5 +1,5 @@
 type: GenericSmelter
-name: Ballistics-Factory
+localizedName: Ballistics-Factory
 description: "Create powerful [#8f0101]Ballistic Missiles[] that can only be fired by the biggest of missile launchers."
 size: 4
 health: 500

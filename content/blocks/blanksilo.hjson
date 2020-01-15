@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Missile Silo
+localizedName: Missile Silo
 description: An avarage missile silo with no extra abilities. Still pretty powerful though.
 health: 200
 size: 4
