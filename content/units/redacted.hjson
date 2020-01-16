@@ -1,5 +1,6 @@
 type: hoverUnit
 name: Lucifer
+description: "[#8f0101]Piercing lasers of destruction..."
 mass: 50
 hitsize: 56
 drag: 0.03
@@ -21,14 +22,50 @@ weapon: {
   name: redactedlaser
   width: 14
   length: 32
-  nimPlayerDist: 10
-  reload: 90
+  nimPlayerDist: 24
+  reload: 6
   recoil: 5
   shots: 1
   alternate: false
-  inaccuracy: 3
+  inaccuracy: 5
   shake: 10
   lengthRand: 0.2
   shootSound: laser
-  bullet: lancerLaser
+  bullet: {
+    type: ArtilleryBulletType
+    bulletSprite: missiles-mod-of-pure-ohno-redactedbeam
+    speed: 10
+    damage: 25
+    bulletShrink: 0
+    drag: 0
+    incendChance: 10
+    incendAmount: 10
+    lifetime: 32
+    collidesTiles: true
+    collides: true
+    collidesAir: true
+    pierce: true
+    drawSize: 8
+    hitSize: 8
+    trailEffect: shieldBreak
+    hitEffect: shieldBreak
+    despawnEffect: shieldBreak
+    hitSound: none
+    frontColor: FF9C5A
+    backColor: EC7458
+    fragBullets: 5
+    fragBullet: {
+      type: BasicBulletType
+      bulletSprite: missiles-mod-of-pure-ohno-redactedbeam
+      speed: 10
+      damage:5
+      bulletShrink: 0
+      lifetime: 5
+      drawSize: 2
+      hitSize: 2
+      hitSound: none
+      hitEffect: none
+      despawnEffect: none
+    }
+  }
 }
