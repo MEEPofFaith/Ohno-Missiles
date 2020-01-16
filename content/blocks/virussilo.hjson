@@ -51,7 +51,7 @@ ammo: {
       homingRange: 80
       frontColor: 7EFF72
       backColor: A4FF59
-      hitSound: bugerror
+      hitSound: none
       knockback: 10000
       bulletSprite: missiles-mod-of-pure-ohno-missilevirusbug
       hitEffect: none
