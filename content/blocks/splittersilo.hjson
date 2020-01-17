@@ -21,7 +21,7 @@ ammo: {
     type: MissileBulletType
     bulletShrink: 0
     trailColor: FFF600
-    speed: 1.7
+    speed: 2
     damage: 2000
     splashDamage: 2000
     splashDamageRadius: 160
@@ -49,7 +49,7 @@ ammo: {
       trailColor: FFF600
       bulletShrink: 0
       bulletSprite: missiles-mod-of-pure-ohno-missilesplitterpiece
-      speed: 1.5
+      speed: 2.5
       frontColor: ffffff
       backColor: ffffff
       damage: 0
@@ -73,7 +73,7 @@ ammo: {
         trailColor: FFF600
         bulletShrink: 0
         bulletSprite: missiles-mod-of-pure-ohno-missilesplitterpiece
-        speed: 1.5
+        speed: 2.5
         frontColor: ffffff
         backColor: ffffff
         damage: 200
@@ -87,7 +87,7 @@ ammo: {
         lifetime: 3600
         hitEffect: flakExplosionBig
         splashDamageRadius: 120
-        homingPower: 0.0001
+        homingPower: 0.0002
         homingRange: 69420
         fragBullets: 5
         despawnEffect: flakExplosionBig
@@ -100,7 +100,7 @@ ammo: {
           trailColor: FFF600
           bulletSprite: missiles-mod-of-pure-ohno-missilesplittershard
           hitShake: 0.015
-          speed: 2
+          speed: 3
           damage: 0
           homingPower: 0
           homingRange: 0
@@ -124,9 +124,9 @@ ammo: {
             trailColor: FFF600
             bulletSprite: missiles-mod-of-pure-ohno-missilesplittershard
             hitShake: 0.015
-            speed: 2
+            speed: 3
             damage: 20
-            homingPower: 0.0001
+            homingPower: 0.0003
             homingRange: 69420
             hitSize: 32
             bulletWidth: 32
@@ -147,7 +147,7 @@ ammo: {
               bulletSprite: missiles-mod-of-pure-ohno-missilesplitterbit
               frontColor: ffffff
               backColor: ffffff
-              speed: 2.5
+              speed: 3.5
               damage: 0
               homingPower: 0
               homingRange: 0
@@ -158,7 +158,6 @@ ammo: {
               splashDamageRadius: 40
               lifetime: 150
               knockback: 0
-              hitShake: 0.0001
               hitEffect: none
               hitSound: none
               hitShake: 0.00015
@@ -172,9 +171,9 @@ ammo: {
                 bulletSprite: missiles-mod-of-pure-ohno-missilesplitterbit
                 frontColor: ffffff
                 backColor: ffffff
-                speed: 2.5
+                speed: 3.5
                 damage: 2
-                homingPower: 0.0001
+                homingPower: 0.0004
                 homingRange: 69420
                 hitSize: 32
                 bulletWidth: 32
