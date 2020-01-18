@@ -1,5 +1,5 @@
-localizedName: : hoverUnit
-name: Lucifer
+type: hoverUnit
+localizedName: Lucifer
 mass: 50
 hitsize: 56
 drag: 0.03
