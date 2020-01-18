@@ -71,7 +71,7 @@ ammo: {
       hitSize: 4
       statusDuration: 300
       status: {
-        localizedName: stoprightthere
+        name: stoprightthere
         speedMultiplier: 0
         damageMultiplier: 0
         armorMultiplier: 0
