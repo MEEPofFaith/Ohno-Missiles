@@ -1,8 +1,8 @@
-name: "[#E7885C]Napalm[]"
+name: "[#FFA665]Napalm[]"
 description: Liquid flames
-effect: melting
-color: E7885C
-lightColor: E7885C
+effect: lava
+color: FFA665
+lightColor: FFA665
 explosiveness: 69420
 flammability: 69420
 temperature: 69420
