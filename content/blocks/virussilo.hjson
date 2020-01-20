@@ -27,7 +27,7 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     ammoMultiplier: 3
-    homingPower: 0.0001
+    homingPower: 0.0002
     homingRange: 69420
     hitSound: virusboom
     knockback: 1000
@@ -39,6 +39,8 @@ ammo: {
     lifetime: 3600
     hitShake: 1
     fragBullets: 200
+    fragVelocityMin: 0.8
+    fragVelocityMax: 1.2
     fragBullet: {
       type: ArtilleryBulletType
       bulletShrink: 0
@@ -47,7 +49,7 @@ ammo: {
       damage: 0.01
       bulletWidth: 12
       bulletHeight: 12
-      homingPower: 360
+      homingPower: 180
       homingRange: 80
       frontColor: 7EFF72
       backColor: A4FF59

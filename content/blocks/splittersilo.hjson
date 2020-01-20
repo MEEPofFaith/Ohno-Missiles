@@ -32,7 +32,7 @@ ammo: {
     backColor: ffffff
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.0001
+    homingPower: 0.0002
     homingRange: 69420
     splashDamageRadius: 100
     hitSound: missileboom
@@ -43,6 +43,8 @@ ammo: {
     lifetime: 3600
     hitShake: 1.5
     fragBullets: 5
+    fragVelocityMin: 1
+    fragVelocityMax: 1
     fragBullet: {
       type: MissileBulletType
       effect: missileTrail
@@ -65,6 +67,8 @@ ammo: {
       homingPower: 0
       homingRange: 0
       fragBullets: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
       despawnEffect: none
       hitSound: none
       fragBullet: {
@@ -90,6 +94,8 @@ ammo: {
         homingPower: 0.0002
         homingRange: 69420
         fragBullets: 5
+        fragVelocityMin: 1
+        fragVelocityMax: 1
         despawnEffect: flakExplosionBig
         fragBullet: {
           type: MissileBulletType
@@ -114,6 +120,8 @@ ammo: {
           hitEffect: none
           hitSound: none
           fragBullets: 1
+          fragVelocityMin: 1
+          fragVelocityMax: 1
           despawnEffect: none
           fragBullet: {
             type: MissileBulletType
@@ -126,7 +134,7 @@ ammo: {
             hitShake: 0.015
             speed: 3
             damage: 20
-            homingPower: 0.0003
+            homingPower: 0.0002
             homingRange: 69420
             hitSize: 32
             bulletWidth: 32
@@ -138,6 +146,8 @@ ammo: {
             hitEffect: flakExplosion
             hitSound: explosionbig
             fragBullets: 5
+            fragVelocityMin: 1
+            fragVelocityMax: 1
             despawnEffect: flakExplosion
             fragBullet: {
               type: MissileBulletType
@@ -162,6 +172,8 @@ ammo: {
               hitSound: none
               hitShake: 0.00015
               fragBullets: 1
+              fragVelocityMin: 1
+              fragVelocityMax: 1
               despawnEffect: none
               fragBullet: {
                 type: MissileBulletType
@@ -173,7 +185,7 @@ ammo: {
                 backColor: ffffff
                 speed: 3.5
                 damage: 2
-                homingPower: 0.0004
+                homingPower: 0.0002
                 homingRange: 69420
                 hitSize: 32
                 bulletWidth: 32

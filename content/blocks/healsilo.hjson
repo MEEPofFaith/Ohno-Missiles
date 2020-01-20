@@ -27,7 +27,7 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     ammoMultiplier: 3
-    homingPower: 0.0001
+    homingPower: 0.0002
     homingRange: 69420
     hitSound: virusboom
     knockback: 1000
@@ -45,7 +45,7 @@ ammo: {
       type: HealBulletType
       healPercent: 50
       speed: 10
-      lifetime: 60
+      lifetime: 15
       collidesAir: true
       pierce: true
     }
