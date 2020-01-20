@@ -8,8 +8,8 @@ range: 69420
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
-targetGround: false
-maxAmmo: 9
+targetGround: true
+maxAmmo: 90
 ammoPerShot:2
 heatColor: ff3333
 cooldown: 0.003
@@ -18,12 +18,12 @@ shootSound: missilelaunch
 restitution: 0.003
 recoil: 8
 ammo: {
-  missile: {
+  copper: {
     type: MissileBulletType
     bulletShrink: 0
     speed: 6.66
-    damage: 2000
-    splashDamage: 2000
+    damage: 20000
+    splashDamage: 200000
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
@@ -33,7 +33,7 @@ ammo: {
     backColor: ffffff
     homingPower: 0.5
     homingRange: 69420
-    splashDamageRadius: 240
+    splashDamageRadius: 240000
     bulletSprite: missiles-mod-of-pure-ohno-missileaa
     lifetime: 3600
     hitSound: missileboom
@@ -45,14 +45,7 @@ ammo: {
   }
 }
 requirements: [
-  copper/2000
-  lead/2000
-  silicon/1300
-  graphite/1300
-  titanium/1700
-  plastanium/800
-  thorium/800
-  surge-alloy/400
+  copper/2
 ]
 category: turret
 research: airminesilo
