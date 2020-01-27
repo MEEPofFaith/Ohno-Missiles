@@ -4,7 +4,7 @@ description: The missile keeps splitting and splitting and splitting...
 health: 200
 size: 4
 reload: 1800
-range: 69420
+range: 2000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
@@ -33,7 +33,7 @@ ammo: {
     effect: missileTrail
     ammoMultiplier: 3
     homingPower: 0.0002
-    homingRange: 69420
+    homingrange: 2000
     splashDamageRadius: 100
     hitSound: missileboom
     knockback: 2
@@ -92,7 +92,7 @@ ammo: {
         hitEffect: flakExplosionBig
         splashDamageRadius: 120
         homingPower: 0.0002
-        homingRange: 69420
+        homingrange: 2000
         fragBullets: 5
         fragVelocityMin: 1
         fragVelocityMax: 1
@@ -135,7 +135,7 @@ ammo: {
             speed: 3
             damage: 20
             homingPower: 0.0002
-            homingRange: 69420
+            homingrange: 2000
             hitSize: 32
             bulletWidth: 32
             bulletHeight: 32
@@ -186,7 +186,7 @@ ammo: {
                 speed: 3.5
                 damage: 2
                 homingPower: 0.0002
-                homingRange: 69420
+                homingrange: 2000
                 hitSize: 32
                 bulletWidth: 32
                 bulletHeight: 32

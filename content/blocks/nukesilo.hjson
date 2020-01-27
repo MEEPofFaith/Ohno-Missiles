@@ -4,7 +4,7 @@ description: Slow firing, but will obliterate a large area.
 health: 200
 size: 4
 reload: 3600
-range: 69420
+range: 2000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
@@ -30,7 +30,7 @@ ammo: {
     effect: missileTrail
     ammoMultiplier: 1
     homingPower: 0.0002
-    homingRange: 69420
+    homingrange: 2000
     splashDamageRadius: 16000
     hitSound: nuke
     knockback: 100

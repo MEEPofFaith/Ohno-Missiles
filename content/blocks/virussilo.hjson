@@ -4,7 +4,7 @@ description: Continuous low Damage, uploads to nearby enemy units and mechs. Vir
 health: 200
 size: 4
 reload: 900
-range: 69420
+range: 2000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
@@ -28,7 +28,7 @@ ammo: {
     bulletHeight: 32
     ammoMultiplier: 3
     homingPower: 0.0002
-    homingRange: 69420
+    homingrange: 2000
     hitSound: virusboom
     knockback: 1000
     frontColor: ffffff

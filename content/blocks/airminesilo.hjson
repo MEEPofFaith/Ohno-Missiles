@@ -4,7 +4,7 @@ description: Fires a missile that bursts into a swarm of air mines.
 health: 200
 size: 4
 reload: 900
-range: 69420
+range: 2000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
@@ -65,7 +65,7 @@ ammo: {
       bulletSprite: missiles-mod-of-pure-ohno-missileairminemine
       knockback: 5
       homingPower: 0.0002
-      homingRange: 69420
+      homingrange: 2000
       hitShake: 0.75
       hitEffect: flakExplosionBig
       hitSound: explosion

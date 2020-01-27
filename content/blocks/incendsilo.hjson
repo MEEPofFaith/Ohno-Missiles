@@ -4,7 +4,7 @@ description: Doesn't deal as much damage, but a massive area gets set on fire.
 health: 200
 size: 4
 reload: 1800
-range: 69420
+range: 2000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: false
@@ -30,7 +30,7 @@ ammo: {
     effect: missileTrail
     ammoMultiplier: 3
     homingPower: 0.0002
-    homingRange: 69420
+    homingrange: 2000
     hitSound: explosionbig
     knockback: 0.8
     bulletSprite: missiles-mod-of-pure-ohno-missileincend

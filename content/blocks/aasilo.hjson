@@ -4,7 +4,7 @@ description: Fires fast missiles that effectively blast down flying enemies.
 health: 200
 size: 4
 reload: 1200
-range: 69420
+range: 2000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
@@ -32,7 +32,7 @@ ammo: {
     frontColor: ffffff
     backColor: ffffff
     homingPower: 0.0002
-    homingRange: 69420
+    homingrange: 2000
     splashDamageRadius: 240
     bulletSprite: missiles-mod-of-pure-ohno-missileaa
     lifetime: 3600
