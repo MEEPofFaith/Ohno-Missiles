@@ -23,6 +23,7 @@ ammo: {
     trailColor: FFF600
     speed: 2
     damage: 0
+    splashDamage: 0
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
@@ -30,7 +31,7 @@ ammo: {
     homingPower: 0.0002
     homingRange: 69420
     hitSound: virusboom
-    knockback: 1000
+    knockback: 6942069
     frontColor: ffffff
     backColor: ffffff
     bulletSprite: missiles-mod-of-pure-ohno-missileheal
