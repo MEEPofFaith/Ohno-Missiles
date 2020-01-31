@@ -78,8 +78,9 @@ ammo: {
         trailEffect: shieldBreak
         speed: 5
         knockback: 0
-		    damage: 80
-		    splashDamage: 4000
+		    damage: 100
+        splashDamageRadius: 64
+		    splashDamage: 100
 		    bulletWidth: 1
 		    bulletHeight: 1
         homingPower: 0
