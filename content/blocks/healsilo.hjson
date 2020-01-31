@@ -45,7 +45,7 @@ ammo: {
       type: HealBulletType
       healPercent: 50
       speed: 10
-      lifetime: 10
+      lifetime: 30
       collidesAir: true
       pierce: true
     }
