@@ -33,7 +33,7 @@ ammo: {
     effect: missileTrail
     ammoMultiplier: 3
     homingPower: 0.0002
-    homingrange: 2000
+    homingRange: 69420
     splashDamageRadius: 100
     hitSound: missileboom
     knockback: 2
@@ -92,7 +92,7 @@ ammo: {
         hitEffect: flakExplosionBig
         splashDamageRadius: 120
         homingPower: 0.0002
-        homingrange: 2000
+        homingRange: 69420
         fragBullets: 5
         fragVelocityMin: 1
         fragVelocityMax: 1
@@ -135,7 +135,7 @@ ammo: {
             speed: 3
             damage: 20
             homingPower: 0.0002
-            homingrange: 2000
+            homingRange: 69420
             hitSize: 32
             bulletWidth: 32
             bulletHeight: 32
@@ -186,7 +186,7 @@ ammo: {
                 speed: 3.5
                 damage: 2
                 homingPower: 0.0002
-                homingrange: 2000
+                homingRange: 69420
                 hitSize: 32
                 bulletWidth: 32
                 bulletHeight: 32

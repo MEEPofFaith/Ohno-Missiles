@@ -9,7 +9,7 @@ inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
 maxAmmo: 9
-ammoPerShot: 9
+ammoPerShot: 4
 heatColor: d620d6
 cooldown: 0.003
 shootEffect: nuclearShockwave
@@ -21,16 +21,16 @@ ammo: {
     type: MissileBulletType
     bulletShrink: 0
     trailColor: FFF600
-    speed: 1.3
+    speed: 2
     damage: 0
     splashDamage: 0
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
     effect: missileTrail
-    ammoMultiplier: 1
+    ammoMultiplier: 3
     homingPower: 0.0002
-    homingrange: 2000
+    homingRange: 69420
     splashDamageRadius: 0
     hitSound: none
     knockback: 0
@@ -64,7 +64,7 @@ ammo: {
       bulletSprite: missiles-mod-of-pure-ohno-missileshattercapsule
       hitEffect: shockwave
       despawnEffect: shockwave
-      lifetime: 30
+      lifetime: 20
       hitShake: 0
       collidesTiles: false
       collidesAir: false

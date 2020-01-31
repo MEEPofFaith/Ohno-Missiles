@@ -29,7 +29,7 @@ ammo: {
     homingPower: 0.0002
     frontColor: ffffff
     backColor: ffffff
-    homingrange: 2000
+    homingRange: 69420
     splashDamageRadius: 900
     hitSound: missileboom
     knockback: 2

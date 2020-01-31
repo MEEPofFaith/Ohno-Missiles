@@ -9,7 +9,7 @@ inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
 maxAmmo: 6
-ammoPerShot: 6
+ammoPerShot: 2
 heatColor: FFBCFB
 cooldown: 0.003
 shootEffect: nuclearShockwave
@@ -28,7 +28,7 @@ ammo: {
     bulletHeight: 32
     ammoMultiplier: 3
     homingPower: 0.0002
-    homingrange: 2000
+    homingRange: 69420
     hitSound: virusboom
     knockback: 1000
     frontColor: ffffff
@@ -45,7 +45,7 @@ ammo: {
       type: HealBulletType
       healPercent: 50
       speed: 10
-      lifetime: 15
+      lifetime: 10
       collidesAir: true
       pierce: true
     }

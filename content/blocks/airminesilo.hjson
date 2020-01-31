@@ -65,7 +65,7 @@ ammo: {
       bulletSprite: missiles-mod-of-pure-ohno-missileairminemine
       knockback: 5
       homingPower: 0.0002
-      homingrange: 2000
+      homingRange: 69420
       hitShake: 0.75
       hitEffect: flakExplosionBig
       hitSound: explosion

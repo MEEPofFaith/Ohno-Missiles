@@ -32,7 +32,7 @@ ammo: {
     frontColor: ffffff
     backColor: ffffff
     homingPower: 0.0002
-    homingrange: 2000
+    homingRange: 69420
     splashDamageRadius: 240
     bulletSprite: missiles-mod-of-pure-ohno-missileaa
     lifetime: 3600

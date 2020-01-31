@@ -30,7 +30,7 @@ ammo: {
     effect: missileTrail
     ammoMultiplier: 1
     homingPower: 0.0002
-    homingrange: 2000
+    homingRange: 69420
     splashDamageRadius: 16000
     hitSound: nuke
     knockback: 100

@@ -28,7 +28,7 @@ ammo: {
     bulletHeight: 32
     ammoMultiplier: 3
     homingPower: 0.0002
-    homingrange: 2000
+    homingRange: 69420
     hitSound: virusboom
     knockback: 1000
     frontColor: ffffff
