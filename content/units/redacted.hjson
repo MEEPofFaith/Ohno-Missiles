@@ -48,8 +48,8 @@ weapon: {
     drawSize: 8
     hitSize: 8
     trailEffect: shieldBreak
-    hitEffect: shieldBreak
-    despawnEffect: shieldBreak
+    hitEffect: padlaunch
+    despawnEffect: padlaunch
     hitSound: none
     frontColor: FF9C5A
     backColor: EC7458
