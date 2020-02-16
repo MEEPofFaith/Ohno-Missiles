@@ -4,7 +4,7 @@ description: Continuous low Damage, uploads to nearby enemy units and mechs. Vir
 health: 200
 size: 4
 reload: 900
-range: 2000
+range: 8000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
