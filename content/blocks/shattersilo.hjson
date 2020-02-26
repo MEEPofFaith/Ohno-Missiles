@@ -40,7 +40,7 @@ ammo: {
     despawnEffect: shieldBreak
     hitEffect: shieldBreak
     lifetime: 3600
-    hitShake: 2
+    hitShake: 4
     fragBullets: 10
     fragVelocityMin: 1
     fragVelocityMax: 1
@@ -65,7 +65,7 @@ ammo: {
       hitEffect: shockwave
       despawnEffect: shockwave
       lifetime: 20
-      hitShake: 0
+      hitShake: 3
       collidesTiles: false
       collidesAir: false
 	    collides: false
@@ -94,7 +94,7 @@ ammo: {
         hitEffect: shockwave
         despawnEffect: shockwave
         lifetime: 8
-        hitShake: 40
+        hitShake: 2
         collidesTiles: false
         collidesAir: false
         collides: false

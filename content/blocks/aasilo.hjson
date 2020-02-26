@@ -41,7 +41,7 @@ ammo: {
     collidesAir: true
     knockback: 3
     hitEffect: flakExplosionBig
-    hitShake: 0.25
+    hitShake: 2
   }
 }
 requirements: [

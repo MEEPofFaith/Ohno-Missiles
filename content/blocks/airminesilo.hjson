@@ -39,7 +39,7 @@ ammo: {
     hitEffect: flakExplosionBig
     despawnEffect: flakExplosionBig
     lifetime: 281
-    hitShake: 0.75
+    hitShake: 2
     frontColor: ffffff
     backColor: ffffff
     collidesTiles: false
@@ -66,11 +66,10 @@ ammo: {
       knockback: 5
       homingPower: 0.0002
       homingRange: 69420
-      hitShake: 0.75
+      hitShake: 1
       hitEffect: flakExplosionBig
       hitSound: explosion
       despawnEffect: flakExplosionBig
-      hitShake: 0.75
       collidesTiles: false
       collidesAir: true
       lifetime: 1800

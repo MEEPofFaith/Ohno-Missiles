@@ -40,7 +40,7 @@ ammo: {
     despawnEffect: nuclearShockwave
     hitEffect: nuclearShockwave
     lifetime: 3600
-    hitShake: 1
+    hitShake: 1.5
     fragBullets: 400
     fragVelocityMin: 1
     fragVelocityMax: 1

@@ -194,7 +194,6 @@ ammo: {
                 splashDamageRadius: 40
                 lifetime: 3600
                 knockback: 0.002
-                hitShake: 0.0001
                 hitEffect: flakExplosion
                 hitSound: explosion
                 hitShake: 0.00015
