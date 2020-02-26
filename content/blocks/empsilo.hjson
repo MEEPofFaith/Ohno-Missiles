@@ -21,7 +21,7 @@ ammo: {
     type: MissileBulletType
     bulletShrink: 0
     trailColor: FFF600
-    speed: 2
+    speed: 3.5
     damage: 0
     splashDamage: 0
     hitSize: 32

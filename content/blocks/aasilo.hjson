@@ -21,7 +21,7 @@ ammo: {
   missile: {
     type: MissileBulletType
     bulletShrink: 0
-    speed: 6.66
+    speed: 6
     damage: 2000
     splashDamage: 2000
     hitSize: 32

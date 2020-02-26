@@ -21,7 +21,7 @@ ammo: {
     type: MissileBulletType
     bulletShrink: 0
     trailColor: FFF600
-    speed: 2
+    speed: 3.5
     damage: 0
     splashDamage: 0
     hitSize: 32
@@ -48,7 +48,7 @@ ammo: {
       type: ArtilleryBulletType
       bulletShrink: 0
       trailEffect: shieldBreak
-      speed: 3
+      speed: 4.25
       knockback: 0
       damage: 0
       splashDamage: 0
@@ -76,7 +76,7 @@ ammo: {
 	    type: ArtilleryBulletType
         bulletShrink: 0
         trailEffect: shieldBreak
-        speed: 5
+        speed: 5.5
         knockback: 0
 		    damage: 500
         splashDamageRadius: 128
