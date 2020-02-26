@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "[#7EFF72]Virus Missile Silo[]"
+localizedName: "[#7EFF72]Virus Missile Silo[]"
 description: Continuous low Damage, uploads to nearby enemy units and mechs. Virus damages them slowly till death, then they move on to other enemies.
 health: 200
 size: 4

@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "[#ff3333]Anti-Air Silo[]"
+localizedName: "[#ff3333]Anti-Air Silo[]"
 description: Fires fast missiles that effectively blast down flying enemies.
 health: 200
 size: 4

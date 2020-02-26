@@ -1,5 +1,5 @@
 type: ItemTurret
-name: "[#7affbd]Nuclear Missile Silo[]"
+localizedName: "[#7affbd]Nuclear Missile Silo[]"
 description: Slow firing, but will obliterate a large area.
 health: 200
 size: 4

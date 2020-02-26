@@ -1,3 +1,5 @@
+![Missiles Mod Logo](https://cdn.discordapp.com/attachments/653293028869537843/682118535270760448/Missiles_Mod_of_Ohno_Image_Card.png)
+
 # Missiles Ohno Mod for Mindustry
 With the new ballistic missile, you can nuke the enemies with various missile silos. (It's also my first mod) Please, if you have any suggestions for balance changes (I'm only gonna change build cost) or missiles, DM me in discord with #MEEP of Faith#7277 (Plase don't spam my DMs though).
 
