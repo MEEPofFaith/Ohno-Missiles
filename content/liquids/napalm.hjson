@@ -1,8 +1,8 @@
-name: "[#F27D00]Napalm[]"
-description: Liquid flames
+name: "[#EA8878]Napalm"
+description: "[#EA8878]Liquid flames"
 effect: melting
-color: F27D00
-lightColor: F27D00
+color: EA8878
+lightColor: EA8878
 explosiveness: 69420
 flammability: 69420
 temperature: 69420

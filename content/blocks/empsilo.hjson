@@ -4,7 +4,7 @@ description: No Damage, but freezes enemies into their position.
 health: 200
 size: 4
 reload: 2520
-range: 69420
+range: 8000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
@@ -29,7 +29,7 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.25
+    homingPower: 0.0002
     homingRange: 69420
     splashDamageRadius: 0
     hitSound: spark
@@ -40,7 +40,7 @@ ammo: {
     despawnEffect: nuclearShockwave
     hitEffect: nuclearShockwave
     lifetime: 3600
-    hitShake: 1
+    hitShake: 1.5
     fragBullets: 400
     fragVelocityMin: 1
     fragVelocityMax: 1

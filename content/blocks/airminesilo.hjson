@@ -4,7 +4,7 @@ description: Fires a missile that bursts into a swarm of air mines.
 health: 200
 size: 4
 reload: 900
-range: 69420
+range: 8000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
@@ -39,15 +39,14 @@ ammo: {
     hitEffect: flakExplosionBig
     despawnEffect: flakExplosionBig
     lifetime: 281
-    hitShake: 0.75
+    hitShake: 2
     frontColor: ffffff
     backColor: ffffff
     collidesTiles: false
     hitTiles: false
     fragBullets: 20
-    fragVelocityMin: 0
+    fragVelocityMin: 0.1
     fragVelocityMax: 2
-    homingPower: 0.001
     fragBullet: {
       type: FlakBulletType
       drag: 0.033
@@ -67,11 +66,10 @@ ammo: {
       knockback: 5
       homingPower: 0.0002
       homingRange: 69420
-      hitShake: 0.75
+      hitShake: 1
       hitEffect: flakExplosionBig
       hitSound: explosion
       despawnEffect: flakExplosionBig
-      hitShake: 0.75
       collidesTiles: false
       collidesAir: true
       lifetime: 1800

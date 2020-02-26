@@ -4,7 +4,7 @@ description: Slow firing, but will obliterate a large area.
 health: 200
 size: 4
 reload: 3600
-range: 69420
+range: 8000
 inaccuracy: 5
 rotatespeed: 0.5
 targetAir: true
@@ -29,7 +29,7 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 1
-    homingPower: 0.25
+    homingPower: 0.0002
     homingRange: 69420
     splashDamageRadius: 16000
     hitSound: nuke
@@ -40,8 +40,10 @@ ammo: {
     despawnEffect: dynamicExplosion
     hitEffect: dynamicExplosion
     lifetime: 3600
-    hitShake: 1000
+    hitShake: 20
     fragBullets: 200
+    fragVelocityMin: 1
+    fragVelocityMax: 1
     fragBullet: {
       type: ArtilleryBulletType
       bulletShrink: 0
@@ -63,7 +65,7 @@ ammo: {
       hitEffect: shockwave
       despawnEffect: none
       lifetime: 30
-      hitShake: 1000
+      hitShake: 10
       collidesTiles: true
       collidesAir: true
     }
