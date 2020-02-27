@@ -42,7 +42,7 @@ ammo: {
     hitEffect: dynamicExplosion
     lifetime: 3600
     hitShake: 20
-    fragBullets: 200
+    fragBullets: 420
     fragVelocityMin: 1
     fragVelocityMax: 1
     fragBullet: {
