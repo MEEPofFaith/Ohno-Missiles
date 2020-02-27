@@ -3,9 +3,10 @@ localizedName: "[#7EFF72]Virus Missile Silo[]"
 description: Continuous low Damage, uploads to nearby enemy units and mechs. Virus damages them slowly till death, then they move on to other enemies.
 health: 200
 size: 4
-reload: 900
+reload: 1200
 range: 8000
 inaccuracy: 5
+shootCone: 25
 rotatespeed: 0.5
 targetAir: true
 maxAmmo: 6
