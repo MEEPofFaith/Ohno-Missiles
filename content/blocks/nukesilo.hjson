@@ -34,7 +34,7 @@ ammo: {
     homingRange: 69420
     splashDamageRadius: 16000
     hitSound: nuke
-    knockback: 100
+    knockback: 69420
     frontColor: ffffff
     backColor: ffffff
     bulletSprite: ohno-missiles-missilenuke
@@ -50,7 +50,6 @@ ammo: {
       bulletShrink: 0
       trailEffect: none
       speed: 10
-      knockback: 100
       damage: 69420
       splashDamage: 69420
       bulletWidth: 0
@@ -61,7 +60,7 @@ ammo: {
       backColor: ffffff
       splashDamageRadius: 16000
       hitSound: none
-      knockback: 1000
+      knockback: 69420
       bulletSprite: missile
       hitEffect: shockwave
       despawnEffect: none

@@ -33,7 +33,7 @@ ammo: {
     homingRange: 69420
     splashDamageRadius: 900
     hitSound: missileboom
-    knockback: 2
+    knockback: 3
     bulletSprite: ohno-missiles-missileblank
     hitEffect: flakExplosionBig
     lifetime: 3600

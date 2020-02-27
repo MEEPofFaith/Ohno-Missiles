@@ -31,7 +31,7 @@ ammo: {
     homingPower: 0.001
     homingRange: 69420
     hitSound: virusboom
-    knockback: 1000
+    knockback: 10
     frontColor: ffffff
     backColor: ffffff
     bulletSprite: ohno-missiles-missilevirus
@@ -55,7 +55,7 @@ ammo: {
       frontColor: 7EFF72
       backColor: A4FF59
       hitSound: none
-      knockback: 10000
+      knockback: 69420
       bulletSprite: ohno-missiles-missilevirusbug
       hitEffect: none
       despawnEffect: none

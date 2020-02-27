@@ -34,7 +34,7 @@ ammo: {
     homingRange: 69420
     splashDamageRadius: 0
     hitSound: spark
-    knockback: 1000
+    knockback: 1
     frontColor: ffffff
     backColor: ffffff
     bulletSprite: ohno-missiles-missileemp
@@ -59,7 +59,7 @@ ammo: {
       backColor: 0042FF
       splashDamageRadius: 0
       hitSound: spark
-      knockback: 10000
+      knockback: 0
       bulletSprite: missile
       hitEffect: none
       despawnEffect: none

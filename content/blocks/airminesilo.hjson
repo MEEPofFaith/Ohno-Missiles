@@ -64,7 +64,7 @@ ammo: {
       bulletHeight: 4
       bulletWidth: 4
       bulletSprite: ohno-missiles-missileairminemine
-      knockback: 5
+      knockback: 3000
       homingPower: 0.001
       homingRange: 69420
       hitShake: 1

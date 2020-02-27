@@ -40,7 +40,7 @@ ammo: {
     hitSound: missileboom
     collidesTiles: false
     collidesAir: true
-    knockback: 3
+    knockback: 2000
     hitEffect: flakExplosionBig
     hitShake: 2
   }
