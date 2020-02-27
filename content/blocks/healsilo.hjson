@@ -23,7 +23,7 @@ ammo: {
     bulletShrink: 0
     trailColor: FFF600
     speed: 4.5
-    damage: 0
+    damage: 100
     splashDamage: 0
     hitSize: 32
     bulletWidth: 32

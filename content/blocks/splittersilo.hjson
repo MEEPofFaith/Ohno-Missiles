@@ -25,7 +25,7 @@ ammo: {
     speed: 4
     damage: 2000
     splashDamage: 2000
-    splashDamageRadius: 160
+    splashDamageRadius: 80
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
@@ -35,7 +35,6 @@ ammo: {
     ammoMultiplier: 3
     homingPower: 0.001
     homingRange: 69420
-    splashDamageRadius: 100
     hitSound: missileboom
     knockback: 4
     bulletSprite: ohno-missiles-missilesplitter
@@ -64,7 +63,7 @@ ammo: {
       hitShake: 0.15
       lifetime: 150
       hitEffect: none
-      splashDamageRadius: 120
+      splashDamageRadius: 0
       homingPower: 0
       homingRange: 0
       fragBullets: 1
@@ -91,7 +90,7 @@ ammo: {
         hitSound: missileboom
         lifetime: 3600
         hitEffect: flakExplosionBig
-        splashDamageRadius: 120
+        splashDamageRadius: 70
         homingPower: 0.001
         homingRange: 69420
         fragBullets: 5
@@ -115,7 +114,7 @@ ammo: {
           bulletWidth: 32
           bulletHeight: 32
           splashDamage: 0
-          splashDamageRadius: 80
+          splashDamageRadius: 0
           lifetime: 150
           knockback: 0
           hitEffect: none
@@ -141,7 +140,7 @@ ammo: {
             bulletWidth: 32
             bulletHeight: 32
             splashDamage: 20
-            splashDamageRadius: 80
+            splashDamageRadius: 60
             lifetime: 3600
             knockback: 2
             hitEffect: flakExplosion
@@ -166,7 +165,7 @@ ammo: {
               bulletWidth: 32
               bulletHeight: 32
               splashDamage: 0
-              splashDamageRadius: 40
+              splashDamageRadius: 0
               lifetime: 150
               knockback: 0
               hitEffect: none
@@ -192,7 +191,7 @@ ammo: {
                 bulletWidth: 32
                 bulletHeight: 32
                 splashDamage: 2
-                splashDamageRadius: 40
+                splashDamageRadius: 50
                 lifetime: 3600
                 knockback: 1
                 hitEffect: flakExplosion

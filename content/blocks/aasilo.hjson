@@ -34,7 +34,7 @@ ammo: {
     backColor: ffffff
     homingPower: 0.001
     homingRange: 69420
-    splashDamageRadius: 240
+    splashDamageRadius: 96
     bulletSprite: ohno-missiles-missileaa
     lifetime: 3600
     hitSound: missileboom

@@ -80,7 +80,7 @@ ammo: {
         speed: 5.5
         knockback: 0
 		    damage: 500
-        splashDamageRadius: 128
+        splashDamageRadius: 80
 		    splashDamage: 500
 		    bulletWidth: 1
 		    bulletHeight: 1
@@ -88,7 +88,6 @@ ammo: {
         homingRange: 0
         frontColor: ffffff
         backColor: ffffff
-        splashDamageRadius: 40
         hitSound: none
         knockback: 0
         bulletSprite: ohno-missiles-missileshattercapsule

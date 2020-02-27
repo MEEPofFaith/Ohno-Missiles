@@ -32,7 +32,7 @@ ammo: {
     ammoMultiplier: 1
     homingPower: 0.001
     homingRange: 69420
-    splashDamageRadius: 16000
+    splashDamageRadius: 1600
     hitSound: nuke
     knockback: 69420
     frontColor: ffffff
@@ -58,7 +58,7 @@ ammo: {
       homingRange: 0
       frontColor: ffffff
       backColor: ffffff
-      splashDamageRadius: 16000
+      splashDamageRadius: 1600
       hitSound: none
       knockback: 69420
       bulletSprite: missile

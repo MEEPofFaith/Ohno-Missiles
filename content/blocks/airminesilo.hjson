@@ -56,7 +56,7 @@ ammo: {
       speed: 3
       damage: 500
       splashDamage: 500
-      splashDamageRadius: 120
+      splashDamageRadius: 160
       frontColor: 9EE6FF
       backColor: 9799A3
       bulletShrink: 0
