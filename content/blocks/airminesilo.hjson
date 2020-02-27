@@ -31,7 +31,7 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.0002
+    homingPower: 0.001
     homingRange: 0
     hitSound: explosionbig
     knockback: 0.8
@@ -64,7 +64,7 @@ ammo: {
       bulletWidth: 4
       bulletSprite: ohno-missiles-missileairminemine
       knockback: 5
-      homingPower: 0.0002
+      homingPower: 0.001
       homingRange: 69420
       hitShake: 1
       hitEffect: flakExplosionBig

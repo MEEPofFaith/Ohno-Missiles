@@ -32,7 +32,7 @@ ammo: {
     backColor: ffffff
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.0002
+    homingPower: 0.001
     homingRange: 69420
     splashDamageRadius: 100
     hitSound: missileboom
@@ -91,7 +91,7 @@ ammo: {
         lifetime: 3600
         hitEffect: flakExplosionBig
         splashDamageRadius: 120
-        homingPower: 0.0002
+        homingPower: 0.001
         homingRange: 69420
         fragBullets: 5
         fragVelocityMin: 1
@@ -134,7 +134,7 @@ ammo: {
             hitShake: 0.015
             speed: 5
             damage: 20
-            homingPower: 0.0002
+            homingPower: 0.001
             homingRange: 69420
             hitSize: 32
             bulletWidth: 32
@@ -185,7 +185,7 @@ ammo: {
                 backColor: ffffff
                 speed: 5.5
                 damage: 2
-                homingPower: 0.0002
+                homingPower: 0.001
                 homingRange: 69420
                 hitSize: 32
                 bulletWidth: 32

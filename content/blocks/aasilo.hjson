@@ -31,7 +31,7 @@ ammo: {
     ammoMultiplier: 3
     frontColor: ffffff
     backColor: ffffff
-    homingPower: 0.0002
+    homingPower: 0.001
     homingRange: 69420
     splashDamageRadius: 240
     bulletSprite: ohno-missiles-missileaa

@@ -26,7 +26,7 @@ ammo: {
     bulletHeight: 32
     effect: missileTrail
     ammoMultiplier: 3
-    homingPower: 0.0002
+    homingPower: 0.001
     frontColor: ffffff
     backColor: ffffff
     homingRange: 69420
