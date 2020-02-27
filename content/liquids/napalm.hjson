@@ -8,6 +8,7 @@ flammability: 69420
 temperature: 69420
 viscosity: 0.95
 heatCapacity: 0
+buildVisibility: hidden
 status: {
   name: burnyburnohno
   damage: 33.33333333333333333333333333
