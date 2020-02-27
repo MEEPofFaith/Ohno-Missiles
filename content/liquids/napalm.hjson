@@ -9,8 +9,8 @@ temperature: 69420
 viscosity: 0.95
 heatCapacity: 0
 status: {
-  name: StickyNapalm
-  damage: 0.05
+  name: burnyburnohno
+  damage: 33.33333333333333333333333333
   speedMultiplier: 0.2
   armorMultiplier: 0.5
   damageMultiplier: 0.75
