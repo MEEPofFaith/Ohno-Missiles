@@ -6,7 +6,7 @@ lightColor: EA8878
 explosiveness: 69420
 flammability: 69420
 temperature: 69420
-viscosity: 0.95
+viscosity: 0.65
 heatCapacity: 0
 buildVisibility: hidden
 status: {
