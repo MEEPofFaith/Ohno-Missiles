@@ -33,7 +33,7 @@ weapon: {
   shootSound: laser
   bullet: {
     type: ArtilleryBulletType
-    bulletSprite: missiles-mod-of-pure-ohno-redactedbeam
+    bulletSprite: ohno-missiles-redactedbeam
     speed: 10
     damage: 25
     bulletShrink: 0
@@ -56,7 +56,7 @@ weapon: {
     fragBullets: 5
     fragBullet: {
       type: BasicBulletType
-      bulletSprite: missiles-mod-of-pure-ohno-redactedbeam
+      bulletSprite: ohno-missiles-redactedbeam
       speed: 10
       damage:5
       bulletShrink: 0
