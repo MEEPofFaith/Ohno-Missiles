@@ -33,7 +33,7 @@ ammo: {
     knockback: 1000
     frontColor: ffffff
     backColor: ffffff
-    bulletSprite: missiles-mod-of-pure-ohno-missilevirus
+    bulletSprite: ohno-missiles-missilevirus
     despawnEffect: shockwave
     hitEffect: shockwave
     lifetime: 3600
@@ -55,7 +55,7 @@ ammo: {
       backColor: A4FF59
       hitSound: none
       knockback: 10000
-      bulletSprite: missiles-mod-of-pure-ohno-missilevirusbug
+      bulletSprite: ohno-missiles-missilevirusbug
       hitEffect: none
       despawnEffect: none
       lifetime: 1800

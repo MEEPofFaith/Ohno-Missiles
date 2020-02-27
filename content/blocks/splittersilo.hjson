@@ -37,7 +37,7 @@ ammo: {
     splashDamageRadius: 100
     hitSound: missileboom
     knockback: 2
-    bulletSprite: missiles-mod-of-pure-ohno-missilesplitter
+    bulletSprite: ohno-missiles-missilesplitter
     despawnEffect: flakExplosionBig
     hitEffect: flakExplosionBig
     lifetime: 3600
@@ -50,7 +50,7 @@ ammo: {
       effect: missileTrail
       trailColor: FFF600
       bulletShrink: 0
-      bulletSprite: missiles-mod-of-pure-ohno-missilesplitterpiece
+      bulletSprite: ohno-missiles-missilesplitterpiece
       speed: 4.5
       frontColor: ffffff
       backColor: ffffff
@@ -76,7 +76,7 @@ ammo: {
         effect: missileTrail
         trailColor: FFF600
         bulletShrink: 0
-        bulletSprite: missiles-mod-of-pure-ohno-missilesplitterpiece
+        bulletSprite: ohno-missiles-missilesplitterpiece
         speed: 4.5
         frontColor: ffffff
         backColor: ffffff
@@ -104,7 +104,7 @@ ammo: {
           backColor: ffffff
           effect: missileTrail
           trailColor: FFF600
-          bulletSprite: missiles-mod-of-pure-ohno-missilesplittershard
+          bulletSprite: ohno-missiles-missilesplittershard
           hitShake: 0.015
           speed: 5
           damage: 0
@@ -130,7 +130,7 @@ ammo: {
             backColor: ffffff
             effect: missileTrail
             trailColor: FFF600
-            bulletSprite: missiles-mod-of-pure-ohno-missilesplittershard
+            bulletSprite: ohno-missiles-missilesplittershard
             hitShake: 0.015
             speed: 5
             damage: 20
@@ -154,7 +154,7 @@ ammo: {
               bulletShrink: 0
               effect: missileTrail
               trailColor: FFF600
-              bulletSprite: missiles-mod-of-pure-ohno-missilesplitterbit
+              bulletSprite: ohno-missiles-missilesplitterbit
               frontColor: ffffff
               backColor: ffffff
               speed: 5.5
@@ -180,7 +180,7 @@ ammo: {
                 bulletShrink: 0
                 effect: missileTrail
                 trailColor: FFF600
-                bulletSprite: missiles-mod-of-pure-ohno-missilesplitterbit
+                bulletSprite: ohno-missiles-missilesplitterbit
                 frontColor: ffffff
                 backColor: ffffff
                 speed: 5.5

@@ -36,7 +36,7 @@ ammo: {
     knockback: 0
     frontColor: ffffff
     backColor: ffffff
-    bulletSprite: missiles-mod-of-pure-ohno-missileshatter
+    bulletSprite: ohno-missiles-missileshatter
     despawnEffect: shieldBreak
     hitEffect: shieldBreak
     lifetime: 3600
@@ -61,7 +61,7 @@ ammo: {
       splashDamageRadius: 0
       hitSound: none
       knockback: 0
-      bulletSprite: missiles-mod-of-pure-ohno-missileshattercapsule
+      bulletSprite: ohno-missiles-missileshattercapsule
       hitEffect: shockwave
       despawnEffect: shockwave
       lifetime: 20
@@ -90,7 +90,7 @@ ammo: {
         splashDamageRadius: 40
         hitSound: none
         knockback: 0
-        bulletSprite: missiles-mod-of-pure-ohno-missileshattercapsule
+        bulletSprite: ohno-missiles-missileshattercapsule
         hitEffect: shockwave
         despawnEffect: shockwave
         lifetime: 8

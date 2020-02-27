@@ -34,7 +34,7 @@ ammo: {
     knockback: 6942069
     frontColor: ffffff
     backColor: ffffff
-    bulletSprite: missiles-mod-of-pure-ohno-missileheal
+    bulletSprite: ohno-missiles-missileheal
     despawnEffect: shockwave
     hitEffect: shockwave
     lifetime: 3600
