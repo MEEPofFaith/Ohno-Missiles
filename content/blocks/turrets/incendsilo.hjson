@@ -20,7 +20,7 @@ ammo: {
   missile: {
     type: MissileBulletType
     bulletShrink: 0
-    trailColor: FFF600
+    trailColor: F27D00
     speed: 3.5
     damage: 300
     splashDamage: 1000
@@ -39,8 +39,8 @@ ammo: {
     despawnEffect: flakExplosionBig
     lifetime: 3600
     hitShake: 2
-    frontColor: ffffff
-    backColor: ffffff
+    frontColor: F27D00
+    backColor: 90929B
     collidesTiles: true
     collidesAir: false
     collidesAir: false

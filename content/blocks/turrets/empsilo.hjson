@@ -21,7 +21,7 @@ ammo: {
   missile: {
     type: MissileBulletType
     bulletShrink: 0
-    trailColor: FFF600
+    trailColor: 009DF5
     speed: 3.5
     damage: 0
     splashDamage: 0
@@ -35,8 +35,8 @@ ammo: {
     splashDamageRadius: 0
     hitSound: spark
     knockback: 1
-    frontColor: ffffff
-    backColor: ffffff
+    frontColor: 009DF5
+    backColor: 90929B
     bulletSprite: ohno-missiles-missileemp
     despawnEffect: nuclearShockwave
     hitEffect: nuclearShockwave

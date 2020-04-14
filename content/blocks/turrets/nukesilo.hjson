@@ -1,0 +1,85 @@
+type: ItemTurret
+localizedName: "[#7affbd]Nuclear Missile Silo[]"
+description: Slow firing, but will obliterate a large area.
+health: 200
+size: 4
+reload: 3600
+range: 8000
+inaccuracy: 5
+shootCone: 25
+rotatespeed: 0.5
+targetAir: true
+maxAmmo: 9
+ammoPerShot: 9
+heatColor: 7affbd
+cooldown: 0.003
+shootEffect: nuclearShockwave
+shootSound: ohnolaunch
+recoil: 8
+restitution: 0.003
+ammo: {
+  missile: {
+    type: MissileBulletType
+    bulletShrink: 0
+    trailColor: 00F98A
+    speed: 2.75
+    damage: 69420
+    splashDamage: 320
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    effect: missileTrail
+    ammoMultiplier: 1
+    homingPower: 0.001
+    homingRange: 69420
+    splashDamageRadius: 1600
+    hitSound: nuke
+    knockback: 69420
+    frontColor: 00F98A
+    backColor: 90929B
+    bulletSprite: ohno-missiles-missilenuke
+    despawnEffect: dynamicExplosion
+    hitEffect: dynamicExplosion
+    lifetime: 3600
+    hitShake: 20
+    fragBullets: 420
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragBullet: {
+      type: ArtilleryBulletType
+      bulletShrink: 0
+      trailEffect: none
+      speed: 10
+      damage: 69420
+      splashDamage: 69420
+      bulletWidth: 0
+      bulletHeight: 0
+      homingPower: 0
+      homingRange: 0
+      frontColor: ffffff
+      backColor: 90929B
+      splashDamageRadius: 1600
+      hitSound: none
+      knockback: 69420
+      bulletSprite: missile
+      hitEffect: shockwave
+      despawnEffect: none
+      lifetime: 30
+      hitShake: 10
+      collidesTiles: true
+      collidesAir: true
+    }
+  }
+}
+requirements: [
+  copper/5000
+  lead/5000
+  silicon/2000
+  graphite/2250
+  titanium/2500
+  plastanium/1750
+  thorium/2000
+  surge-alloy/2000
+]
+category: turret
+research: splittersilo

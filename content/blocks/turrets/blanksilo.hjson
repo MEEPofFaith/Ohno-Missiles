@@ -1,0 +1,53 @@
+type: ItemTurret
+localizedName: Missile Silo
+description: An avarage missile silo with no extra abilities. Still pretty powerful though.
+health: 200
+size: 4
+reload: 600
+range: 8000
+inaccuracy: 5
+shootCone: 25
+rotatespeed: 0.5
+targetAir: true
+maxAmmo: 6
+restitution: 0.003
+recoil: 8
+shootSound: missilelaunch
+shootEffect: nuclearShockwave
+ammo: {
+  missile: {
+    type: MissileBulletType
+    bulletShrink: 0
+    speed: 4.5
+    damage: 1500
+    splashDamage: 1500
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    trailColor: CF0A00
+    ammoMultiplier: 3
+    homingPower: 0.001
+    frontColor: CF0A00
+    backColor: 90929B
+    homingRange: 69420
+    splashDamageRadius: 48
+    hitSound: missileboom
+    knockback: 3
+    bulletSprite: ohno-missiles-missileblank
+    hitEffect: flakExplosionBig
+    lifetime: 3600
+    hitShake: 0.75
+  }
+}
+requirements: [
+  copper/2000
+  lead/2000
+  silicon/1250
+  graphite/1250
+  titanium/1500
+  plastanium/1000
+  thorium/1000
+  surge-alloy/750
+]
+category: turret
+research: missilefactory
