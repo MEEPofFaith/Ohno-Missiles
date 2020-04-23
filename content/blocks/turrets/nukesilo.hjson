@@ -62,7 +62,7 @@ ammo: {
       hitSound: none
       knockback: 69420
       bulletSprite: missile
-      hitEffect: shockwave
+      hitEffect: none
       despawnEffect: none
       lifetime: 30
       hitShake: 10
