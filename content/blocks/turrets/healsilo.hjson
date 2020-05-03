@@ -52,7 +52,7 @@ ammo: {
       pierce: true
       status: {
         name: missileofhealing
-        damage: -1
+        damage: -10
       }
     }
   }
@@ -91,7 +91,7 @@ ammo: {
       pierce: true
       status: {
         name: missileofhealing
-        damage: -1
+        damage: -10
       }
     }
   }
