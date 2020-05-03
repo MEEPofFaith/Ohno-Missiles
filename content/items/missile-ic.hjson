@@ -1,0 +1,6 @@
+type: resource
+localizedName: "[#8f0101]Ballistic Missile[]"
+description: "Premanufactured for use in the Incendiary Missile Silo."
+explosiveness: 69420
+flammability: 420
+color: 8f0101

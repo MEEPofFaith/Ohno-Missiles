@@ -10,7 +10,7 @@ shootCone: 25
 rotatespeed: 0.5
 targetAir: true
 maxAmmo: 6
-ammoPerShot: 6
+ammoPerShot: 3
 heatColor: 7EFF72
 cooldown: 0.003
 shootEffect: nuclearShockwave
@@ -27,7 +27,66 @@ ammo: {
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
-    ammoMultiplier: 3
+    homingPower: 0.001
+    homingRange: 69420
+    hitSound: virusboom
+    knockback: 10
+    frontColor: 70EF72
+    backColor: 90929B
+    bulletSprite: ohno-missiles-missilevirus
+    despawnEffect: shockwave
+    hitEffect: shockwave
+    lifetime: 3600
+    hitShake: 1
+    fragBullets: 200
+    fragVelocityMin: 0.8
+    fragVelocityMax: 1.2
+    fragBullet: {
+      type: ArtilleryBulletType
+      bulletShrink: 0
+      trailEffect: healWaveMend
+      speed: 10
+      damage: 1
+      bulletWidth: 12
+      bulletHeight: 12
+      homingPower: 69420
+      homingRange: 80
+      frontColor: 7EFF72
+      backColor: A4FF59
+      hitSound: none
+      knockback: 69420
+      bulletSprite: ohno-missiles-missilevirusbug
+      hitEffect: none
+      despawnEffect: none
+      lifetime: 1800
+      hitShake: 0
+      pierce: true
+      collides: true
+      collidesAir: true
+      collidesTiles: false
+      hitSize: 80
+      statusDuration: 300
+      status: {
+        name: HalfStat
+        speedMultiplier: 0.5
+        damageMultiplier: 0.5
+        armorMultiplier: 0.5
+        damage: 0
+        color: 7EFF72
+        effect: lightningShoot
+      }
+    }
+  }
+  missile-v: {
+    type: MissileBulletType
+    reloadMultiplier: 4
+    bulletShrink: 0
+    trailColor: 70EF72
+    speed: 3.5
+    damage: 0
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
     homingPower: 0.001
     homingRange: 69420
     hitSound: virusboom

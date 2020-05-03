@@ -10,7 +10,7 @@ shootCone: 25
 rotatespeed: 0.5
 targetAir: true
 targetGround: false
-maxAmmo: 9
+maxAmmo: 4
 ammoPerShot:2
 heatColor: ff3333
 cooldown: 0.003
@@ -29,7 +29,31 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     trailColor: CF0A00
-    ammoMultiplier: 3
+    frontColor: CF0A00
+    backColor: 90929B
+    homingPower: 0.001
+    homingRange: 69420
+    splashDamageRadius: 96
+    bulletSprite: ohno-missiles-missileaa
+    lifetime: 3600
+    hitSound: missileboom
+    collidesTiles: false
+    collidesAir: true
+    knockback: 2000
+    hitEffect: flakExplosionBig
+    hitShake: 2
+  }
+  missile-aa: {
+    type: MissileBulletType
+    reloadMultiplier: 4
+    bulletShrink: 0
+    speed: 6
+    damage: 2000
+    splashDamage: 2000
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    trailColor: CF0A00
     frontColor: CF0A00
     backColor: 90929B
     homingPower: 0.001

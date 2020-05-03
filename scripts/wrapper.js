@@ -1,7 +1,7 @@
 //Code copyied from younggam/multi-lib by younggam
 
 //get moudle from library
-const lib=require("multi-lib/library");
+const lib=require("ohno-missiles/library");
 
 module.exports={
   extend(Type,Entity,name,def,recipes){

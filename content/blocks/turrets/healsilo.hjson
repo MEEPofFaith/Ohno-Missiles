@@ -9,7 +9,7 @@ inaccuracy: 5
 shootCone: 25
 rotatespeed: 0.5
 targetAir: true
-maxAmmo: 6
+maxAmmo: 4
 ammoPerShot: 2
 heatColor: FFBCFB
 cooldown: 0.003
@@ -28,7 +28,45 @@ ammo: {
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
-    ammoMultiplier: 3
+    homingPower: 0.001
+    homingRange: 69420
+    hitSound: virusboom
+    knockback: 2
+    frontColor: FFBCFB
+    backColor: 90929B
+    bulletSprite: ohno-missiles-missileheal
+    despawnEffect: shockwave
+    hitEffect: shockwave
+    lifetime: 3600
+    hitShake: 1
+    fragBullets: 420
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragBullet: {
+      type: HealBulletType
+      healPercent: 50
+      speed: 10
+      lifetime: 30
+      damage: 0
+      collidesAir: true
+      pierce: true
+      status: {
+        name: missileofhealing
+        damage: -1
+      }
+    }
+  }
+  missile-h: {
+    type: MissileBulletType
+    reloadMultiplier: 4
+    bulletShrink: 0
+    trailColor: FFBCFB
+    speed: 4.5
+    damage: 100
+    splashDamage: 0
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
     homingPower: 0.001
     homingRange: 69420
     hitSound: virusboom

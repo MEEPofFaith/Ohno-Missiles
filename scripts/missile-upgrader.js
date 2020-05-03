@@ -1,7 +1,7 @@
 //Code copyied from younggam/multi-lib-example by younggam
 
 //get script from multi-lib
-const multiLib=require("multi-lib/wrapper");
+const multiLib=require("ohno-missiles/wrapper");
 //you can use GenericSmelter
 const multi=multiLib.extend(GenericCrafter,GenericCrafter.GenericCrafterEntity,"multi",{
 // you can customize here ex) draw(tile)
@@ -34,12 +34,28 @@ liquid-name is .json file name
 
 {
   _output:[
-    [/*items*/ null/*liquids*/, null/*power*/,null],
+    [/*items*/ [["ohno-missiles-missile-am", 1]], /*liquids*/, null/*power*/, null],
+    [/*items*/ [["ohno-missiles-missile-aa", 1]], /*liquids*/, null/*power*/, null],
+    [/*items*/ [["ohno-missiles-missile-ic", 1]], /*liquids*/, null/*power*/, null],
+    [/*items*/ [["ohno-missiles-missile-emp", 1]], /*liquids*/, null/*power*/, null],
+    [/*items*/ [["ohno-missiles-missile-h", 1]], /*liquids*/, null/*power*/, null],
+    [/*items*/ [["ohno-missiles-missile-sp", 1]], /*liquids*/, null/*power*/, null],
+    [/*items*/ [["ohno-missiles-missile-v", 1]], /*liquids*/, null/*power*/, null],
+    [/*items*/ [["ohno-missiles-missile-sh", 1]], /*liquids*/, null/*power*/, null],
+    [/*items*/ [["ohno-missiles-missile-n", 1]], /*liquids*/, null/*power*/, null],
   ],
   _input:[
-    [/*items*/ null/*liquids*/, null/*power*/,null],
+    [/*items am*/ [["ohno-missiles-missile", 2]], /*liquids*/, null/*power*/, null],
+    [/*items aa*/ [["ohno-missiles-missile", 3]], /*liquids*/, null/*power*/, null],
+    [/*items ic*/ [["ohno-missiles-missile", 2]], /*liquids*/, null/*power*/, null],
+    [/*items emp*/ [["ohno-missiles-missile", 2]], /*liquids*/, null/*power*/, null],
+    [/*items h*/ [["ohno-missiles-missile", 2]], /*liquids*/, null/*power*/, null],
+    [/*items sp*/ [["ohno-missiles-missile", 4]], /*liquids*/, null/*power*/, null],
+    [/*items v*/ [["ohno-missiles-missile", 3]], /*liquids*/, null/*power*/, null],
+    [/*items sh*/ [["ohno-missiles-missile", 4]], /*liquids*/, null/*power*/, null],
+    [/*items n*/ [["ohno-missiles-missile", 9]], /*liquids*/, null/*power*/, null],
   ],
-  craftTimes:[12,60,72,30,12,60,72,30,12,60],
+  craftTimes:[300, 300, 300, 300, 300, 300, 300, 300, 300],
   //DON'T MODIFY THESE
   output:[],
   input:[],
@@ -50,7 +66,7 @@ liquid-name is .json file name
 });
 /*true: enable displaying inventory
 false:disable displaying inventory*/
-multi.enableInv=false;
+multi.enableInv=true;
 /*true: dump items and liquids of output according to button
 false: dump items and liquids of output unconditionally*/
 multi.dumpToggle=false;
@@ -65,8 +81,8 @@ hasLiquids=true;
 hasPower=true;
 */
 //using this without json. not recommanded because can cause error.
-multi.localizedName="multi";
-multi.description="multi";
+multi.localizedName="Additional Missile Manufacturing Plant";
+multi.description="Takes normal missiles and upgrades them to missiles meant specifically for certain missile silos, allowing them to fire faster because they don't need to synthesize and upgrade the imputed missiles themselves. Selection is output, cost is bottom right gui.";
 multi.itemCapacity= 30;
 multi.liquidCapacity= 20;
 multi.size= 4;
