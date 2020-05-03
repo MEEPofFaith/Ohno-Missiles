@@ -1,1 +1,1 @@
-require("missile-upgrader")
+require("ohno-missiles/missile-upgrader")

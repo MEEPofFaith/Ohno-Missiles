@@ -1,7 +1,7 @@
 //Code copyied from younggam/multi-lib-example by younggam
 
 //get script from multi-lib
-const multiLib=require("ohno-missiles/wrapper");
+const multiLib=require("multi-lib/wrapper");
 //you can use GenericSmelter
 const multi=multiLib.extend(GenericCrafter,GenericCrafter.GenericCrafterEntity,"multi",{
 // you can customize here ex) draw(tile)
