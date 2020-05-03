@@ -46,6 +46,7 @@ ammo: {
   missile-aa: {
     type: MissileBulletType
     reloadMultiplier: 4
+    ammoMultiplier: 2
     bulletShrink: 0
     speed: 6
     damage: 2000

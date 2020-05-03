@@ -73,6 +73,7 @@ ammo: {
   missile-n: {
     type: MissileBulletType
     reloadMultiplier: 4
+    ammoMultiplier: 9
     bulletShrink: 0
     trailColor: 00F98A
     speed: 2.75

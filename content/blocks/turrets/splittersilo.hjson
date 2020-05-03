@@ -206,6 +206,7 @@ ammo: {
   missile-sp: {
     type: MissileBulletType
     reloadMultiplier: 4
+    ammoMultiplier: 4
     bulletShrink: 0
     trailColor: FFFF00
     speed: 4

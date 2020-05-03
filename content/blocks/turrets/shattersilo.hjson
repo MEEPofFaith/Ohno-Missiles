@@ -103,6 +103,7 @@ ammo: {
   missile-sh: {
     type: MissileBulletType
     reloadMultiplier: 4
+    ammoMultiplier: 4
     bulletShrink: 0
     trailColor: D620D6
     speed: 3.5

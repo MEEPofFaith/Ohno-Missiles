@@ -80,6 +80,7 @@ ammo: {
   missile-v: {
     type: MissileBulletType
     reloadMultiplier: 4
+    ammoMultiplier: 3
     bulletShrink: 0
     trailColor: 70EF72
     speed: 3.5

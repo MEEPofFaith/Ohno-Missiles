@@ -59,6 +59,7 @@ ammo: {
   missile-h: {
     type: MissileBulletType
     reloadMultiplier: 4
+    ammoMultiplier: 2
     bulletShrink: 0
     trailColor: FFBCFB
     speed: 4.5

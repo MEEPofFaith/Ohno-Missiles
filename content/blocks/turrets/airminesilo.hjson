@@ -79,6 +79,7 @@ ammo: {
   missile-am: {
     type: MissileBulletType
     reloadMultiplier: 4
+    ammoMultiplier: 3
     bulletShrink: 0
     speed: 3.75
     damage: 0

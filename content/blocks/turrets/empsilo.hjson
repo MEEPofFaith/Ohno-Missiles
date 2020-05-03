@@ -84,6 +84,7 @@ ammo: {
   missile-emp: {
     type: MissileBulletType
     reloadMultiplier: 4
+    ammoMultiplier: 2
     bulletShrink: 0
     trailColor: 009DF5
     speed: 3.5

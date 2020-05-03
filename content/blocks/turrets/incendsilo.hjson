@@ -77,6 +77,7 @@ ammo: {
   missile-ic: {
     type: MissileBulletType
     reloadMultiplier: 4
+    ammoMultiplier: 2
     bulletShrink: 0
     trailColor: F27D00
     speed: 3.5
