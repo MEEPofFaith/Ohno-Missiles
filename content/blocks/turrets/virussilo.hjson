@@ -21,7 +21,7 @@ ammo: {
   missile: {
     type: MissileBulletType
     bulletShrink: 0
-    trailColor: 70EF72
+    trailColor: 4EE04E
     speed: 3.5
     damage: 0
     hitSize: 32
@@ -31,7 +31,7 @@ ammo: {
     homingRange: 69420
     hitSound: virusboom
     knockback: 10
-    frontColor: 70EF72
+    frontColor: 4EE04E
     backColor: 90929B
     bulletSprite: ohno-missiles-missilevirus
     despawnEffect: shockwave
@@ -82,7 +82,7 @@ ammo: {
     reloadMultiplier: 4
     ammoMultiplier: 3
     bulletShrink: 0
-    trailColor: 70EF72
+    trailColor: 4EE04E
     speed: 3.5
     damage: 0
     hitSize: 32
@@ -92,7 +92,7 @@ ammo: {
     homingRange: 69420
     hitSound: virusboom
     knockback: 10
-    frontColor: 70EF72
+    frontColor: 4EE04E
     backColor: 90929B
     bulletSprite: ohno-missiles-missilevirus
     despawnEffect: shockwave

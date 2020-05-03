@@ -29,7 +29,7 @@ ammo: {
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
-    trailColor: CF0A00
+    trailColor: 78DCFF
     homingPower: 0.001
     homingRange: 0
     hitSound: explosionbig
@@ -50,12 +50,12 @@ ammo: {
       type: FlakBulletType
       drag: 0.033
       explodeRange: 80
-      trailColor: FFF600
+      trailColor: 78DCFF
       speed: 3
       damage: 500
       splashDamage: 500
       splashDamageRadius: 160
-      frontColor: 9EE6FF
+      frontColor: 78DCFF
       backColor: 9799A3
       bulletShrink: 0
       hitSize: 4
