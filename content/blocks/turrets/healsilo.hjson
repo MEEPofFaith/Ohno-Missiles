@@ -90,7 +90,7 @@ ammo: {
       collidesAir: true
       pierce: true
       status: {
-        name: missileofhealing
+        name: supermissileofhealing
         damage: -10
       }
     }

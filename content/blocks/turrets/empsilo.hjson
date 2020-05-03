@@ -135,7 +135,7 @@ ammo: {
       hitSize: 4
       statusDuration: 300
       status: {
-        name: stoprightthere
+        name: superstoprightthere
         speedMultiplier: 0
         damageMultiplier: 0
         armorMultiplier: 0

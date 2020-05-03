@@ -127,9 +127,8 @@ ammo: {
       hitSize: 80
       statusDuration: 300
       status: {
-        name: HalfStat
+        name: superhalfstat
         speedMultiplier: 0.5
-        damageMultiplier: 0.5
         armorMultiplier: 0.5
         damage: 0
         color: 7EFF72
