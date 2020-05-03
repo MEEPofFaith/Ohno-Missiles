@@ -390,7 +390,6 @@ ammo: {
     }
   }
 }
-}
 requirements: [
   copper/2500
   lead/2500
