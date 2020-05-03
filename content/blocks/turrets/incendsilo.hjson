@@ -19,6 +19,7 @@ shootEffect: nuclearShockwave
 ammo: {
   missile: {
     type: MissileBulletType
+    ammoMultiplier: 1
     bulletShrink: 0
     trailColor: F27D00
     speed: 3.5

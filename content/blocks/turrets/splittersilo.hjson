@@ -20,6 +20,7 @@ shootSound: missilelaunch
 ammo: {
   missile: {
     type: MissileBulletType
+    ammoMultiplier: 1
     bulletShrink: 0
     trailColor: FFFF00
     speed: 4

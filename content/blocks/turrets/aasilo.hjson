@@ -21,6 +21,7 @@ recoil: 8
 ammo: {
   missile: {
     type: MissileBulletType
+    ammoMultiplier: 1
     bulletShrink: 0
     speed: 6
     damage: 2000

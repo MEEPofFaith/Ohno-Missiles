@@ -20,6 +20,7 @@ restitution: 0.003
 ammo: {
   missile: {
     type: MissileBulletType
+    ammoMultiplier: 1
     bulletShrink: 0
     trailColor: 4EE04E
     speed: 3.5

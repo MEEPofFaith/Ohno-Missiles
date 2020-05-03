@@ -21,6 +21,7 @@ shootSound: missilelaunch
 ammo: {
   missile: {
     type: MissileBulletType
+    ammoMultiplier: 1
     bulletShrink: 0
     speed: 3.75
     damage: 0
