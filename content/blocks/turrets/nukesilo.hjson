@@ -37,8 +37,8 @@ ammo: {
     frontColor: 00F98A
     backColor: 90929B
     bulletSprite: ohno-missiles-missilenuke
-    despawnEffect: dynamicExplosion
-    hitEffect: dynamicExplosion
+    despawnEffect: nuclearcloud
+    hitEffect: nuclearcloud
     lifetime: 3600
     hitShake: 20
     fragBullets: 420
@@ -90,8 +90,8 @@ ammo: {
     frontColor: 00F98A
     backColor: 90929B
     bulletSprite: ohno-missiles-missilenuke
-    despawnEffect: dynamicExplosion
-    hitEffect: dynamicExplosion
+    despawnEffect: nuclearcloud
+    hitEffect: nuclearcloud
     lifetime: 3600
     hitShake: 20
     fragBullets: 420
