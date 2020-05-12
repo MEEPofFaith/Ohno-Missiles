@@ -12,6 +12,7 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
     this.decal = Core.atlas.find(this.name + "-decal");
     for(i = 0; i < 11; i++){
       this.topRegions[i] = Core.atlas.find(this.name + "-top-" + i);
+      this.itemRegions[i] = Core.atlas.find(this.name + "-item-" + i);
     }
   },
   draw(tile){
@@ -29,20 +30,41 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
     if(entity.warmup > 0){
       Draw.color(this.missileColors[tile.entity.getToggle() + 1]);
       Draw.alpha(entity.warmup);
-      Draw.rect(this.topRegions[tile.entity.getToggle() + 1], tile.drawx() + Mathf.random(), tile.drawy());
+      Draw.rect(this.topRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
+      Draw.color();
+      
+      var craftLoc = Mathf.sin(entity.totalProgress / 20) * 7;
+      Lines.stroke(1.5)
+      Draw.color(Color.valueOf("565666"));
+      Draw.alpha(entity.warmup);
+      Lines.line(tile.drawx() + craftLoc, tile.drawy() - 3, tile.drawx() + craftLoc, tile.drawy() + 3);
+      Lines.line(tile.drawx() - craftLoc, tile.drawy() - 3, tile.drawx() - craftLoc, tile.drawy() + 3);
+      Draw.color();
+      Draw.alpha(entity.progress);
+      Draw.rect(this.itemRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
+      Draw.color(Pal.accent);
+      Draw.alpha(entity.warmup);
+      Lines.stroke(0.75)
+      Lines.line(tile.drawx() + craftLoc, tile.drawy() - 3, tile.drawx() + craftLoc, tile.drawy() + 3);
+      Lines.line(tile.drawx() - craftLoc, tile.drawy() - 3, tile.drawx() - craftLoc, tile.drawy() + 3);
       Draw.color();
     }
+
+    var lens = [9.5, 9.5 , 9.5];
     
-    var lens = [5, 5, 5];
+    var ft1 = Mathf.sin(entity.totalProgress, 15, 7);
+    var ft2 = Mathf.sin(entity.totalProgress, 12, 11);
+    var ft3 = Mathf.sin(entity.totalProgress, 10, 14);
+    var rots = [ft1 + 12, ft2 - 98, ft3 - 63];
     
-    var ft1 = Mathf.sin(entity.totalProgress, 12, 20);
-    var ft2 = Mathf.sin(entity.totalProgress, 12, 20);
-    var ft3 = Mathf.sin(entity.totalProgress, 12, 20);
-    var rots = [ft1, ft2, ft3];
-    
-    aclib.legRenderer("ohno-missiles-" + this.name + "-rightarm", tile.drawx() + 16, tile.drawx(), 0, 3, rots, lens, 1);
-    aclib.legRenderer("ohno-missiles-" + this.name + "-leftarm", tile.drawx() - 16, tile.drawx(), 0, 3, rots, lens, -1);
-  }
+    aclib.legRenderer("ohno-missiles-missile-upgrader-rightarm", tile.drawx() + 16, tile.drawy(), +90, 3, rots, lens, -1);
+    aclib.legRenderer("ohno-missiles-missile-upgrader-leftarm", tile.drawx() - 16, tile.drawy(), +90, 3, rots, lens, 1);
+  },
+	generateIcons(){
+		return [
+			Core.atlas.find(this.name + "-icon")
+		];
+	}
 },
 /*length of output, input, crafTimes should be same.
 if not, I'm not sure which error happens.
@@ -93,7 +115,7 @@ liquid-name is .json file name
     [/*items sh*/ [ ["ohno-missiles-missile", 4] ], /*liquids*/, null/*power*/, null],
     [/*items n*/ [ ["ohno-missiles-missile", 9] ], /*liquids*/, null/*power*/, null],
   ],
-  craftTimes:[300, 300, 300, 300, 300, 300, 300, 300, 300],
+  craftTimes:[150, 180, 180, 180, 120, 210, 210, 240, 300],
   //DON'T MODIFY THESE
   output:[],
   input:[],
@@ -130,5 +152,6 @@ missileUpgrader.updateEffect = Fx.hitMeltdown;
 
 missileUpgrader.missileColors = [/*none*/Color.valueOf("565666"), /*am*/Color.valueOf("9EE6FF"), /*aa*/Color.valueOf("ff3333"), /*inc*/Color.valueOf("F27D00"), /*emp*/Color.valueOf("00A9FF"), /*h*/Color.valueOf("FFBCFB"), /*sp*/Color.valueOf("ffeb0d"), /*v*/Color.valueOf("4EE04E"), /*sh*/Color.valueOf("d620d6"), /*n*/Color.valueOf("7affbd"), /*dump*/Color.valueOf("565666")];
 missileUpgrader.topRegions = [];
+missileUpgrader.itemRegions = [];
 
 missileUpgrader.requirements(Category.crafting,ItemStack.with(Items.copper, 3000, Items.lead, 2250, Items.silicon, 1500, Items.graphite, 1500, Items.thorium, 2100, Items.titanium, 2250, Items.plastanium, 1600, Items.surgealloy, 1600, Items.phasefabric, 350));
