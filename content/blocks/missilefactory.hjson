@@ -1,11 +1,11 @@
 type: GenericSmelter
-localizedName: Ballistics-Factory
+localizedName: "[#8f0101]Ballistics Factory"
 description: "Create powerful [#8f0101]Ballistic Missiles[] that can only be fired by the biggest of missile launchers."
 size: 4
 health: 500
 hasPower: true
 flameColor: 7affbd
-craftTime: 300
+craftTime: 150
 itemCapacity: 32
 consumesPower: true
 consumes: {

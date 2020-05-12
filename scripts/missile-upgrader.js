@@ -27,26 +27,27 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
     Draw.rect(this.decal, tile.drawx(), tile.drawy());
     Draw.color();
     
-    if(entity.warmup > 0){
+    if(entity.warmup > 0 && tile.entity.getToggle() > -1 && tile.entity.getToggle() < 9){
       Draw.color(this.missileColors[tile.entity.getToggle() + 1]);
       Draw.alpha(entity.warmup);
       Draw.rect(this.topRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
       Draw.color();
       
-      var craftLoc = Mathf.sin(entity.totalProgress / 20) * 7;
+      var craftAnimSpeed = this.produceTimes[tile.entity.getToggle() + 1] / 20;
+      var craftAnimLoc = Mathf.sin(entity.totalProgress / craftAnimSpeed) * 7;
       Lines.stroke(1.5)
       Draw.color(Color.valueOf("565666"));
       Draw.alpha(entity.warmup);
-      Lines.line(tile.drawx() + craftLoc, tile.drawy() - 3, tile.drawx() + craftLoc, tile.drawy() + 3);
-      Lines.line(tile.drawx() - craftLoc, tile.drawy() - 3, tile.drawx() - craftLoc, tile.drawy() + 3);
+      Lines.line(tile.drawx() + craftAnimLoc, tile.drawy() - 3, tile.drawx() + craftAnimLoc, tile.drawy() + 3);
+      Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 3, tile.drawx() - craftAnimLoc, tile.drawy() + 3);
       Draw.color();
       Draw.alpha(entity.progress);
       Draw.rect(this.itemRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
       Draw.color(Pal.accent);
       Draw.alpha(entity.warmup);
       Lines.stroke(0.75)
-      Lines.line(tile.drawx() + craftLoc, tile.drawy() - 3, tile.drawx() + craftLoc, tile.drawy() + 3);
-      Lines.line(tile.drawx() - craftLoc, tile.drawy() - 3, tile.drawx() - craftLoc, tile.drawy() + 3);
+      Lines.line(tile.drawx() + craftAnimLoc, tile.drawy() - 3, tile.drawx() + craftAnimLoc, tile.drawy() + 3);
+      Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 3, tile.drawx() - craftAnimLoc, tile.drawy() + 3);
       Draw.color();
     }
 
@@ -141,7 +142,7 @@ hasLiquids=true;
 hasPower=true;
 */
 //using this without json. not recommanded because can cause error.
-missileUpgrader.localizedName = "Additional Missile Manufacturing Plant";
+missileUpgrader.localizedName = "[#8f0101]Further Missile Manufacturing Plant";
 missileUpgrader.description = "Takes normal missiles and upgrades them to missiles meant specifically for certain missile silos, allowing them to fire faster because they don't need to synthesize and upgrade the imputed missiles themselves. Selection is output, cost is bottom right gui.";
 missileUpgrader.itemCapacity = 30;
 missileUpgrader.liquidCapacity = 20;
@@ -153,5 +154,6 @@ missileUpgrader.updateEffect = Fx.hitMeltdown;
 missileUpgrader.missileColors = [/*none*/Color.valueOf("565666"), /*am*/Color.valueOf("9EE6FF"), /*aa*/Color.valueOf("ff3333"), /*inc*/Color.valueOf("F27D00"), /*emp*/Color.valueOf("00A9FF"), /*h*/Color.valueOf("FFBCFB"), /*sp*/Color.valueOf("ffeb0d"), /*v*/Color.valueOf("4EE04E"), /*sh*/Color.valueOf("d620d6"), /*n*/Color.valueOf("7affbd"), /*dump*/Color.valueOf("565666")];
 missileUpgrader.topRegions = [];
 missileUpgrader.itemRegions = [];
+missileUpgrader.produceTimes = [0, 150, 180, 180, 180, 120, 210, 210, 240, 300, 0];
 
 missileUpgrader.requirements(Category.crafting,ItemStack.with(Items.copper, 3000, Items.lead, 2250, Items.silicon, 1500, Items.graphite, 1500, Items.thorium, 2100, Items.titanium, 2250, Items.plastanium, 1600, Items.surgealloy, 1600, Items.phasefabric, 350));
