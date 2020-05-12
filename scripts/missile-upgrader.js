@@ -3,8 +3,33 @@
 //get script from multi-lib
 const multiLib=require("multi-lib/wrapper");
 //you can use GenericSmelter
-const multi=multiLib.extend(GenericCrafter,GenericCrafter.GenericCrafterEntity,"multi",{
+const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCrafterEntity, "missile-upgrader",{
 // you can customize here ex) draw(tile)
+  load(){
+    this.region = Core.atlas.find(this.name);
+    this.decal = Core.atlas.find(this.name + "-decal");
+    for(i = 0; i < 10; i++){
+      this.topRegions[i] = Core.atlas.find(this.name + "-top-" + i);
+    }
+    for(e = 0; e < 10; e++){
+      this.lightRegions[e] = Core.atlas.find(this.name + "-light-" + e);
+    }
+  },
+  draw(tile){
+    entity = tile.ent();
+    
+    Draw.rect(this.region, tile.drawx(), tile.drawy());
+    
+    Draw.rect(this.topRegion[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
+    Draw.color(this.missileColors[tile.entity.getToggle() + 1]);
+    Draw.rect(this.decal, tile.drawx(), tile.drawy())
+    
+    Draw.color(1, 1, 1, entity.warmup);
+    Draw.blend(Blending.additive);
+    Draw.rect(this.lightRegion[tile.entity.getToggle() + 1], tile.drawx() + Mathf.random(-1,1), tile.drawy() + Mathf.random(-1,1));
+    Draw.color();
+    Draw.blend();
+  }
 },
 /*length of output, input, crafTimes should be same.
 if not, I'm not sure which error happens.
@@ -66,10 +91,10 @@ liquid-name is .json file name
 });
 /*true: enable displaying inventory
 false:disable displaying inventory*/
-multi.enableInv=true;
+missileUpgrader.enableInv=true;
 /*true: dump items and liquids of output according to button
 false: dump items and liquids of output unconditionally*/
-multi.dumpToggle=false;
+missileUpgrader.dumpToggle=false;
 
 /*
 YOU MUST NOT MODIFY VALUE OF
@@ -81,13 +106,18 @@ hasLiquids=true;
 hasPower=true;
 */
 //using this without json. not recommanded because can cause error.
-multi.localizedName="Additional Missile Manufacturing Plant";
-multi.description="Takes normal missiles and upgrades them to missiles meant specifically for certain missile silos, allowing them to fire faster because they don't need to synthesize and upgrade the imputed missiles themselves. Selection is output, cost is bottom right gui.";
-multi.itemCapacity= 30;
-multi.liquidCapacity= 20;
-multi.size= 4;
-multi.health= 100;
-multi.craftEffect= Fx.pulverizeMedium;
-multi.updateEffect=Fx.none;
+missileUpgrader.localizedName = "Additional Missile Manufacturing Plant";
+missileUpgrader.description = "Takes normal missiles and upgrades them to missiles meant specifically for certain missile silos, allowing them to fire faster because they don't need to synthesize and upgrade the imputed missiles themselves. Selection is output, cost is bottom right gui.";
+missileUpgrader.itemCapacity = 30;
+missileUpgrader.liquidCapacity = 20;
+missileUpgrader.size = 5;
+missileUpgrader.health = 100;
+missileUpgrader.craftEffect = Fx.hitMeltdown;
+missileUpgrader.updateEffect = Fx.producesmoke;
 
-multi.requirements(Category.crafting,ItemStack.with(Items.copper,75));
+missileUpgrader.missileColors = [Color.valueOf("8C8C8C"), Color.valueOf("9EE6FF"), Color.valueOf("ff3333"), Color.valueOf("F27D00"), Color.valueOf("00A9FF"), Color.valueOf("FFBCFB"), Color.valueOf("ffeb0d"), Color.valueOf("4EE04E"), Color.valueOf("d620d6"), Color.valueOf("7affbd")];
+missileUpgrader.topRegions = undefined;
+missileUpgrader.topRegions = [];
+missileUpgrader.lightRegions = [];
+
+missileUpgrader.requirements(Category.crafting,ItemStack.with(Items.copper, 3000, Items.lead, 2250, Items.silicon, 1500, Items.graphite, 1500, Items.thorium, 2100, Items.titanium, 2250, Items.plastanium, 1600, Items.surgealloy, 1600, Items.phasefabric, 350));
