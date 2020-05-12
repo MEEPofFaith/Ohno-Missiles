@@ -31,7 +31,7 @@ ammo: {
     bulletHeight: 32
     trailColor: CF0A00
     frontColor: CF0A00
-    backColor: 90929B
+    backColor: 565666
     homingPower: 0.001
     homingRange: 69420
     splashDamageRadius: 96
@@ -57,7 +57,7 @@ ammo: {
     bulletHeight: 32
     trailColor: CF0A00
     frontColor: CF0A00
-    backColor: 90929B
+    backColor: 565666
     homingPower: 0.001
     homingRange: 69420
     splashDamageRadius: 96

@@ -36,7 +36,7 @@ ammo: {
     hitSound: nuke
     knockback: 69420
     frontColor: 00F98A
-    backColor: 90929B
+    backColor: 565666
     bulletSprite: ohno-missiles-missileblank
     despawnEffect: nuclearcloud
     hitEffect: nuclearcloud
@@ -57,7 +57,7 @@ ammo: {
       homingPower: 0
       homingRange: 0
       frontColor: ffffff
-      backColor: 90929B
+      backColor: 565666
       splashDamageRadius: 1600
       hitSound: none
       knockback: 69420
@@ -90,7 +90,7 @@ ammo: {
     hitSound: nuke
     knockback: 69420
     frontColor: 00F98A
-    backColor: 90929B
+    backColor: 565666
     bulletSprite: ohno-missiles-missilenuke
     despawnEffect: nuclearcloud
     hitEffect: nuclearcloud
@@ -111,7 +111,7 @@ ammo: {
       homingPower: 0
       homingRange: 0
       frontColor: ffffff
-      backColor: 90929B
+      backColor: 565666
       splashDamageRadius: 1600
       hitSound: none
       knockback: 69420

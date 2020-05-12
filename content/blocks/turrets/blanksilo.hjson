@@ -28,7 +28,7 @@ ammo: {
     ammoMultiplier: 3
     homingPower: 0.001
     frontColor: CF0A00
-    backColor: 90929B
+    backColor: 565666
     homingRange: 69420
     splashDamageRadius: 48
     hitSound: missileboom

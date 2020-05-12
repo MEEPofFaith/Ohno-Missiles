@@ -34,7 +34,7 @@ ammo: {
     hitSound: virusboom
     knockback: 2
     frontColor: FFBCFB
-    backColor: 90929B
+    backColor: 565666
     bulletSprite: ohno-missiles-missileblank
     despawnEffect: shockwave
     hitEffect: shockwave
@@ -75,7 +75,7 @@ ammo: {
     hitSound: virusboom
     knockback: 2
     frontColor: FFBCFB
-    backColor: 90929B
+    backColor: 565666
     bulletSprite: ohno-missiles-missileheal
     despawnEffect: shockwave
     hitEffect: shockwave

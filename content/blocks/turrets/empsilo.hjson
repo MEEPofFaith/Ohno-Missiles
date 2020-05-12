@@ -36,7 +36,7 @@ ammo: {
     hitSound: spark
     knockback: 1
     frontColor: 009DF5
-    backColor: 90929B
+    backColor: 565666
     bulletSprite: ohno-missiles-missileblank
     despawnEffect: nuclearShockwave
     hitEffect: nuclearShockwave
@@ -101,7 +101,7 @@ ammo: {
     hitSound: spark
     knockback: 1
     frontColor: 009DF5
-    backColor: 90929B
+    backColor: 565666
     bulletSprite: ohno-missiles-missileemp
     despawnEffect: nuclearShockwave
     hitEffect: nuclearShockwave

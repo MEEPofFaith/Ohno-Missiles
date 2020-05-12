@@ -36,7 +36,7 @@ ammo: {
     hitSound: none
     knockback: 0
     frontColor: D620D6
-    backColor: 90929B
+    backColor: 565666
     bulletSprite: ohno-missiles-missileblank
     despawnEffect: padlaunch
     hitEffect: padlaunch
@@ -58,7 +58,7 @@ ammo: {
       homingPower: 0
       homingRange: 4
       frontColor: D620D6
-      backColor: 90929B
+      backColor: 565666
       splashDamageRadius: 0
       hitSound: none
       knockback: 0
@@ -87,7 +87,7 @@ ammo: {
         homingPower: 0
         homingRange: 0
         frontColor: D620D6
-        backColor: 90929B
+        backColor: 565666
         hitSound: none
         knockback: 0
         bulletSprite: ohno-missiles-missileshattercapsule
@@ -120,7 +120,7 @@ ammo: {
     hitSound: none
     knockback: 0
     frontColor: D620D6
-    backColor: 90929B
+    backColor: 565666
     bulletSprite: ohno-missiles-missileshatter
     despawnEffect: padlaunch
     hitEffect: padlaunch
@@ -142,7 +142,7 @@ ammo: {
       homingPower: 0
       homingRange: 4
       frontColor: D620D6
-      backColor: 90929B
+      backColor: 565666
       splashDamageRadius: 0
       hitSound: none
       knockback: 0
@@ -171,7 +171,7 @@ ammo: {
         homingPower: 0
         homingRange: 0
         frontColor: D620D6
-        backColor: 90929B
+        backColor: 565666
         hitSound: none
         knockback: 0
         bulletSprite: ohno-missiles-missileshattercapsule

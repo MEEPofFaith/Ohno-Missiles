@@ -40,7 +40,7 @@ ammo: {
     lifetime: 3600
     hitShake: 2
     frontColor: F27D00
-    backColor: 90929B
+    backColor: 565666
     collidesTiles: true
     collidesAir: false
     collidesAir: false
@@ -99,7 +99,7 @@ ammo: {
     lifetime: 3600
     hitShake: 2
     frontColor: F27D00
-    backColor: 90929B
+    backColor: 565666
     collidesTiles: true
     collidesAir: false
     collidesAir: false
