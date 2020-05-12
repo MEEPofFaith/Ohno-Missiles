@@ -3,7 +3,7 @@ localizedName: "[#ffeb0d]Splitter Missile Silo[]"
 description: The missile keeps splitting and splitting and splitting...
 health: 200
 size: 4
-reload: 1800
+reload: 450
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -37,7 +37,7 @@ ammo: {
     homingRange: 69420
     hitSound: missileboom
     knockback: 4
-    bulletSprite: ohno-missiles-missilesplitter
+    bulletSprite: ohno-missiles-missileblank
     despawnEffect: flakExplosionBig
     hitEffect: flakExplosionBig
     lifetime: 3600

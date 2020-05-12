@@ -1,9 +1,9 @@
 type: ItemTurret
-localizedName: "[#7affbd]Nuclear Missile Silo[]"
+localizedName: "[#7affbd]Nuclear Missile Missile Silo[]"
 description: Slow firing, but will obliterate a large area.
 health: 200
 size: 4
-reload: 3600
+reload: 900
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -37,7 +37,7 @@ ammo: {
     knockback: 69420
     frontColor: 00F98A
     backColor: 90929B
-    bulletSprite: ohno-missiles-missilenuke
+    bulletSprite: ohno-missiles-missileblank
     despawnEffect: nuclearcloud
     hitEffect: nuclearcloud
     lifetime: 3600

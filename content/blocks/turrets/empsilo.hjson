@@ -1,9 +1,9 @@
 type: ItemTurret
-localizedName: "[#00A9FF]EMP Missile Silo[]"
+localizedName: "[#00A9FF]EMP Missile Missile Silo[]"
 description: No Damage, but freezes enemies into their position.
 health: 200
 size: 4
-reload: 2520
+reload: 650
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -37,7 +37,7 @@ ammo: {
     knockback: 1
     frontColor: 009DF5
     backColor: 90929B
-    bulletSprite: ohno-missiles-missileemp
+    bulletSprite: ohno-missiles-missileblank
     despawnEffect: nuclearShockwave
     hitEffect: nuclearShockwave
     lifetime: 3600

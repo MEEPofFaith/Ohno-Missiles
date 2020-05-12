@@ -1,9 +1,9 @@
 type: ItemTurret
-localizedName: "[#F27D00]Incendiary Missile Silo[]"
+localizedName: "[#F27D00]Incendiary Missile Missile Silo[]"
 description: Doesn't deal as much damage, but a massive area gets set on fire.
 health: 200
 size: 4
-reload: 1800
+reload: 450
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -34,7 +34,7 @@ ammo: {
     homingRange: 69420
     hitSound: explosionbig
     knockback: 0.8
-    bulletSprite: ohno-missiles-missileincend
+    bulletSprite: ohno-missiles-missileblank
     hitEffect: flakExplosionBig
     despawnEffect: flakExplosionBig
     lifetime: 3600

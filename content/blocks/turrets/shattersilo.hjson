@@ -1,9 +1,9 @@
 type: ItemTurret
-name: "[#d620d6]Shatter Silo[]"
-description: Slow firing. Scatters tile eaters across the impact area.
+name: "[#d620d6]Cluster Missile Silo[]"
+description: Spreads a large amount of cluster explosives around the blast zone.
 health: 200
 size: 4
-reload: 1200
+reload: 300
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -37,7 +37,7 @@ ammo: {
     knockback: 0
     frontColor: D620D6
     backColor: 90929B
-    bulletSprite: ohno-missiles-missileshatter
+    bulletSprite: ohno-missiles-missileblank
     despawnEffect: padlaunch
     hitEffect: padlaunch
     lifetime: 3600
@@ -49,7 +49,7 @@ ammo: {
       type: ArtilleryBulletType
       bulletShrink: 0
       trailEffect: shieldBreak
-      speed: 4.25
+      speed: 2.125
       knockback: 0
       damage: 0
       splashDamage: 0
@@ -65,7 +65,7 @@ ammo: {
       bulletSprite: ohno-missiles-missileshattercapsule
       hitEffect: blockExplosion
       despawnEffect: blockExplosion
-      lifetime: 20
+      lifetime: 10
       hitShake: 3
       collidesTiles: false
       collidesAir: false
@@ -77,7 +77,7 @@ ammo: {
 	    type: ArtilleryBulletType
         bulletShrink: 0
         trailEffect: shieldBreak
-        speed: 5.5
+        speed: 2.75
         knockback: 0
 		    damage: 500
         splashDamageRadius: 80
@@ -93,7 +93,7 @@ ammo: {
         bulletSprite: ohno-missiles-missileshattercapsule
         hitEffect: shockwave
         despawnEffect: shockwave
-        lifetime: 8
+        lifetime: 4
         hitShake: 2
         collidesTiles: false
         collidesAir: false

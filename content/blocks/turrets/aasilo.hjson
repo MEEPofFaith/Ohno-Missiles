@@ -1,9 +1,9 @@
 type: ItemTurret
-localizedName: "[#ff3333]Anti-Air Silo[]"
+localizedName: "[#ff3333]Anti-Air Missile Silo[]"
 description: Fires fast missiles that effectively blast down flying enemies.
 health: 200
 size: 4
-reload: 1200
+reload: 300
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -35,7 +35,7 @@ ammo: {
     homingPower: 0.001
     homingRange: 69420
     splashDamageRadius: 96
-    bulletSprite: ohno-missiles-missileaa
+    bulletSprite: ohno-missiles-missileblank
     lifetime: 3600
     hitSound: missileboom
     collidesTiles: false

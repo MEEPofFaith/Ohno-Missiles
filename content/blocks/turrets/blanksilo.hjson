@@ -3,7 +3,7 @@ localizedName: Missile Silo
 description: An avarage missile silo with no extra abilities. Still pretty powerful though.
 health: 200
 size: 4
-reload: 600
+reload: 150
 range: 8000
 inaccuracy: 5
 shootCone: 25

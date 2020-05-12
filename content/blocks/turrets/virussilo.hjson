@@ -3,7 +3,7 @@ localizedName: "[#7EFF72]Virus Missile Silo[]"
 description: Continuous low Damage, uploads to nearby enemy units and mechs. Virus damages them slowly till death, then they move on to other enemies.
 health: 200
 size: 4
-reload: 1200
+reload: 300
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -34,7 +34,7 @@ ammo: {
     knockback: 10
     frontColor: 4EE04E
     backColor: 90929B
-    bulletSprite: ohno-missiles-missilevirus
+    bulletSprite: ohno-missiles-missileblank
     despawnEffect: shockwave
     hitEffect: shockwave
     lifetime: 3600

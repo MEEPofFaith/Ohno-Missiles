@@ -1,9 +1,9 @@
 type: ItemTurret
-localizedName: "[#9EE6FF]Air Mine Silo[]"
+localizedName: "[#9EE6FF]Air Mine Missile Silo[]"
 description: Fires a missile that bursts into a swarm of air mines.
 health: 200
 size: 4
-reload: 900
+reload: 225
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -35,7 +35,7 @@ ammo: {
     homingRange: 0
     hitSound: explosionbig
     knockback: 0.8
-    bulletSprite: ohno-missiles-missileairmine
+    bulletSprite: ohno-missiles-missileblank
     hitEffect: flakExplosionBig
     despawnEffect: flakExplosionBig
     lifetime: 281

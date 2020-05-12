@@ -1,9 +1,9 @@
 type: ItemTurret
-name: "[#FFBCFB]Heal Missile Silo v2[]"
+name: "[#FFBCFB]Heal Missile Missile Silo v2[]"
 description: "The return of the [#FFBCFB]Heal Silo[], which was scrapped before the releace of v1."
 health: 200
 size: 4
-reload: 1200
+reload: 300
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -35,7 +35,7 @@ ammo: {
     knockback: 2
     frontColor: FFBCFB
     backColor: 90929B
-    bulletSprite: ohno-missiles-missileheal
+    bulletSprite: ohno-missiles-missileblank
     despawnEffect: shockwave
     hitEffect: shockwave
     lifetime: 3600
@@ -50,6 +50,7 @@ ammo: {
       lifetime: 30
       damage: 0
       collidesAir: true
+      collidesTeam: true
       pierce: true
       status: {
         name: missileofhealing
