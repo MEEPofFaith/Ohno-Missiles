@@ -1,3 +1,5 @@
+const aclib = require("ohno-missiles/advancecontentfunclib"); //kinda obvious where this came from
+
 //Code copyied from younggam/multi-lib-example by younggam
 
 //get script from multi-lib
@@ -16,7 +18,7 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
     entity = tile.ent();
     
     Draw.rect(this.region, tile.drawx(), tile.drawy());
-    Draw.color(Color.valueOf("52525C"));
+    Draw.color(Color.valueOf("363646"));
     Draw.rect(this.topRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
     Draw.color();
     
@@ -30,6 +32,16 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
       Draw.rect(this.topRegions[tile.entity.getToggle() + 1], tile.drawx() + Mathf.random(), tile.drawy());
       Draw.color();
     }
+    
+    var lens = [5, 5, 5];
+    
+    var ft1 = Mathf.sin(entity.totalProgress, 12, 20);
+    var ft2 = Mathf.sin(entity.totalProgress, 12, 20);
+    var ft3 = Mathf.sin(entity.totalProgress, 12, 20);
+    var rots = [ft1, ft2, ft3];
+    
+    aclib.legRenderer("ohno-missiles-" + this.name + "-rightarm", tile.drawx() + 16, tile.drawx(), 0, 3, rots, lens, 1);
+    aclib.legRenderer("ohno-missiles-" + this.name + "-leftarm", tile.drawx() - 16, tile.drawx(), 0, 3, rots, lens, -1);
   }
 },
 /*length of output, input, crafTimes should be same.
