@@ -8,27 +8,28 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
   load(){
     this.region = Core.atlas.find(this.name);
     this.decal = Core.atlas.find(this.name + "-decal");
-    for(i = 0; i < 10; i++){
+    for(i = 0; i < 11; i++){
       this.topRegions[i] = Core.atlas.find(this.name + "-top-" + i);
-    }
-    for(e = 0; e < 10; e++){
-      this.lightRegions[e] = Core.atlas.find(this.name + "-light-" + e);
     }
   },
   draw(tile){
     entity = tile.ent();
     
     Draw.rect(this.region, tile.drawx(), tile.drawy());
-    
-    Draw.rect(this.topRegion[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
-    Draw.color(this.missileColors[tile.entity.getToggle() + 1]);
-    Draw.rect(this.decal, tile.drawx(), tile.drawy())
-    
-    Draw.color(1, 1, 1, entity.warmup);
-    Draw.blend(Blending.additive);
-    Draw.rect(this.lightRegion[tile.entity.getToggle() + 1], tile.drawx() + Mathf.random(-1,1), tile.drawy() + Mathf.random(-1,1));
+    Draw.color(Color.valueOf("52525C"));
+    Draw.rect(this.topRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
     Draw.color();
-    Draw.blend();
+    
+    Draw.color(this.missileColors[tile.entity.getToggle() + 1]);
+    Draw.rect(this.decal, tile.drawx(), tile.drawy());
+    Draw.color();
+    
+    if(entity.warmup > 0){
+      Draw.color(this.missileColors[tile.entity.getToggle() + 1]);
+      Draw.alpha(entity.warmup);
+      Draw.rect(this.topRegions[tile.entity.getToggle() + 1], tile.drawx() + Mathf.random(), tile.drawy());
+      Draw.color();
+    }
   }
 },
 /*length of output, input, crafTimes should be same.
@@ -112,12 +113,10 @@ missileUpgrader.itemCapacity = 30;
 missileUpgrader.liquidCapacity = 20;
 missileUpgrader.size = 5;
 missileUpgrader.health = 100;
-missileUpgrader.craftEffect = Fx.hitMeltdown;
-missileUpgrader.updateEffect = Fx.producesmoke;
+missileUpgrader.craftEffect = Fx.producesmoke;
+missileUpgrader.updateEffect = Fx.hitMeltdown;
 
-missileUpgrader.missileColors = [Color.valueOf("8C8C8C"), Color.valueOf("9EE6FF"), Color.valueOf("ff3333"), Color.valueOf("F27D00"), Color.valueOf("00A9FF"), Color.valueOf("FFBCFB"), Color.valueOf("ffeb0d"), Color.valueOf("4EE04E"), Color.valueOf("d620d6"), Color.valueOf("7affbd")];
-missileUpgrader.topRegions = undefined;
+missileUpgrader.missileColors = [/*none*/Color.valueOf("8C8C8C"), /*am*/Color.valueOf("9EE6FF"), /*aa*/Color.valueOf("ff3333"), /*inc*/Color.valueOf("F27D00"), /*emp*/Color.valueOf("00A9FF"), /*h*/Color.valueOf("FFBCFB"), /*sp*/Color.valueOf("ffeb0d"), /*v*/Color.valueOf("4EE04E"), /*sh*/Color.valueOf("d620d6"), /*n*/Color.valueOf("7affbd"), /*dump*/Color.valueOf("8C8C8C")];
 missileUpgrader.topRegions = [];
-missileUpgrader.lightRegions = [];
 
 missileUpgrader.requirements(Category.crafting,ItemStack.with(Items.copper, 3000, Items.lead, 2250, Items.silicon, 1500, Items.graphite, 1500, Items.thorium, 2100, Items.titanium, 2250, Items.plastanium, 1600, Items.surgealloy, 1600, Items.phasefabric, 350));
