@@ -121,7 +121,7 @@ liquid-name is .json file name
     [/*items*/ [ ["ohno-missiles-missile-sp", 1] ] /*liquids*/, null/*power*/, null],
     [/*items*/ [ ["ohno-missiles-missile-v", 1] ] /*liquids*/, null/*power*/, null],
     [/*items*/ [ ["ohno-missiles-missile-sh", 1] ] /*liquids*/, null/*power*/, null],
-    [/*items*/ [ ["ohno-missiles-missile-n", 1] /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-n", 1] ]/*liquids*/, null/*power*/, null],
   ],
   _input:[
     [/*items am*/ [ ["ohno-missiles-missile", 2], ["surge-alloy", 2], ["silicon", 10], ["plastanium", 5], ["titanium", 5] ] /*liquids*/, null/*power*/, 16],
