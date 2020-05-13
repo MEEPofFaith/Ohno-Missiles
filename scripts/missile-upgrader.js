@@ -113,26 +113,26 @@ liquid-name is .json file name
 
 {
   _output:[
-    [/*items*/ [ ["ohno-missiles-missile-am", 1] ], /*liquids*/, null/*power*/, null],
-    [/*items*/ [ ["ohno-missiles-missile-aa", 1] ], /*liquids*/, null/*power*/, null],
-    [/*items*/ [ ["ohno-missiles-missile-ic", 1] ], /*liquids*/, null/*power*/, null],
-    [/*items*/ [ ["ohno-missiles-missile-emp", 1] ], /*liquids*/, null/*power*/, null],
-    [/*items*/ [ ["ohno-missiles-missile-h", 1] ], /*liquids*/, null/*power*/, null],
-    [/*items*/ [ ["ohno-missiles-missile-sp", 1] ], /*liquids*/, null/*power*/, null],
-    [/*items*/ [ ["ohno-missiles-missile-v", 1] ], /*liquids*/, null/*power*/, null],
-    [/*items*/ [ ["ohno-missiles-missile-sh", 1] ], /*liquids*/, null/*power*/, null],
-    [/*items*/ [ ["ohno-missiles-missile-n", 1] ], /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-am", 1] ] /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-aa", 1] ] /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-ic", 1] ] /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-emp", 1] ] /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-h", 1] ] /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-sp", 1] ] /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-v", 1] ] /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-sh", 1] ] /*liquids*/, null/*power*/, null],
+    [/*items*/ [ ["ohno-missiles-missile-n", 1] /*liquids*/, null/*power*/, null],
   ],
   _input:[
-    [/*items am*/ [ ["ohno-missiles-missile", 2] ], /*liquids*/, null/*power*/, null],
-    [/*items aa*/ [ ["ohno-missiles-missile", 3] ], /*liquids*/, null/*power*/, null],
-    [/*items ic*/ [ ["ohno-missiles-missile", 2] ], /*liquids*/, null/*power*/, null],
-    [/*items emp*/ [ ["ohno-missiles-missile", 2] ], /*liquids*/, null/*power*/, null],
-    [/*items h*/ [ ["ohno-missiles-missile", 2] ], /*liquids*/, null/*power*/, null],
-    [/*items sp*/ [ ["ohno-missiles-missile", 4] ], /*liquids*/, null/*power*/, null],
-    [/*items v*/ [ ["ohno-missiles-missile", 3] ], /*liquids*/, null/*power*/, null],
-    [/*items sh*/ [ ["ohno-missiles-missile", 4] ], /*liquids*/, null/*power*/, null],
-    [/*items n*/ [ ["ohno-missiles-missile", 9] ], /*liquids*/, null/*power*/, null],
+    [/*items am*/ [ ["ohno-missiles-missile", 2], ["surge-alloy", 2], ["silicon", 10], ["plastanium", 5], ["titanium", 5] ] /*liquids*/, null/*power*/, 16],
+    [/*items aa*/ [ ["ohno-missiles-missile", 3], ["blast-compound", 4], ["titanium", 5] ] /*liquids*/, null/*power*/, 17],
+    [/*items ic*/ [ ["ohno-missiles-missile", 2], ["pyratite", 8], ["metaglass", 8], ["titanium", 5] ] /*liquids*/, [ ["ohno-missiles-napalm", 24], ["oil", 18]] ]/*power*/,18],
+    [/*items emp*/ [ ["ohno-missiles-missile", 2], ["surge-alloy", 4], ["silicon", 12], ["plastanium", 6] ["titanium", 5] ] /*liquids*/, null/*power*/, 18],
+    [/*items h*/ [ ["ohno-missiles-missile", 2], ["phase-fabric", 8], ["silicon", 8], ["titanium", 5] ] /*liquids*/, null/*power*/, 15],
+    [/*items sp*/ [ ["ohno-missiles-missile", 4], ["blast-compound", 4], ["silicon", 10], ["titanium", 5] ] /*liquids*/, null/*power*/, 23],
+    [/*items v*/ [ ["ohno-missiles-missile", 3], ["silicon", 15], ["graphite", 10], ["titanium", 5] ] /*liquids*/, null/*power*/, 23],
+    [/*items sh*/ [ ["ohno-missiles-missile", 4], ["blast-compound", 6], ["silicon", 12], ["titanium", 5] ] /*liquids*/, null/*power*/, 25],
+    [/*items n*/ [ ["ohno-missiles-missile", 6], ["blast-compound", 10], ["thorium", 5], ["titanium", 5] ] /*liquids*/, null/*power*/, 28],
   ],
   craftTimes:[150, 180, 180, 180, 120, 210, 210, 240, 300],
   //DON'T MODIFY THESE
@@ -161,7 +161,7 @@ hasPower=true;
 */
 //using this without json. not recommanded because can cause error.
 missileUpgrader.localizedName = "[#F90800]Ballistic Modification Plant";
-missileUpgrader.description = "Takes normal [#F90800]Ballistic Missiles[] and upgrades them to missiles meant specifically for certain missile silos, allowing them to fire faster because they don't need to synthesize and upgrade the imputed missiles themselves. Selection is output, cost is bottom right gui. Easer to read in the [?] info.";
+missileUpgrader.description = "Takes normal [#F90800]Ballistic Missiles[] and upgrades them to missiles meant specifically for certain missile silos, allowing them to fire faster because they don't need to synthesize the upgraded missiles themselves. Selection is output, cost is bottom right gui. Easer to read in the [?] info. [red]Just note that it's extremely long.";
 missileUpgrader.itemCapacity = 30;
 missileUpgrader.liquidCapacity = 20;
 missileUpgrader.size = 5;

@@ -22,10 +22,7 @@ consumes: {
     ]
   }
 }
-outputItem: {
-  item: missile
-  amount: 1
-}
+outputItem: missile/1
 requirements: [
   lead/2000
   silicon/1000
