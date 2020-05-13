@@ -1,0 +1,23 @@
+localizedName: "Napalm Mixer"
+description: 
+  '''
+  Mixes Slag and Oil to create volatile Napalm.
+  
+  Don't ask how this works, I threw science out the window a while ago.
+  '''
+consumes: {
+  power: {
+    usage: 2.5
+    capacity: 2.5
+  }
+}
+requirements: [
+  lead/150
+  silicon/150
+  thorium/135
+  surge-alloy/45
+]
+category: crafting
+research: cryofluidmixer
+idleSound: respawning
+idleSoundVolume: 0.5

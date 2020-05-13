@@ -2,7 +2,6 @@ type: GenericSmelter
 localizedName: "[#F90800]Ballistics Factory"
 description: "Create powerful [#F90800]Ballistic Missiles[] that can only be fired by the biggest of missile launchers."
 size: 4
-health: 500
 hasPower: true
 flameColor: 7affbd
 craftTime: 150
@@ -15,10 +14,10 @@ consumes: {
   }
   items: {
     items: [
-      surge-alloy/5
-      plastanium/10
-      thorium/10
-      blast-compound/16
+      surge-alloy/3
+      plastanium/5
+      thorium/6
+      blast-compound/8
     ]
   }
 }
