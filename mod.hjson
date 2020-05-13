@@ -8,5 +8,5 @@ description:
   
   Note: Missile launchers are extremely expensive and time consuming to build. I recommend using the 250% build speed on the Trident Bomber and Phantom Builders.
   '''
-version: 3.54
+version: 3.55
 dependencies:["multi-lib"]
