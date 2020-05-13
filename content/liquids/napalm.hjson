@@ -7,10 +7,9 @@ flammability: 69420
 temperature: 69420
 viscosity: 0.65
 heatCapacity: 0
-buildVisibility: hidden
 effect: {
   name: burnyburnohno
-  damage: 90
+  damage: 300
   speedMultiplier: 0.2
   armorMultiplier: 0.5
   damageMultiplier: 0.75
