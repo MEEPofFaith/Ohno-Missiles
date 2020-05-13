@@ -1,6 +1,6 @@
 type: GenericSmelter
-localizedName: "[#8f0101]Ballistics Factory"
-description: "Create powerful [#8f0101]Ballistic Missiles[] that can only be fired by the biggest of missile launchers."
+localizedName: "[#F90800]Ballistics Factory"
+description: "Create powerful [#F90800]Ballistic Missiles[] that can only be fired by the biggest of missile launchers."
 size: 4
 health: 500
 hasPower: true

@@ -24,10 +24,10 @@ ammo: {
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
-    trailColor: CF0A00
+    trailColor: F90800
     ammoMultiplier: 3
     homingPower: 0.001
-    frontColor: CF0A00
+    frontColor: F90800
     backColor: 565666
     homingRange: 69420
     splashDamageRadius: 48

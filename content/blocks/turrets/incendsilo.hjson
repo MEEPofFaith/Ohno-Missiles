@@ -49,16 +49,16 @@ ammo: {
     fragVelocityMin: 0
     fragVelocityMax: 3
     fragBullet: {
-      type: ArtilleryBulletType
+      type: BasicBulletType
       speed: 5
       lifetime: 10
-      bulletSprite: ohno-missiles-missileairminemine
-      frontColor: F27D00
-      backColor: F27D00
+      bulletSprite: none
       damage: 0
       hitEffect: none
       despawnEffect: none
+      collidesAir: false
       collides: false
+      collidesTile: true
       incendChance: 100
       incendAmount: 100
       incendSpread: 8
@@ -108,16 +108,16 @@ ammo: {
     fragVelocityMin: 0
     fragVelocityMax: 3
     fragBullet: {
-      type: ArtilleryBulletType
+      type: BasicBulletType
       speed: 5
       lifetime: 10
-      bulletSprite: ohno-missiles-missileairminemine
-      frontColor: F27D00
-      backColor: F27D00
+      bulletSprite: none
       damage: 0
       hitEffect: none
       despawnEffect: none
+      collidesAir: false
       collides: false
+      collidesTile: true
       incendChance: 100
       incendAmount: 100
       incendSpread: 8

@@ -10,6 +10,7 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
   load(){
     this.region = Core.atlas.find(this.name);
     this.decal = Core.atlas.find(this.name + "-decal");
+    this.original = Core.atlas.find(this.name + "-original");
     for(i = 0; i < 11; i++){
       this.topRegions[i] = Core.atlas.find(this.name + "-top-" + i);
       this.itemRegions[i] = Core.atlas.find(this.name + "-item-" + i);
@@ -35,35 +36,52 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
       
       var craftAnimSpeed = this.produceTimes[tile.entity.getToggle() + 1] / 20;
       var craftAnimLoc = Mathf.sin(entity.totalProgress / craftAnimSpeed) * 7;
-      Lines.stroke(1.5)
+      
       Draw.color(Color.valueOf("565666"));
-      Draw.alpha(entity.warmup);
-      Lines.line(tile.drawx() + craftAnimLoc, tile.drawy() - 3, tile.drawx() + craftAnimLoc, tile.drawy() + 3);
-      Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 3, tile.drawx() - craftAnimLoc, tile.drawy() + 3);
+      Draw.alpha(entity.warmup * 0.8);
+      Lines.stroke(2);
+      Lines.line(tile.drawx() + craftAnimLoc, tile.drawy() + 10, tile.drawx() + craftAnimLoc, tile.drawy() + 16);
+      Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 10, tile.drawx() - craftAnimLoc, tile.drawy() - 16);
       Draw.color();
+      
       Draw.alpha(entity.progress);
       Draw.rect(this.itemRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
+      Draw.alpha(1 - entity.progress);
+      Draw.rect(this.original, tile.drawx(), tile.drawy());
+      
       Draw.color(Pal.accent);
-      Draw.alpha(entity.warmup);
-      Lines.stroke(0.75)
-      Lines.line(tile.drawx() + craftAnimLoc, tile.drawy() - 3, tile.drawx() + craftAnimLoc, tile.drawy() + 3);
-      Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 3, tile.drawx() - craftAnimLoc, tile.drawy() + 3);
+      Draw.alpha(entity.warmup * 0.8);
+      Lines.stroke(1);
+      Lines.line(tile.drawx() + craftAnimLoc, tile.drawy() + 10, tile.drawx() + craftAnimLoc, tile.drawy() + 16);
+      Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 10, tile.drawx() - craftAnimLoc, tile.drawy() - 16);
       Draw.color();
     }
-
+    
     var lens = [9.5, 9.5 , 9.5];
+    var armSpeed = 6;
+    var armItemSpeed = this.produceTimes[tile.entity.getToggle() + 1] / 20;
     
-    var ft1 = Mathf.sin(entity.totalProgress, 15, 7);
-    var ft2 = Mathf.sin(entity.totalProgress, 12, 11);
-    var ft3 = Mathf.sin(entity.totalProgress, 10, 14);
-    var rots = [ft1 + 12, ft2 - 98, ft3 - 63];
+    //top arms
+    var ft1 = Mathf.sin(entity.totalProgress, armSpeed + armItemSpeed, 6);
+    var ft2 = Mathf.sin(entity.totalProgress, armSpeed - 2 + armItemSpeed, 8);
+    var ft3 = Mathf.sin(entity.totalProgress, armSpeed - 6 + armItemSpeed, 12);
+    var rots = [ft1 + 12, ft2 - 94, ft3 - 70];
     
-    aclib.legRenderer("ohno-missiles-missile-upgrader-rightarm", tile.drawx() + 16, tile.drawy(), +90, 3, rots, lens, -1);
-    aclib.legRenderer("ohno-missiles-missile-upgrader-leftarm", tile.drawx() - 16, tile.drawy(), +90, 3, rots, lens, 1);
+    aclib.legRenderer("ohno-missiles-missile-upgrader-rightarm", tile.drawx() + 16, tile.drawy() + 12.5, 90, 3, rots, lens, -1);
+    aclib.legRenderer("ohno-missiles-missile-upgrader-leftarm", tile.drawx() - 16, tile.drawy() + 12.5, 90, 3, rots, lens, 1);
+    
+    //bottom arms
+    ft1 = Mathf.sin(entity.totalProgress, armSpeed + armItemSpeed, 6);
+    ft2 = Mathf.sin(entity.totalProgress, armSpeed - 2 + armItemSpeed, 8);
+    ft3 = Mathf.sin(entity.totalProgress, armSpeed - 6 + armItemSpeed, 12);
+    rots = [ft1 + 8, ft2 - 103, ft3 - 63];
+    
+    aclib.legRenderer("ohno-missiles-missile-upgrader-leftarm", tile.drawx() + 16, tile.drawy() - 12.5, 90, 3, rots, lens, -1);
+    aclib.legRenderer("ohno-missiles-missile-upgrader-rightarm", tile.drawx() - 16, tile.drawy() - 12.5, 90, 3, rots, lens, 1);
   },
 	generateIcons(){
 		return [
-			Core.atlas.find(this.name + "-icon")
+			Core.atlas.find("ohno-missiles-missile-upgrader-icon")
 		];
 	}
 },
@@ -142,16 +160,18 @@ hasLiquids=true;
 hasPower=true;
 */
 //using this without json. not recommanded because can cause error.
-missileUpgrader.localizedName = "[#8f0101]Further Missile Manufacturing Plant";
-missileUpgrader.description = "Takes normal missiles and upgrades them to missiles meant specifically for certain missile silos, allowing them to fire faster because they don't need to synthesize and upgrade the imputed missiles themselves. Selection is output, cost is bottom right gui.";
+missileUpgrader.localizedName = "[#F90800]Ballistic Modification Plant";
+missileUpgrader.description = "Takes normal [#F90800]Ballistic Missiles[] and upgrades them to missiles meant specifically for certain missile silos, allowing them to fire faster because they don't need to synthesize and upgrade the imputed missiles themselves. Selection is output, cost is bottom right gui. Easer to read in the [?] info.";
 missileUpgrader.itemCapacity = 30;
 missileUpgrader.liquidCapacity = 20;
 missileUpgrader.size = 5;
 missileUpgrader.health = 100;
 missileUpgrader.craftEffect = Fx.producesmoke;
 missileUpgrader.updateEffect = Fx.hitMeltdown;
+missileUpgrader.expanded = true;
+missileUpgrader.drawLiquidLight = false;
 
-missileUpgrader.missileColors = [/*none*/Color.valueOf("565666"), /*am*/Color.valueOf("9EE6FF"), /*aa*/Color.valueOf("ff3333"), /*inc*/Color.valueOf("F27D00"), /*emp*/Color.valueOf("00A9FF"), /*h*/Color.valueOf("FFBCFB"), /*sp*/Color.valueOf("ffeb0d"), /*v*/Color.valueOf("4EE04E"), /*sh*/Color.valueOf("d620d6"), /*n*/Color.valueOf("7affbd"), /*dump*/Color.valueOf("565666")];
+missileUpgrader.missileColors = [/*none*/Color.valueOf("565666"), /*am*/Color.valueOf("9EE6FF"), /*aa*/Color.valueOf("CF0A00"), /*inc*/Color.valueOf("F27D00"), /*emp*/Color.valueOf("00A9FF"), /*h*/Color.valueOf("FFBCFB"), /*sp*/Color.valueOf("ffeb0d"), /*v*/Color.valueOf("4EE04E"), /*sh*/Color.valueOf("d620d6"), /*n*/Color.valueOf("7affbd"), /*dump*/Color.valueOf("565666")];
 missileUpgrader.topRegions = [];
 missileUpgrader.itemRegions = [];
 missileUpgrader.produceTimes = [0, 150, 180, 180, 180, 120, 210, 210, 240, 300, 0];

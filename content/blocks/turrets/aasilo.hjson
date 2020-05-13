@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: "[#ff3333]Anti-Air Missile Silo[]"
+localizedName: "[#CF0A00]Anti-Air Missile Silo[]"
 description: Fires fast missiles that effectively blast down flying enemies.
 health: 200
 size: 4
@@ -12,7 +12,7 @@ targetAir: true
 targetGround: false
 maxAmmo: 4
 ammoPerShot:2
-heatColor: ff3333
+heatColor: CF0A00
 cooldown: 0.003
 shootEffect: nuclearShockwave
 shootSound: missilelaunch
