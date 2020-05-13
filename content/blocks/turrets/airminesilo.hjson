@@ -1,17 +1,17 @@
 type: ItemTurret
-localizedName: "[#9EE6FF]Air Mine Silo[]"
+localizedName: "[#9EE6FF]Air Mine Missile Silo[]"
 description: Fires a missile that bursts into a swarm of air mines.
 health: 200
 size: 4
-reload: 900
+reload: 225
 range: 8000
 inaccuracy: 5
 shootCone: 25
 rotatespeed: 0.5
 targetAir: true
 targetGround: false
-maxAmmo: 12
-ammoPerShot:5
+maxAmmo: 6
+ammoPerShot:3
 heatColor: 9EE6FF
 restitution: 0.003
 recoil: 8
@@ -21,6 +21,66 @@ shootSound: missilelaunch
 ammo: {
   missile: {
     type: MissileBulletType
+    ammoMultiplier: 1
+    bulletShrink: 0
+    speed: 3.75
+    damage: 0
+    splashDamage: 0
+    splashDamageRadius: 0
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    trailColor: 78DCFF
+    homingPower: 0.001
+    homingRange: 0
+    hitSound: explosionbig
+    knockback: 0.8
+    bulletSprite: ohno-missiles-missileblank
+    hitEffect: flakExplosionBig
+    despawnEffect: flakExplosionBig
+    lifetime: 281
+    hitShake: 2
+    frontColor: 78DCFF
+    backColor: 565666
+    collidesTiles: false
+    hitTiles: false
+    fragBullets: 20
+    fragVelocityMin: 0.1
+    fragVelocityMax: 2
+    fragBullet: {
+      type: FlakBulletType
+      drag: 0.033
+      explodeRange: 80
+      trailColor: 78DCFF
+      speed: 3
+      damage: 500
+      splashDamage: 500
+      splashDamageRadius: 160
+      frontColor: 78DCFF
+      backColor: 9799A3
+      bulletShrink: 0
+      hitSize: 4
+      bulletHeight: 4
+      bulletWidth: 4
+      bulletSprite: ohno-missiles-missileairminemine
+      knockback: 3000
+      homingPower: 0.001
+      homingRange: 69420
+      hitShake: 1
+      hitEffect: flakExplosionBig
+      hitSound: explosion
+      despawnEffect: flakExplosionBig
+      collidesTiles: false
+      collidesAir: true
+      lifetime: 1800
+      fragBullets: 10
+      fragBullet: lightning
+    }
+  }
+  missile-am: {
+    type: MissileBulletType
+    reloadMultiplier: 4
+    ammoMultiplier: 3
     bulletShrink: 0
     speed: 3.75
     damage: 0
@@ -30,7 +90,6 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     trailColor: CF0A00
-    ammoMultiplier: 3
     homingPower: 0.001
     homingRange: 0
     hitSound: explosionbig
@@ -41,7 +100,7 @@ ammo: {
     lifetime: 281
     hitShake: 2
     frontColor: 78DCFF
-    backColor: 90929B
+    backColor: 565666
     collidesTiles: false
     hitTiles: false
     fragBullets: 20

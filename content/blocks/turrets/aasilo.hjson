@@ -1,18 +1,18 @@
 type: ItemTurret
-localizedName: "[#ff3333]Anti-Air Silo[]"
+localizedName: "[#CF0A00]Anti-Air Missile Silo[]"
 description: Fires fast missiles that effectively blast down flying enemies.
 health: 200
 size: 4
-reload: 1200
+reload: 300
 range: 8000
 inaccuracy: 5
 shootCone: 25
 rotatespeed: 0.5
 targetAir: true
 targetGround: false
-maxAmmo: 9
+maxAmmo: 4
 ammoPerShot:2
-heatColor: ff3333
+heatColor: CF0A00
 cooldown: 0.003
 shootEffect: nuclearShockwave
 shootSound: missilelaunch
@@ -21,6 +21,7 @@ recoil: 8
 ammo: {
   missile: {
     type: MissileBulletType
+    ammoMultiplier: 1
     bulletShrink: 0
     speed: 6
     damage: 2000
@@ -29,9 +30,34 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     trailColor: CF0A00
-    ammoMultiplier: 3
     frontColor: CF0A00
-    backColor: 90929B
+    backColor: 565666
+    homingPower: 0.001
+    homingRange: 69420
+    splashDamageRadius: 96
+    bulletSprite: ohno-missiles-missileblank
+    lifetime: 3600
+    hitSound: missileboom
+    collidesTiles: false
+    collidesAir: true
+    knockback: 2000
+    hitEffect: flakExplosionBig
+    hitShake: 2
+  }
+  missile-aa: {
+    type: MissileBulletType
+    reloadMultiplier: 4
+    ammoMultiplier: 2
+    bulletShrink: 0
+    speed: 6
+    damage: 2000
+    splashDamage: 2000
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    trailColor: CF0A00
+    frontColor: CF0A00
+    backColor: 565666
     homingPower: 0.001
     homingRange: 69420
     splashDamageRadius: 96

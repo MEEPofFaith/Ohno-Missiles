@@ -3,7 +3,7 @@ localizedName: Missile Silo
 description: An avarage missile silo with no extra abilities. Still pretty powerful though.
 health: 200
 size: 4
-reload: 600
+reload: 150
 range: 8000
 inaccuracy: 5
 shootCone: 25
@@ -24,11 +24,11 @@ ammo: {
     hitSize: 32
     bulletWidth: 32
     bulletHeight: 32
-    trailColor: CF0A00
+    trailColor: F90800
     ammoMultiplier: 3
     homingPower: 0.001
-    frontColor: CF0A00
-    backColor: 90929B
+    frontColor: F90800
+    backColor: 565666
     homingRange: 69420
     splashDamageRadius: 48
     hitSound: missileboom

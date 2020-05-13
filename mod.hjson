@@ -4,7 +4,10 @@ author: "[#FCC21B]MEEP of Faith[] and [#6ECDEC]SolarPH[]"
 description:
   '''
   With the new [#8f0101]Ballistic Missile[], you can nuke the enemies with various missile silos.
+  Requires: Younggam/Multi-lib
   
-  Note: Missile launchers are extremely expensive and time consuming to build. I recommend using the 250% build speed on the Trident Bomber and Phantom Builders.
+  Update: New [#F90800]Ballistic Modification Plant[] for upgrading your normal [#F90800]Ballistic Missiles[].
+  [green]Note: Missile launchers are extremely expensive and time consuming to build. I recommend using the 250% build speed on the Trident Bomber and Phantom Builders.
   '''
-version: 3.5 I guess æügh
+version: 4.0
+dependencies:["multi-lib"]

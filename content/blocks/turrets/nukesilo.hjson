@@ -1,15 +1,15 @@
 type: ItemTurret
-localizedName: "[#7affbd]Nuclear Missile Silo[]"
+localizedName: "[#7affbd]Nuclear Missile Missile Silo[]"
 description: Slow firing, but will obliterate a large area.
 health: 200
 size: 4
-reload: 3600
+reload: 900
 range: 8000
 inaccuracy: 5
 shootCone: 25
 rotatespeed: 0.5
 targetAir: true
-maxAmmo: 9
+maxAmmo: 18
 ammoPerShot: 9
 heatColor: 7affbd
 cooldown: 0.003
@@ -20,6 +20,7 @@ restitution: 0.003
 ammo: {
   missile: {
     type: MissileBulletType
+    ammoMultiplier: 1
     bulletShrink: 0
     trailColor: 00F98A
     speed: 2.75
@@ -29,17 +30,16 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     effect: missileTrail
-    ammoMultiplier: 1
     homingPower: 0.001
     homingRange: 69420
     splashDamageRadius: 1600
     hitSound: nuke
     knockback: 69420
     frontColor: 00F98A
-    backColor: 90929B
-    bulletSprite: ohno-missiles-missilenuke
-    despawnEffect: dynamicExplosion
-    hitEffect: dynamicExplosion
+    backColor: 565666
+    bulletSprite: ohno-missiles-missileblank
+    despawnEffect: nuclearcloud
+    hitEffect: nuclearcloud
     lifetime: 3600
     hitShake: 20
     fragBullets: 420
@@ -57,17 +57,72 @@ ammo: {
       homingPower: 0
       homingRange: 0
       frontColor: ffffff
-      backColor: 90929B
+      backColor: 565666
       splashDamageRadius: 1600
       hitSound: none
       knockback: 69420
       bulletSprite: missile
-      hitEffect: shockwave
+      hitEffect: none
       despawnEffect: none
       lifetime: 30
       hitShake: 10
       collidesTiles: true
       collidesAir: true
+      pierce: true
+    }
+  }
+  missile-n: {
+    type: MissileBulletType
+    reloadMultiplier: 4
+    ammoMultiplier: 9
+    bulletShrink: 0
+    trailColor: 00F98A
+    speed: 2.75
+    damage: 69420
+    splashDamage: 320
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    effect: missileTrail
+    homingPower: 0.001
+    homingRange: 69420
+    splashDamageRadius: 1600
+    hitSound: nuke
+    knockback: 69420
+    frontColor: 00F98A
+    backColor: 565666
+    bulletSprite: ohno-missiles-missilenuke
+    despawnEffect: nuclearcloud
+    hitEffect: nuclearcloud
+    lifetime: 3600
+    hitShake: 20
+    fragBullets: 420
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragBullet: {
+      type: ArtilleryBulletType
+      bulletShrink: 0
+      trailEffect: none
+      speed: 10
+      damage: 69420
+      splashDamage: 69420
+      bulletWidth: 0
+      bulletHeight: 0
+      homingPower: 0
+      homingRange: 0
+      frontColor: ffffff
+      backColor: 565666
+      splashDamageRadius: 1600
+      hitSound: none
+      knockback: 69420
+      bulletSprite: missile
+      hitEffect: none
+      despawnEffect: none
+      lifetime: 30
+      hitShake: 10
+      collidesTiles: true
+      collidesAir: true
+      pierce: true
     }
   }
 }
@@ -82,4 +137,4 @@ requirements: [
   surge-alloy/2000
 ]
 category: turret
-research: splittersilo
+research: shattersilo

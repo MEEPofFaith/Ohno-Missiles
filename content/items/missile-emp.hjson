@@ -1,0 +1,6 @@
+type: resource
+localizedName: "[#00A9FF]EMP Ballistic Missile[]"
+description: "Premanufactured for use in the EMP Missile Silo."
+explosiveness: 69420
+flammability: 420
+color: 009DF5

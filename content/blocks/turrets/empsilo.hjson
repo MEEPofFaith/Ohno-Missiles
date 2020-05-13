@@ -1,15 +1,15 @@
 type: ItemTurret
-localizedName: "[#00A9FF]EMP Missile Silo[]"
+localizedName: "[#00A9FF]EMP Missile Missile Silo[]"
 description: No Damage, but freezes enemies into their position.
 health: 200
 size: 4
-reload: 2520
+reload: 650
 range: 8000
 inaccuracy: 5
 shootCone: 25
 rotatespeed: 0.5
 targetAir: true
-maxAmmo: 6
+maxAmmo: 4
 ammoPerShot: 2
 heatColor: 00A9FF
 cooldown: 0.003
@@ -20,6 +20,7 @@ restitution: 0.003
 ammo: {
   missile: {
     type: MissileBulletType
+    ammoMultiplier: 1
     bulletShrink: 0
     trailColor: 009DF5
     speed: 3.5
@@ -29,15 +30,14 @@ ammo: {
     bulletWidth: 32
     bulletHeight: 32
     effect: missileTrail
-    ammoMultiplier: 3
     homingPower: 0.001
     homingRange: 69420
     splashDamageRadius: 0
     hitSound: spark
     knockback: 1
     frontColor: 009DF5
-    backColor: 90929B
-    bulletSprite: ohno-missiles-missileemp
+    backColor: 565666
+    bulletSprite: ohno-missiles-missileblank
     despawnEffect: nuclearShockwave
     hitEffect: nuclearShockwave
     lifetime: 3600
@@ -73,6 +73,71 @@ ammo: {
       statusDuration: 300
       status: {
         name: stoprightthere
+        speedMultiplier: 0
+        damageMultiplier: 0
+        armorMultiplier: 0
+        damage: 0
+        color: 00A9FF
+        effect: lightningCharge
+      }
+    }
+  }
+  missile-emp: {
+    type: MissileBulletType
+    reloadMultiplier: 4
+    ammoMultiplier: 2
+    bulletShrink: 0
+    trailColor: 009DF5
+    speed: 3.5
+    damage: 0
+    splashDamage: 0
+    hitSize: 32
+    bulletWidth: 32
+    bulletHeight: 32
+    effect: missileTrail
+    homingPower: 0.001
+    homingRange: 69420
+    splashDamageRadius: 0
+    hitSound: spark
+    knockback: 1
+    frontColor: 009DF5
+    backColor: 565666
+    bulletSprite: ohno-missiles-missileemp
+    despawnEffect: nuclearShockwave
+    hitEffect: nuclearShockwave
+    lifetime: 3600
+    hitShake: 1.5
+    fragBullets: 400
+    fragVelocityMin: 1
+    fragVelocityMax: 1
+    fragBullet: {
+      type: ArtilleryBulletType
+      bulletShrink: 0
+      trailEffect: lightningCharge
+      speed: 5
+      damage: 0
+      splashDamage: 0
+      bulletWidth: 0
+      bulletHeight: 0
+      homingRange: 0
+      frontColor: 0042FF
+      backColor: 0042FF
+      splashDamageRadius: 0
+      hitSound: spark
+      knockback: 0
+      bulletSprite: missile
+      hitEffect: none
+      despawnEffect: none
+      lifetime: 30
+      hitShake: 0
+      pierce: true
+      collides: true
+      collidesAir: true
+      collidesTiles: false
+      hitSize: 4
+      statusDuration: 300
+      status: {
+        name: superstoprightthere
         speedMultiplier: 0
         damageMultiplier: 0
         armorMultiplier: 0
