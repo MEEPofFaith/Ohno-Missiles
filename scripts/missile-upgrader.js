@@ -15,6 +15,8 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
       this.topRegions[i] = Core.atlas.find(this.name + "-top-" + i);
       this.itemRegions[i] = Core.atlas.find(this.name + "-item-" + i);
     }
+    
+    this.layer2 = Layer.light;
   },
   draw(tile){
     entity = tile.ent();
@@ -46,8 +48,10 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
       
       Draw.alpha(entity.progress);
       Draw.rect(this.itemRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
-      Draw.alpha(1 - entity.progress);
-      Draw.rect(this.original, tile.drawx(), tile.drawy());
+      if(tile.entity.items.get(Vars.content.getByName(ContentType.item, "ohno-missiles-missile")) >= 1){
+        Draw.alpha(1 - entity.progress);
+        Draw.rect(this.original, tile.drawx(), tile.drawy());
+      }
       
       Draw.color(Pal.accent);
       Draw.alpha(entity.warmup * 0.8);
@@ -56,6 +60,9 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
       Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 10, tile.drawx() - craftAnimLoc, tile.drawy() - 16);
       Draw.color();
     }
+  },
+  drawLayer2(tile){
+    entity = tile.ent();
     
     var lens = [9.5, 9.5 , 9.5];
     var armSpeed = 6;
