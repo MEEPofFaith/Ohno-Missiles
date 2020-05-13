@@ -16,7 +16,7 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
       this.itemRegions[i] = Core.atlas.find(this.name + "-item-" + i);
     }
     
-    this.layer2 = Layer.light;
+    this.layer2 = Layer.lights;
   },
   draw(tile){
     entity = tile.ent();
