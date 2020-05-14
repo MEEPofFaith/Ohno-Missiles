@@ -1,0 +1,12 @@
+ammo: {
+  water: waterShot
+  slag: slagShot
+  cryofluid: cryoShot
+  oil: oilShot
+  napalm: {
+    type: LiquidBulletType
+    liquid: napalm
+    damage: 20
+    drag: 0.03
+  }
+}

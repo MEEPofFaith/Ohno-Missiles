@@ -2,14 +2,14 @@ name: "[#EA8878]Napalm"
 description: "[#EA8878]Liquid flames"
 color: EA8878
 lightColor: EA8878
-explosiveness: 69420
-flammability: 69420
-temperature: 69420
+explosiveness: 0.2
+flammability: 0.2
+temperature: 500
 viscosity: 0.65
 heatCapacity: 0
 effect: {
   name: burnyburnohno
-  damage: 300
+  damage: 600
   speedMultiplier: 0.2
   armorMultiplier: 0.5
   damageMultiplier: 0.75
