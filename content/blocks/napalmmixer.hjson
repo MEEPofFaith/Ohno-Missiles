@@ -1,10 +1,11 @@
-localizedName: "Napalm Mixer"
+localizedName: "[#EA8878]Napalm Mixer"
 description: 
   '''
-  Mixes Slag and Oil to create volatile Napalm.
+  Mixes Slag and Oil to create volatile [#EA8878]Napalm[].
   
   Don't ask how this works, I threw science out the window a while ago.
   '''
+size: 3
 consumes: {
   power: {
     usage: 2.5

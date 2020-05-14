@@ -15,8 +15,6 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
       this.topRegions[i] = Core.atlas.find(this.name + "-top-" + i);
       this.itemRegions[i] = Core.atlas.find(this.name + "-item-" + i);
     }
-    
-    this.layer2 = Layer.lights;
   },
   draw(tile){
     entity = tile.ent();
@@ -88,7 +86,7 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
   },
 	generateIcons(){
 		return [
-			Core.atlas.find("ohno-missiles-missile-upgrader-icon")
+			Core.atlas.find(this.name + "-icon")
 		];
 	}
 },
@@ -176,6 +174,7 @@ missileUpgrader.craftEffect = Fx.producesmoke;
 missileUpgrader.updateEffect = Fx.hitMeltdown;
 missileUpgrader.expanded = true;
 missileUpgrader.drawLiquidLight = false;
+missileUpgrader.layer2 = Layer.lights;
 
 missileUpgrader.missileColors = [/*none*/Color.valueOf("565666"), /*am*/Color.valueOf("9EE6FF"), /*aa*/Color.valueOf("CF0A00"), /*inc*/Color.valueOf("F27D00"), /*emp*/Color.valueOf("00A9FF"), /*h*/Color.valueOf("FFBCFB"), /*sp*/Color.valueOf("ffeb0d"), /*v*/Color.valueOf("4EE04E"), /*sh*/Color.valueOf("d620d6"), /*n*/Color.valueOf("7affbd"), /*dump*/Color.valueOf("565666")];
 missileUpgrader.topRegions = [];
