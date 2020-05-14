@@ -84,11 +84,11 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
     aclib.legRenderer("ohno-missiles-missile-upgrader-leftarm", tile.drawx() + 16, tile.drawy() - 12.5, 90, 3, rots, lens, -1);
     aclib.legRenderer("ohno-missiles-missile-upgrader-rightarm", tile.drawx() - 16, tile.drawy() - 12.5, 90, 3, rots, lens, 1);
   },
-	generateIcons(){
-		return [
-			Core.atlas.find(this.name + "-icon")
-		];
-	}
+  generateIcons(){
+    return [
+      Core.atlas.find(this.name + "-icon")
+    ];
+  }
 },
 /*length of output, input, crafTimes should be same.
 if not, I'm not sure which error happens.
