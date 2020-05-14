@@ -86,6 +86,7 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
   },
   generateIcons(){
     return [
+      Core.atlas.find(this.name),
       Core.atlas.find(this.name + "-icon")
     ];
   }
