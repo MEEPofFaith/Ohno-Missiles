@@ -132,7 +132,7 @@ liquid-name is .json file name
   _input:[
     [/*items am*/ [ ["ohno-missiles-missile", 2], ["surge-alloy", 2], ["silicon", 10], ["plastanium", 5], ["titanium", 5] ] /*liquids*/, null/*power*/, 16],
     [/*items aa*/ [ ["ohno-missiles-missile", 3], ["blast-compound", 4], ["titanium", 5] ] /*liquids*/, null/*power*/, 17],
-    [/*items ic*/ [ ["ohno-missiles-missile", 2], ["pyratite", 8], ["metaglass", 8], ["titanium", 5] ] /*liquids*/, [ ["ohno-missiles-napalm", 48] ] /*power*/,18],
+    [/*items ic*/ [ ["ohno-missiles-missile", 2], ["pyratite", 8], ["metaglass", 8], ["titanium", 5] ] /*liquids*/, [ ["ohno-missiles-napalm", 36] ] /*power*/,18],
     [/*items emp*/ [ ["ohno-missiles-missile", 2], ["surge-alloy", 4], ["silicon", 12], ["plastanium", 6] ["titanium", 5] ] /*liquids*/, null/*power*/, 18],
     [/*items h*/ [ ["ohno-missiles-missile", 2], ["phase-fabric", 8], ["silicon", 8], ["titanium", 5] ] /*liquids*/, null/*power*/, 15],
     [/*items sp*/ [ ["ohno-missiles-missile", 4], ["blast-compound", 4], ["silicon", 10], ["titanium", 5] ] /*liquids*/, null/*power*/, 23],
@@ -169,7 +169,7 @@ hasPower=true;
 missileUpgrader.localizedName = "[#F90800]Ballistic Modification Plant";
 missileUpgrader.description = "Takes normal [#F90800]Ballistic Missiles[] and upgrades them to missiles meant specifically for certain missile silos, allowing them to fire faster because they don't need to synthesize the upgraded missiles themselves. Selection is output, cost is bottom right gui. Easer to read in the [?] info. [red]Just note that it's extremely long.";
 missileUpgrader.itemCapacity = 69;
-missileUpgrader.liquidCapacity = 48;
+missileUpgrader.liquidCapacity = 69;
 missileUpgrader.size = 5;
 missileUpgrader.craftEffect = Fx.producesmoke;
 missileUpgrader.updateEffect = Fx.hitMeltdown;
