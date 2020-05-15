@@ -3,8 +3,10 @@
 # Missiles Ohno Mod for Mindustry
 With the new ballistic missile, you can nuke the enemies with various missile silos. (It's also my first mod) Please, if you have any suggestions for balance changes (I'm only gonna change build cost) or missiles, DM me in discord with #MEEP of Faith#7277 (Plase don't spam my DMs though).
 
-## Factory
+## Factories
 Adds a Ballistics Factory to create missiles to load various milos. Kinda expensive to run, so have fun with that.
+
+Cool looking multi-crafter using younggam/multi-lib to upgrade your normal missiles.
 
 ## Missile Showcase (Click on the image to open the video)
 [![Missile Showcase Video](https://img.youtube.com/vi/ayshhQFQrW8/0.jpg)](https://www.youtube.com/watch?v=ayshhQFQrW8)
