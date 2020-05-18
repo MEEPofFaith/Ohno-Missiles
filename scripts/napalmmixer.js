@@ -1,7 +1,7 @@
 const flameMixer = extendContent(GenericCrafter, "napalmmixer", {
   load(){
     this.super$load();
-    for(i = 0; i < 3; i ++){
+    for(i = 0; i < 4; i ++){
       this.liquidRegions[i] = Core.atlas.find(this.name + "-liquid-" + i);
     }
     this.topRegion = Core.atlas.find(this.name + "-top");
@@ -13,8 +13,16 @@ const flameMixer = extendContent(GenericCrafter, "napalmmixer", {
   setStats(){
     this.super$setStats();
     
+    this.stats.add(BlockStat.input, "Mixing:", "Mixing:");
+    
     this.stats.add(BlockStat.input,this.inputLiquids[0].liquid,this.inputLiquids[0].amount, false);
     this.stats.add(BlockStat.input,this.inputLiquids[1].liquid,this.inputLiquids[1].amount, false);
+    
+    this.stats.add(BlockStat.input, "| Coolant:", "| Coolant:");
+    
+    this.stats.add(BlockStat.input,this.coolantLiquids[0].liquid,this.coolantLiquids[0].amount*60, true);
+    this.stats.add(BlockStat.input, "or", "or");
+    this.stats.add(BlockStat.input,this.coolantLiquids[0].liquid,this.coolantLiquids[1].amount*60, true);
   },
   acceptLiquid(tile,source,liquid,amount){
     const entity=tile.ent();
@@ -22,14 +30,24 @@ const flameMixer = extendContent(GenericCrafter, "napalmmixer", {
       return false;
     }
     for(i = 0; i < 2; i ++){
-      if(liquid == this.inputLiquids[i].liquid){
+      for(e = 0; e < 2; e++){
+        if(liquid == this.inputLiquids[i].liquid && tile.entity.liquids.get(this.coolantLiquids[e].liquid) >= this.coolantLiquids[e].amount*60){
+          return true;
+        }
+      }
+    }
+    for(f = 0; f < 2; f++){
+      if(liquid == this.coolantLiquids[f].liquid && tile.entity.liquids.get(this.coolantLiquids[1-f].liquid) <= 1){
         return true;
       }
     }
   },
   shouldConsume(tile){
     entity = tile.ent();
-    if(tile.entity.liquids.get(this.outputLiquid.liquid) < this.liquidCapacity && tile.entity.liquids.get(this.inputLiquids[0].liquid) >= this.inputLiquids[0].amount && tile.entity.liquids.get(this.inputLiquids[1].liquid) >= this.inputLiquids[1].amount){
+    if(tile.entity.liquids.get(this.outputLiquid.liquid) < this.liquidCapacity && tile.entity.liquids.get(this.inputLiquids[0].liquid) >= this.inputLiquids[0].amount && tile.entity.liquids.get(this.inputLiquids[1].liquid) >= this.inputLiquids[1].amount && tile.entity.liquids.get(this.coolantLiquids[0].liquid) >= this.coolantLiquids[0].amount){
+      return true;
+    }
+    if(tile.entity.liquids.get(this.outputLiquid.liquid) < this.liquidCapacity && tile.entity.liquids.get(this.inputLiquids[0].liquid) >= this.inputLiquids[0].amount && tile.entity.liquids.get(this.inputLiquids[1].liquid) >= this.inputLiquids[1].amount && tile.entity.liquids.get(this.coolantLiquids[1].liquid) >= this.coolantLiquids[1].amount){
       return true;
     }
     else{
@@ -59,6 +77,20 @@ const flameMixer = extendContent(GenericCrafter, "napalmmixer", {
     Draw.rect(this.liquidRegions[2], tile.drawx(), tile.drawy());
     Draw.color();
     
+    //Other tank, Coolant
+    if(tile.entity.liquids.get(this.coolantLiquids[0].liquid) > tile.entity.liquids.get(this.coolantLiquids[1].liquid) || tile.entity.liquids.get(this.coolantLiquids[0].liquid) == tile.entity.liquids.get(this.coolantLiquids[1].liquid)){
+      Draw.color(this.coolantLiquids[0].liquid.color);
+      Draw.alpha(tile.entity.liquids.get(this.coolantLiquids[0].liquid) / this.liquidCapacity);
+      Draw.rect(this.liquidRegions[3], tile.drawx(), tile.drawy());
+      Draw.color();
+    }
+    if(tile.entity.liquids.get(this.coolantLiquids[1].liquid) > tile.entity.liquids.get(this.coolantLiquids[0].liquid)){
+      Draw.color(this.coolantLiquids[1].liquid.color);
+      Draw.alpha(tile.entity.liquids.get(this.coolantLiquids[1].liquid) / this.liquidCapacity);
+      Draw.rect(this.liquidRegions[3], tile.drawx(), tile.drawy());
+      Draw.color();
+    }
+    
     Draw.rect(this.topRegion, tile.drawx(), tile.drawy());
 	},
   update(tile){
@@ -71,6 +103,12 @@ const flameMixer = extendContent(GenericCrafter, "napalmmixer", {
     }
     else{
       entity.warmup = Mathf.lerp(entity.warmup, 0, 0.02);
+    }
+    
+    //consume coolant if there's oil and slag in the mixer
+    if(tile.entity.liquids.get(this.inputLiquids[0].liquid) > 0 && tile.entity.liquids.get(this.inputLiquids[1].liquid) > 0){
+      entity.liquids.remove(this.coolantLiquids[0].liquid, this.coolantLiquids[0].amount);
+      entity.liquids.remove(this.coolantLiquids[1].liquid, this.coolantLiquids[1].amount);
     }
     
     if(entity.progress >= 1){
@@ -89,17 +127,22 @@ const flameMixer = extendContent(GenericCrafter, "napalmmixer", {
   },
   setBars(){
     this.super$setBars();
-    //initialize
     
     this.bars.remove("liquid");
     
-    this.bars.add("slag",func(entity =>
+    this.bars.add("Slag",func(entity =>
       new Bar(prov(() => this.inputLiquids[0].liquid.localizedName), prov(() => this.inputLiquids[0].liquid.barColor()), floatp(() => entity.liquids.get(this.inputLiquids[0].liquid) / this.liquidCapacity))
     ));
-    this.bars.add("oil",func(entity =>
+    this.bars.add("Oil",func(entity =>
       new Bar(prov(() => this.inputLiquids[1].liquid.localizedName), prov(() => this.inputLiquids[1].liquid.barColor()), floatp(() => entity.liquids.get(this.inputLiquids[1].liquid) / this.liquidCapacity))
     ));
-    this.bars.add("naplam",func(entity =>
+    this.bars.add("Water",func(entity =>
+      new Bar(prov(() => this.coolantLiquids[0].liquid.localizedName), prov(() => this.coolantLiquids[0].liquid.barColor()), floatp(() => entity.liquids.get(this.coolantLiquids[0].liquid) / this.liquidCapacity))
+    ));
+    this.bars.add("Cryofluid",func(entity =>
+      new Bar(prov(() => this.coolantLiquids[1].liquid.localizedName), prov(() => this.coolantLiquids[1].liquid.barColor()), floatp(() => entity.liquids.get(this.coolantLiquids[1].liquid) / this.liquidCapacity))
+    ));
+    this.bars.add("[#EA8878]Naplam",func(entity =>
       new Bar(prov(() => this.outputLiquid.liquid.localizedName), prov(() => this.outputLiquid.liquid.barColor()), floatp(() => entity.liquids.get(this.outputLiquid.liquid) / this.liquidCapacity))
     ));
   },
@@ -111,10 +154,11 @@ const flameMixer = extendContent(GenericCrafter, "napalmmixer", {
 	}
 });
 
-flameMixer.liquidCapacity = 24;
+flameMixer.liquidCapacity = 36;
 flameMixer.hasLiquids = true;
-flameMixer.craftTime = 30;
+flameMixer.craftTime = 45;
 flameMixer.liquidRegions = [];
-flameMixer.inputLiquids = [new LiquidStack(Liquids.slag, 15), new LiquidStack(Liquids.oil, 8)];
+flameMixer.inputLiquids = [new LiquidStack(Liquids.slag, 22.5), new LiquidStack(Liquids.oil, 12)];
+flameMixer.coolantLiquids = [new LiquidStack(Liquids.water, 0.5), new LiquidStack(Liquids.cryofluid, 0.5)];
 flameMixer.craftEffect = Fx.pulverizeRedder;
 flameMixer.updateEffect = Fx.lava;

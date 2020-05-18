@@ -2,10 +2,14 @@ localizedName: "[#EA8878]Napalm Mixer"
 description: 
   '''
   Mixes Slag and Oil to create volatile [#EA8878]Napalm[].
+  Requires Water or Cryofluid as coolant or else it'll catch itself on fire. Slag and Oil will only be allowed in if there's sufficent Water in the mixer.
+  [red]Note: Not 100% guaranteed to negate fire damage. I suggest having many Mend Projectors around it.
+  [#565666]I do mean "or" literally, if there's Water in there, you can't put in Cryofluid and vice versa.[]
   
   Don't ask how this works, I threw science out the window a while ago.
   '''
 size: 3
+health: 120
 consumes: {
   power: {
     usage: 2.5
@@ -15,8 +19,9 @@ consumes: {
 requirements: [
   lead/150
   silicon/150
+  titanium/150
   thorium/135
-  surge-alloy/45
+  surge-alloy/60
 ]
 category: crafting
 research: cryofluidmixer
