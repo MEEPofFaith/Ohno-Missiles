@@ -17,7 +17,7 @@ Cool looking multi-crafter using younggam/multi-lib to upgrade your normal missi
 #### Anti-Air Silo (v1) - Fires much faster missiles that blast down flying enemies.
 #### Splitter Silo (v1) - Fire missiles that split into multiple smaller missiles. Thrice.
 #### Nuclear Silo (v1) - The destruction capable should be read from the name.
-#### Incindiary Silo (v2) - Lower explosion damage radius, but sends liquid flames flying all over the place.
+#### Incendiary Silo (v2) - Lower explosion damage radius, but sends liquid flames flying all over the place.
 #### Virus Silo (v2) (Started by SolarPH) - On collision, creates a swarm of annoying bugs that deal damage.
 #### EMP Silo (v2) (Started by SolarPH) - Deals no damage, but stops enemies from moving and makes them deal no damage.
 
