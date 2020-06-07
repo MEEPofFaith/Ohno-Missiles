@@ -37,44 +37,45 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
       var craftAnimSpeed = this.produceTimes[tile.entity.getToggle() + 1] / 20;
       var craftAnimLoc = Mathf.sin(entity.totalProgress / craftAnimSpeed) * 7;
       
-      /*Draw.color(Color.valueOf("565666"));
+      Draw.color(Color.valueOf("565666"));
       Draw.alpha(entity.warmup * 0.8);
       Lines.stroke(2);
       Lines.line(tile.drawx() + craftAnimLoc, tile.drawy() + 10, tile.drawx() + craftAnimLoc, tile.drawy() + 16);
       Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 10, tile.drawx() - craftAnimLoc, tile.drawy() - 16);
-      Draw.color();*/
+      Draw.color();
       
-      //top upgraded missle
-      Draw.shader(Shaders.build, true);
       Shaders.build.region = this.itemRegions[tile.entity.getToggle() + 1];
       Shaders.build.progress = entity.progress / this.produceTimes[tile.entity.getToggle() + 1];
       Shaders.build.color = Pal.accent;
-      //Shaders.build.color.a = entity.progress;
+      Shaders.build.color.a = entity.progress;
       Shaders.build.time = -entity.totalProgress / 20;
-      Draw.rect(this.itemRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy(), 0);
-      //Draw.flush();
+      
+      Draw.shader(Shaders.build);
+      //Draw.alpha(entity.progress);
+      //top upgraded missle
+      Draw.rect(this.itemRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
       Draw.shader();
       
       if(tile.entity.items.get(Vars.content.getByName(ContentType.item, "ohno-missiles-missile")) >= 1){
-        //bottom original missile
-        //Draw.alpha(1 - entity.progress);
-        Draw.shader(Shaders.build, true);
-        Shaders.build.region = this.original;
+        Shaders.build.region = this.itemRegions[tile.entity.getToggle() + 1];
         Shaders.build.progress = (1 - entity.progress) / this.produceTimes[tile.entity.getToggle() + 1];
         Shaders.build.color = Pal.accent;
-        //Shaders.build.color.a = 1 - entity.progress;
+        Shaders.build.color.a = 1 - entity.progress;
         Shaders.build.time = -entity.totalProgress / 20;
-        Draw.rect(this.original, tile.drawx(), tile.drawy(), 0);
-        //Draw.flush();
+        
+        //bottom original missile
+        Draw.shader(Shaders.build);
+        //Draw.alpha(1 - entity.progress);
+        Draw.rect(this.original, tile.drawx(), tile.drawy());
         Draw.shader();
       }
       
-      /*Draw.color(Pal.accent);
+      Draw.color(Pal.accent);
       Draw.alpha(entity.warmup * 0.8);
       Lines.stroke(1);
       Lines.line(tile.drawx() + craftAnimLoc, tile.drawy() + 10, tile.drawx() + craftAnimLoc, tile.drawy() + 16);
       Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 10, tile.drawx() - craftAnimLoc, tile.drawy() - 16);
-      Draw.color();*/
+      Draw.color();
     }
   },
   drawLayer2(tile){
