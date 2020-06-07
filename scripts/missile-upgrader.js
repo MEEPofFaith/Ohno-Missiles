@@ -44,30 +44,11 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
       Lines.line(tile.drawx() - craftAnimLoc, tile.drawy() - 10, tile.drawx() - craftAnimLoc, tile.drawy() - 16);
       Draw.color();
       
-      Shaders.build.region = this.itemRegions[tile.entity.getToggle() + 1];
-      Shaders.build.progress = entity.progress / this.produceTimes[tile.entity.getToggle() + 1];
-      Shaders.build.color = Pal.accent;
-      Shaders.build.color.a = entity.progress;
-      Shaders.build.time = -entity.totalProgress / 20;
-      
-      Draw.shader(Shaders.build);
-      //Draw.alpha(entity.progress);
-      //top upgraded missle
+      Draw.alpha(entity.progress);
       Draw.rect(this.itemRegions[tile.entity.getToggle() + 1], tile.drawx(), tile.drawy());
-      Draw.shader();
-      
       if(tile.entity.items.get(Vars.content.getByName(ContentType.item, "ohno-missiles-missile")) >= 1){
-        Shaders.build.region = this.itemRegions[tile.entity.getToggle() + 1];
-        Shaders.build.progress = (1 - entity.progress) / this.produceTimes[tile.entity.getToggle() + 1];
-        Shaders.build.color = Pal.accent;
-        Shaders.build.color.a = 1 - entity.progress;
-        Shaders.build.time = -entity.totalProgress / 20;
-        
-        //bottom original missile
-        Draw.shader(Shaders.build);
-        //Draw.alpha(1 - entity.progress);
+        Draw.alpha(1 - entity.progress);
         Draw.rect(this.original, tile.drawx(), tile.drawy());
-        Draw.shader();
       }
       
       Draw.color(Pal.accent);
