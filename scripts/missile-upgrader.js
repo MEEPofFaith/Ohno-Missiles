@@ -17,7 +17,7 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
     }
   },
   draw(tile){
-    entity = tile.ent();
+    const entity = tile.ent();
     
     Draw.rect(this.region, tile.drawx(), tile.drawy());
     Draw.color(Color.valueOf("363646"));
@@ -83,7 +83,7 @@ const missileUpgrader=multiLib.extend(GenericCrafter,GenericCrafter.GenericCraft
     }
   },
   drawLayer2(tile){
-    entity = tile.ent();
+    const entity = tile.ent();
     
     var lens = [9.5, 9.5 , 9.5];
     var armSpeed = 6;
