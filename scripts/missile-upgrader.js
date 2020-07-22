@@ -199,7 +199,6 @@ missileUpgrader.updateEffect = Fx.hitMeltdown;
 missileUpgrader.expanded = true;
 missileUpgrader.drawLiquidLight = false;
 missileUpgrader.layer2 = Layer.power;
-missileUpgrader.research = ohno-missiles-blanksilo;
 
 missileUpgrader.missileColors = [/*none*/Color.valueOf("565666"), /*am*/Color.valueOf("9EE6FF"), /*aa*/Color.valueOf("CF0A00"), /*inc*/Color.valueOf("F27D00"), /*emp*/Color.valueOf("00A9FF"), /*h*/Color.valueOf("FFBCFB"), /*sp*/Color.valueOf("ffeb0d"), /*v*/Color.valueOf("4EE04E"), /*sh*/Color.valueOf("d620d6"), /*n*/Color.valueOf("7affbd"), /*dump*/Color.valueOf("565666")];
 missileUpgrader.topRegions = [];
