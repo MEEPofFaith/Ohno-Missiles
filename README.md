@@ -1,3 +1,6 @@
+# This is not being updated to v6
+## I'm adding missiles into `MEEPofFaith/progressed-materials`, which is my main v6 mod.
+
 ![Missiles Mod Logo](https://cdn.discordapp.com/attachments/653293028869537843/682118535270760448/Missiles_Mod_of_Ohno_Image_Card.png)
 
 # Missiles Ohno Mod for Mindustry
