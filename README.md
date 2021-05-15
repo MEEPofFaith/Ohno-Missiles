@@ -1,5 +1,5 @@
 # This is not being updated to v6
-## Missiles have been added into `MEEPofFaith/progressed-materials`, which is my main v6 mod.
+## Missiles have been added into `MEEPofFaith/prog-mats-java`.
 
 ---
 
