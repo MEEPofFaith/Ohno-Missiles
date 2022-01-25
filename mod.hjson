@@ -10,3 +10,4 @@ description:
   '''
 version: 4.3
 dependencies:["multi-lib"]
+hideBrowser: true
